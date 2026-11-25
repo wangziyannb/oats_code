@@ -1,0 +1,932 @@
+{"started_at": "2026-10-07T01:04:56.699096+00:00", "argv": ["/home/zwang53/oats_code/.venv-awq/bin/python", "-u", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/code/run_oats_awq.py", "inloop", "--model", "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9", "--rank", "32", "--output-dir", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop", "--dtype", "fp16", "--device", "cuda:0", "--num-iters", "80", "--devices", "cuda:0", "cuda:1", "cuda:2", "cuda:3", "--calibration-path", "/home/zwang53/oats_code/calib_llama2-7b.pth", "--seed", "0", "--cal-nsamples", "128", "--cal-seqlen", "2048", "--cal-batch-size", "32", "--awq-tokens", "512", "--scale-grid", "20", "--sparse-refresh", "10", "--worker-cpu-threads", "1"]}
+True
+Pruning using OATS:   0%|          | 0/32 [00:00<?, ?layer/s]pruning layer 0 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 0 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 0 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 0 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 0 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 0 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 0 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 0: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] mlp.gate_proj on cuda:0: 97.83s
+[projection done] mlp.up_proj on cuda:1: 97.98s
+[projection done] mlp.down_proj on cuda:2: 100.29s
+[projection done] self_attn.q_proj on cuda:3: 112.35s
+[projection done] self_attn.v_proj on cuda:1: 96.30s
+[projection done] self_attn.o_proj on cuda:2: 94.37s
+[projection done] self_attn.k_proj on cuda:0: 115.57s
+Pruning using OATS:   3%|▎         | 1/32 [04:10<2:09:31, 250.71s/layer]pruning layer 1 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 1 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 1 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 1 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 1 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 1 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 1 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 1: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.53s
+[projection done] mlp.up_proj on cuda:1: 96.96s
+[projection done] mlp.gate_proj on cuda:0: 97.08s
+[projection done] mlp.down_proj on cuda:2: 96.98s
+[projection done] self_attn.k_proj on cuda:3: 92.78s
+[projection done] self_attn.v_proj on cuda:1: 93.18s
+[projection done] self_attn.o_proj on cuda:0: 100.16s
+Pruning using OATS:   6%|▋         | 2/32 [08:14<2:03:17, 246.57s/layer]pruning layer 2 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 2 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 2 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 2 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 2 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 2 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 2 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 2: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.50s
+[projection done] mlp.gate_proj on cuda:0: 96.94s
+[projection done] mlp.up_proj on cuda:1: 97.16s
+[projection done] mlp.down_proj on cuda:2: 98.98s
+[projection done] self_attn.k_proj on cuda:3: 93.45s
+[projection done] self_attn.v_proj on cuda:0: 92.63s
+[projection done] self_attn.o_proj on cuda:1: 93.89s
+Pruning using OATS:   9%|▉         | 3/32 [12:08<1:56:22, 240.76s/layer]pruning layer 3 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 3 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 3 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 3 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 3 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 3 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 3 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 3: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.20s
+[projection done] mlp.up_proj on cuda:1: 96.57s
+[projection done] mlp.gate_proj on cuda:0: 96.79s
+[projection done] mlp.down_proj on cuda:2: 98.35s
+[projection done] self_attn.k_proj on cuda:3: 92.64s
+[projection done] self_attn.o_proj on cuda:0: 92.82s
+[projection done] self_attn.v_proj on cuda:1: 92.98s
+Pruning using OATS:  12%|█▎        | 4/32 [15:59<1:50:35, 237.00s/layer]pruning layer 4 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 4 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 4 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 4 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 4 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 4 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 4 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 4: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.40s
+[projection done] mlp.up_proj on cuda:1: 97.47s
+[projection done] mlp.gate_proj on cuda:0: 97.56s
+[projection done] mlp.down_proj on cuda:2: 99.56s
+[projection done] self_attn.k_proj on cuda:3: 92.44s
+[projection done] self_attn.v_proj on cuda:1: 92.78s
+[projection done] self_attn.o_proj on cuda:0: 93.19s
+Pruning using OATS:  16%|█▌        | 5/32 [19:55<1:46:28, 236.60s/layer]pruning layer 5 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 5 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 5 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 5 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 5 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 5 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 5 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 5: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.14s
+[projection done] mlp.up_proj on cuda:1: 97.51s
+[projection done] mlp.gate_proj on cuda:0: 97.57s
+[projection done] mlp.down_proj on cuda:2: 99.65s
+[projection done] self_attn.k_proj on cuda:3: 92.50s
+[projection done] self_attn.v_proj on cuda:1: 93.13s
+[projection done] self_attn.o_proj on cuda:0: 93.37s
+Pruning using OATS:  19%|█▉        | 6/32 [23:51<1:42:25, 236.37s/layer]pruning layer 6 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 6 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 6 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 6 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 6 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 6 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 6 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 6: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.27s
+[projection done] mlp.gate_proj on cuda:0: 96.39s
+[projection done] mlp.up_proj on cuda:1: 96.45s
+[projection done] mlp.down_proj on cuda:2: 99.09s
+[projection done] self_attn.k_proj on cuda:3: 92.79s
+[projection done] self_attn.v_proj on cuda:0: 92.32s
+[projection done] self_attn.o_proj on cuda:1: 92.76s
+Pruning using OATS:  22%|██▏       | 7/32 [27:43<1:37:58, 235.12s/layer]pruning layer 7 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 7 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 7 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 7 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 7 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 7 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 7 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 7: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.63s
+[projection done] mlp.gate_proj on cuda:0: 96.47s
+[projection done] mlp.up_proj on cuda:1: 96.51s
+[projection done] mlp.down_proj on cuda:2: 98.69s
+[projection done] self_attn.k_proj on cuda:3: 92.70s
+[projection done] self_attn.v_proj on cuda:0: 92.74s
+[projection done] self_attn.o_proj on cuda:1: 93.14s
+Pruning using OATS:  25%|██▌       | 8/32 [31:31<1:33:04, 232.70s/layer]pruning layer 8 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 8 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 8 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 8 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 8 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 8 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 8 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 8: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.06s
+[projection done] mlp.gate_proj on cuda:0: 97.19s
+[projection done] mlp.up_proj on cuda:1: 97.28s
+[projection done] mlp.down_proj on cuda:2: 98.88s
+[projection done] self_attn.k_proj on cuda:3: 92.33s
+[projection done] self_attn.v_proj on cuda:0: 92.91s
+[projection done] self_attn.o_proj on cuda:1: 93.34s
+Pruning using OATS:  28%|██▊       | 9/32 [35:19<1:28:37, 231.22s/layer]pruning layer 9 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 9 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 9 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 9 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 9 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 9 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 9 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 9: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.93s
+[projection done] mlp.gate_proj on cuda:0: 96.32s
+[projection done] mlp.up_proj on cuda:1: 96.77s
+[projection done] mlp.down_proj on cuda:2: 99.35s
+[projection done] self_attn.k_proj on cuda:3: 92.66s
+[projection done] self_attn.v_proj on cuda:0: 92.76s
+[projection done] self_attn.o_proj on cuda:1: 93.20s
+Pruning using OATS:  31%|███▏      | 10/32 [39:08<1:24:35, 230.70s/layer]pruning layer 10 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 10 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 10 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 10 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 10 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 10 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 10 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 10: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.43s
+[projection done] mlp.gate_proj on cuda:0: 96.85s
+[projection done] mlp.up_proj on cuda:1: 97.93s
+[projection done] mlp.down_proj on cuda:2: 99.19s
+[projection done] self_attn.k_proj on cuda:3: 92.63s
+[projection done] self_attn.v_proj on cuda:0: 92.97s
+[projection done] self_attn.o_proj on cuda:1: 93.25s
+Pruning using OATS:  34%|███▍      | 11/32 [42:58<1:20:39, 230.47s/layer]pruning layer 11 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 11 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 11 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 11 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 11 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 11 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 11 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 11: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.85s
+[projection done] mlp.gate_proj on cuda:0: 97.01s
+[projection done] mlp.up_proj on cuda:1: 97.13s
+[projection done] mlp.down_proj on cuda:2: 98.47s
+[projection done] self_attn.k_proj on cuda:3: 92.73s
+[projection done] self_attn.v_proj on cuda:0: 93.00s
+[projection done] self_attn.o_proj on cuda:1: 93.12s
+Pruning using OATS:  38%|███▊      | 12/32 [46:44<1:16:23, 229.17s/layer]pruning layer 12 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 12 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 12 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 12 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 12 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 12 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 12 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 12: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.15s
+[projection done] mlp.up_proj on cuda:1: 96.80s
+[projection done] mlp.gate_proj on cuda:0: 97.15s
+[projection done] mlp.down_proj on cuda:2: 99.19s
+[projection done] self_attn.k_proj on cuda:3: 92.50s
+[projection done] self_attn.o_proj on cuda:0: 92.88s
+[projection done] self_attn.v_proj on cuda:1: 93.19s
+Pruning using OATS:  41%|████      | 13/32 [50:31<1:12:16, 228.22s/layer]pruning layer 13 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 13 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 13 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 13 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 13 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 13 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 13 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 13: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.89s
+[projection done] mlp.up_proj on cuda:1: 97.16s
+[projection done] mlp.gate_proj on cuda:0: 97.34s
+[projection done] mlp.down_proj on cuda:2: 98.63s
+[projection done] self_attn.k_proj on cuda:3: 92.86s
+[projection done] self_attn.v_proj on cuda:1: 92.35s
+[projection done] self_attn.o_proj on cuda:0: 92.48s
+Pruning using OATS:  44%|████▍     | 14/32 [54:18<1:08:22, 227.94s/layer]pruning layer 14 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 14 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 14 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 14 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 14 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 14 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 14 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 14: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.89s
+[projection done] mlp.gate_proj on cuda:0: 97.34s
+[projection done] mlp.up_proj on cuda:1: 97.49s
+[projection done] mlp.down_proj on cuda:2: 99.12s
+[projection done] self_attn.k_proj on cuda:3: 92.69s
+[projection done] self_attn.v_proj on cuda:0: 92.75s
+[projection done] self_attn.o_proj on cuda:1: 93.88s
+Pruning using OATS:  47%|████▋     | 15/32 [58:08<1:04:46, 228.63s/layer]pruning layer 15 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 15 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 15 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 15 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 15 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 15 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 15 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 15: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.46s
+[projection done] mlp.up_proj on cuda:1: 97.57s
+[projection done] mlp.gate_proj on cuda:0: 97.95s
+[projection done] mlp.down_proj on cuda:2: 98.95s
+[projection done] self_attn.k_proj on cuda:3: 92.51s
+[projection done] self_attn.v_proj on cuda:1: 93.01s
+[projection done] self_attn.o_proj on cuda:0: 93.31s
+Pruning using OATS:  50%|█████     | 16/32 [1:01:56<1:00:52, 228.30s/layer]pruning layer 16 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 16 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 16 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 16 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 16 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 16 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 16 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 16: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.72s
+[projection done] mlp.up_proj on cuda:1: 97.24s
+[projection done] mlp.gate_proj on cuda:0: 97.35s
+[projection done] mlp.down_proj on cuda:2: 99.02s
+[projection done] self_attn.k_proj on cuda:3: 92.49s
+[projection done] self_attn.o_proj on cuda:0: 92.96s
+[projection done] self_attn.v_proj on cuda:1: 92.99s
+Pruning using OATS:  53%|█████▎    | 17/32 [1:05:44<57:03, 228.22s/layer]  pruning layer 17 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 17 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 17 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 17 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 17 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 17 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 17 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 17: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.65s
+[projection done] mlp.up_proj on cuda:1: 96.98s
+[projection done] mlp.gate_proj on cuda:0: 97.04s
+[projection done] mlp.down_proj on cuda:2: 98.60s
+[projection done] self_attn.k_proj on cuda:3: 93.00s
+[projection done] self_attn.o_proj on cuda:0: 93.19s
+[projection done] self_attn.v_proj on cuda:1: 93.29s
+Pruning using OATS:  56%|█████▋    | 18/32 [1:09:35<53:29, 229.22s/layer]pruning layer 18 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 18 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 18 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 18 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 18 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 18 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 18 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 18: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.01s
+[projection done] mlp.up_proj on cuda:1: 97.10s
+[projection done] mlp.gate_proj on cuda:0: 97.31s
+[projection done] mlp.down_proj on cuda:2: 98.91s
+[projection done] self_attn.k_proj on cuda:3: 92.00s
+[projection done] self_attn.v_proj on cuda:1: 93.27s
+[projection done] self_attn.o_proj on cuda:0: 93.66s
+Pruning using OATS:  59%|█████▉    | 19/32 [1:13:22<49:31, 228.56s/layer]pruning layer 19 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 19 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 19 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 19 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 19 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 19 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 19 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 19: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.28s
+[projection done] mlp.up_proj on cuda:1: 97.01s
+[projection done] mlp.gate_proj on cuda:0: 96.93s
+[projection done] mlp.down_proj on cuda:2: 98.55s
+[projection done] self_attn.k_proj on cuda:3: 94.03s
+[projection done] self_attn.v_proj on cuda:1: 92.35s
+[projection done] self_attn.o_proj on cuda:0: 92.74s
+Pruning using OATS:  62%|██████▎   | 20/32 [1:17:11<45:43, 228.66s/layer]pruning layer 20 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 20 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 20 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 20 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 20 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 20 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 20 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 20: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.57s
+[projection done] mlp.gate_proj on cuda:0: 96.87s
+[projection done] mlp.up_proj on cuda:1: 96.90s
+[projection done] mlp.down_proj on cuda:2: 98.40s
+[projection done] self_attn.k_proj on cuda:3: 92.81s
+[projection done] self_attn.v_proj on cuda:0: 92.95s
+[projection done] self_attn.o_proj on cuda:1: 93.62s
+Pruning using OATS:  66%|██████▌   | 21/32 [1:20:58<41:48, 228.08s/layer]pruning layer 21 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 21 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 21 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 21 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 21 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 21 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 21 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 21: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.38s
+[projection done] mlp.gate_proj on cuda:0: 96.90s
+[projection done] mlp.up_proj on cuda:1: 96.93s
+[projection done] mlp.down_proj on cuda:2: 99.47s
+[projection done] self_attn.k_proj on cuda:3: 92.48s
+[projection done] self_attn.v_proj on cuda:0: 92.91s
+[projection done] self_attn.o_proj on cuda:1: 94.04s
+Pruning using OATS:  69%|██████▉   | 22/32 [1:24:59<38:41, 232.16s/layer]pruning layer 22 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 22 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 22 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 22 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 22 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 22 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 22 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 22: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.79s
+[projection done] mlp.gate_proj on cuda:0: 96.96s
+[projection done] mlp.up_proj on cuda:1: 97.11s
+[projection done] mlp.down_proj on cuda:2: 98.93s
+[projection done] self_attn.k_proj on cuda:3: 92.81s
+[projection done] self_attn.v_proj on cuda:0: 92.52s
+[projection done] self_attn.o_proj on cuda:1: 94.38s
+Pruning using OATS:  72%|███████▏  | 23/32 [1:28:53<34:54, 232.69s/layer]pruning layer 23 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 23 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 23 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 23 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 23 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 23 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 23 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 23: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.72s
+[projection done] mlp.gate_proj on cuda:0: 96.99s
+[projection done] mlp.up_proj on cuda:1: 97.13s
+[projection done] mlp.down_proj on cuda:2: 98.80s
+[projection done] self_attn.k_proj on cuda:3: 92.65s
+[projection done] self_attn.v_proj on cuda:0: 92.21s
+[projection done] self_attn.o_proj on cuda:1: 93.57s
+Pruning using OATS:  75%|███████▌  | 24/32 [1:32:45<30:57, 232.24s/layer]pruning layer 24 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 24 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 24 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 24 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 24 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 24 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 24 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 24: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.79s
+[projection done] mlp.gate_proj on cuda:0: 96.90s
+[projection done] mlp.up_proj on cuda:1: 96.96s
+[projection done] mlp.down_proj on cuda:2: 98.79s
+[projection done] self_attn.k_proj on cuda:3: 92.30s
+[projection done] self_attn.v_proj on cuda:0: 92.45s
+[projection done] self_attn.o_proj on cuda:1: 96.70s
+Pruning using OATS:  78%|███████▊  | 25/32 [1:36:42<27:16, 233.72s/layer]pruning layer 25 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 25 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 25 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 25 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 25 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 25 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 25 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 25: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.31s
+[projection done] mlp.gate_proj on cuda:0: 97.49s
+[projection done] mlp.up_proj on cuda:1: 97.75s
+[projection done] mlp.down_proj on cuda:2: 99.13s
+[projection done] self_attn.k_proj on cuda:3: 92.85s
+[projection done] self_attn.v_proj on cuda:0: 92.09s
+[projection done] self_attn.o_proj on cuda:1: 94.60s
+Pruning using OATS:  81%|████████▏ | 26/32 [1:40:32<23:16, 232.82s/layer]pruning layer 26 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 26 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 26 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 26 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 26 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 26 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 26 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 26: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.63s
+[projection done] mlp.up_proj on cuda:1: 96.76s
+[projection done] mlp.gate_proj on cuda:0: 96.89s
+[projection done] mlp.down_proj on cuda:2: 99.13s
+[projection done] self_attn.k_proj on cuda:3: 92.32s
+[projection done] self_attn.v_proj on cuda:1: 92.47s
+[projection done] self_attn.o_proj on cuda:0: 94.99s
+Pruning using OATS:  84%|████████▍ | 27/32 [1:44:23<19:20, 232.09s/layer]pruning layer 27 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 27 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 27 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 27 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 27 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 27 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 27 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 27: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.60s
+[projection done] mlp.up_proj on cuda:1: 97.04s
+[projection done] mlp.gate_proj on cuda:0: 97.11s
+[projection done] mlp.down_proj on cuda:2: 99.80s
+[projection done] self_attn.k_proj on cuda:3: 92.16s
+[projection done] self_attn.v_proj on cuda:1: 92.44s
+[projection done] self_attn.o_proj on cuda:0: 94.10s
+Pruning using OATS:  88%|████████▊ | 28/32 [1:48:14<15:26, 231.68s/layer]pruning layer 28 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 28 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 28 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 28 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 28 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 28 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 28 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 28: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.49s
+[projection done] mlp.gate_proj on cuda:0: 97.02s
+[projection done] mlp.up_proj on cuda:1: 97.14s
+[projection done] mlp.down_proj on cuda:2: 98.80s
+[projection done] self_attn.k_proj on cuda:3: 93.24s
+[projection done] self_attn.v_proj on cuda:0: 92.91s
+[projection done] self_attn.o_proj on cuda:1: 96.22s
+Pruning using OATS:  91%|█████████ | 29/32 [1:52:05<11:34, 231.48s/layer]pruning layer 29 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 29 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 29 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 29 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 29 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 29 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 29 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 29: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 93.61s
+[projection done] mlp.gate_proj on cuda:0: 97.83s
+[projection done] mlp.up_proj on cuda:1: 98.13s
+[projection done] mlp.down_proj on cuda:2: 100.47s
+[projection done] self_attn.k_proj on cuda:3: 92.50s
+[projection done] self_attn.v_proj on cuda:0: 93.03s
+[projection done] self_attn.o_proj on cuda:1: 96.40s
+Pruning using OATS:  94%|█████████▍| 30/32 [1:55:55<07:42, 231.14s/layer]pruning layer 30 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 30 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 30 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 30 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 30 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 30 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 30 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 30: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.66s
+[projection done] mlp.gate_proj on cuda:0: 96.67s
+[projection done] mlp.up_proj on cuda:1: 96.89s
+[projection done] mlp.down_proj on cuda:2: 101.21s
+[projection done] self_attn.k_proj on cuda:3: 91.99s
+[projection done] self_attn.v_proj on cuda:0: 92.74s
+[projection done] self_attn.o_proj on cuda:1: 94.83s
+Pruning using OATS:  97%|█████████▋| 31/32 [1:59:47<03:51, 231.51s/layer]pruning layer 31 name self_attn.q_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 31 name self_attn.k_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 31 name self_attn.v_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 31 name self_attn.o_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 31 name mlp.gate_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 31 name mlp.up_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+pruning layer 31 name mlp.down_proj
+Unstructured sparsity for Sparse Term: 0.5
+Target Rank for Low-Rank Term (fixed): 32
+[projection parallel] layer 31: 7 tasks on ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+[projection done] self_attn.q_proj on cuda:3: 92.57s
+[projection done] mlp.gate_proj on cuda:0: 96.82s
+[projection done] mlp.up_proj on cuda:1: 96.94s
+[projection done] mlp.down_proj on cuda:2: 101.46s
+[projection done] self_attn.k_proj on cuda:3: 93.53s
+[projection done] self_attn.v_proj on cuda:0: 92.63s
+[projection done] self_attn.o_proj on cuda:1: 93.24s
+Pruning using OATS: 100%|██████████| 32/32 [2:03:36<00:00, 230.58s/layer]Pruning using OATS: 100%|██████████| 32/32 [2:03:36<00:00, 231.76s/layer]
+Saved complete model: /home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/checkpoint.pt

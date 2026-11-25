@@ -1,0 +1,34 @@
+{"argv": ["/home/zwang53/oats_code/.venv-awq/bin/python", "-u", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/code/run_oats_refine_full.py", "quantize", "--output-dir", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r32/paired", "--model", "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9", "--baseline-dir", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare", "--calibration-path", "/home/zwang53/oats_code/calib_llama2-7b.pth", "--rank", "32", "--arm", "paired", "--devices", "cuda:0", "cuda:1", "cuda:2", "cuda:3", "--dtype", "fp16", "--batch-size", "8", "--tokens", "512", "--scale-grid", "20", "--sweeps", "3", "--pair-candidates", "16"], "started_at": "2026-10-07T08:57:31.432145+00:00"}
+[layer done] paired rank=32 1/32 elapsed=21.3s
+[layer done] paired rank=32 2/32 elapsed=29.5s
+[layer done] paired rank=32 3/32 elapsed=38.0s
+[layer done] paired rank=32 4/32 elapsed=47.0s
+[layer done] paired rank=32 5/32 elapsed=56.2s
+[layer done] paired rank=32 6/32 elapsed=66.7s
+[layer done] paired rank=32 7/32 elapsed=74.9s
+[layer done] paired rank=32 8/32 elapsed=84.0s
+[layer done] paired rank=32 9/32 elapsed=93.2s
+[layer done] paired rank=32 10/32 elapsed=102.5s
+[layer done] paired rank=32 11/32 elapsed=112.4s
+[layer done] paired rank=32 12/32 elapsed=121.6s
+[layer done] paired rank=32 13/32 elapsed=132.4s
+[layer done] paired rank=32 14/32 elapsed=141.0s
+[layer done] paired rank=32 15/32 elapsed=148.8s
+[layer done] paired rank=32 16/32 elapsed=157.3s
+[layer done] paired rank=32 17/32 elapsed=166.6s
+[layer done] paired rank=32 18/32 elapsed=176.7s
+[layer done] paired rank=32 19/32 elapsed=184.8s
+[layer done] paired rank=32 20/32 elapsed=195.1s
+[layer done] paired rank=32 21/32 elapsed=204.2s
+[layer done] paired rank=32 22/32 elapsed=213.4s
+[layer done] paired rank=32 23/32 elapsed=223.4s
+[layer done] paired rank=32 24/32 elapsed=232.6s
+[layer done] paired rank=32 25/32 elapsed=241.8s
+[layer done] paired rank=32 26/32 elapsed=250.6s
+[layer done] paired rank=32 27/32 elapsed=258.9s
+[layer done] paired rank=32 28/32 elapsed=268.2s
+[layer done] paired rank=32 29/32 elapsed=277.2s
+[layer done] paired rank=32 30/32 elapsed=287.4s
+[layer done] paired rank=32 31/32 elapsed=296.3s
+[layer done] paired rank=32 32/32 elapsed=305.6s
+Saved complete refined model: /home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r32/paired/checkpoint.pt

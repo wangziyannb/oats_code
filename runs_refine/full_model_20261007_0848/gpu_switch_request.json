@@ -1,0 +1,58 @@
+{
+  "requested_at": "2026-10-07T09:08:20.445542+00:00",
+  "new_physical_gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "old_dispatcher_pid": 473775,
+  "active_stages": [
+    {
+      "rank": 128,
+      "arm": "awq",
+      "mode": "quantize",
+      "status": "running",
+      "pid": 548590,
+      "started_at": "2026-10-07T09:07:01.515180+00:00",
+      "argv": [
+        "/home/zwang53/oats_code/.venv-awq/bin/python",
+        "-u",
+        "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/code/run_oats_refine_full.py",
+        "quantize",
+        "--output-dir",
+        "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r128/awq",
+        "--model",
+        "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+        "--baseline-dir",
+        "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare",
+        "--calibration-path",
+        "/home/zwang53/oats_code/calib_llama2-7b.pth",
+        "--rank",
+        "128",
+        "--arm",
+        "awq",
+        "--devices",
+        "cuda:0",
+        "cuda:1",
+        "cuda:2",
+        "cuda:3",
+        "--dtype",
+        "fp16",
+        "--batch-size",
+        "8",
+        "--tokens",
+        "512",
+        "--scale-grid",
+        "20",
+        "--sweeps",
+        "3",
+        "--pair-candidates",
+        "16"
+      ],
+      "output": "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r128/awq",
+      "log": "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/logs/r128_awq_quantize.log"
+    }
+  ],
+  "action": "Dispatcher paused; active child completes on its existing devices; successor will use 4-7."
+}

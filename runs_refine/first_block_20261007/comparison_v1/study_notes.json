@@ -1,0 +1,5 @@
+{
+  "status": "superseded",
+  "reason": "FP32 code state was valid, but some Q/K sparse values underflowed to zero on FP16 conversion. Do not use this version for FP16 deployment.",
+  "replacement": "../comparison_final"
+}

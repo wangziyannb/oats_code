@@ -1,0 +1,5 @@
+{
+  "status": "preliminary",
+  "reason": "Valid FP16 masks; final comparison adds an extra ordinary-code sweep control and real-size reload checks.",
+  "replacement": "../comparison_final"
+}

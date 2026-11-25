@@ -1,0 +1,19 @@
+Waiting for active rank128 AWQ process 548590; no new task will start on 0-3.
+Active task completed; resuming all remaining stages on physical GPUs 4-7.
+2026-10-07T09:12:45.088080+00:00 SKIP completed rank=32 arm=awq mode=quantize
+2026-10-07T09:12:45.089719+00:00 SKIP completed rank=32 arm=coordinate mode=quantize
+2026-10-07T09:12:45.091281+00:00 SKIP completed rank=32 arm=paired mode=quantize
+2026-10-07T09:12:45.091605+00:00 SKIP completed rank=32 arm=awq mode=eval
+2026-10-07T09:12:45.091803+00:00 SKIP completed rank=32 arm=coordinate mode=eval
+2026-10-07T09:12:45.092018+00:00 SKIP completed rank=32 arm=paired mode=eval
+2026-10-07T09:12:45.093482+00:00 SKIP completed rank=128 arm=awq mode=quantize
+2026-10-07T09:12:45.094353+00:00 START rank=128 arm=coordinate mode=quantize
+2026-10-07T09:17:00.132113+00:00 DONE rank=128 arm=coordinate mode=quantize
+2026-10-07T09:17:00.146303+00:00 START rank=128 arm=paired mode=quantize
+2026-10-07T09:21:55.193950+00:00 DONE rank=128 arm=paired mode=quantize
+2026-10-07T09:21:55.195548+00:00 START rank=128 arm=awq mode=eval
+2026-10-07T09:21:55.196305+00:00 START rank=128 arm=coordinate mode=eval
+2026-10-07T09:21:55.197325+00:00 START rank=128 arm=paired mode=eval
+2026-10-07T09:24:10.221489+00:00 DONE rank=128 arm=coordinate mode=eval
+2026-10-07T09:24:10.221819+00:00 DONE rank=128 arm=paired mode=eval
+2026-10-07T09:24:20.223609+00:00 DONE rank=128 arm=awq mode=eval

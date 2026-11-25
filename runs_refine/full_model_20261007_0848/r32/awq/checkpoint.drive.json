@@ -1,0 +1,11 @@
+{
+  "original_path": "runs_refine/full_model_20261007_0848/r32/awq/checkpoint.pt",
+  "bytes": 13637235607,
+  "md5": "f24121b362a03bea1b75c18ec164066f",
+  "sha256": "00083e0c986a9b4f6789632ea8a69c5859a803c3c670dc08808b58714420345a",
+  "drive_file_id": "1DBneSLO7ZZPrOlGcxAh3_DfLAXvgRJQe",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1O51iAZNdpGColYAD9haZaTcgku0Fyakq",
+  "remote_relative_path": "runs_refine/full_model_20261007_0848/r32/awq/checkpoint.pt",
+  "verified_at": "2026-10-08T21:37:09.055691+00:00",
+  "load_function": "pruning_methods.OATS.awq.pipeline.load_bundle"
+}

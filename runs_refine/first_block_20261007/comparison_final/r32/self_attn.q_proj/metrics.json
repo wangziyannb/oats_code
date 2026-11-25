@@ -1,0 +1,113 @@
+{
+  "rank": 32,
+  "name": "self_attn.q_proj",
+  "device": "cuda:1",
+  "config": {
+    "sweeps": 3,
+    "update_scales": true,
+    "pair_candidates": 16,
+    "min_step": 1e-12,
+    "storage_dtype": "float16"
+  },
+  "initialization": {
+    "pair": {
+      "input_ratio": 0.45,
+      "rank_ratio": 0.0,
+      "first_search_mse": 0.0028196447528898716,
+      "pair_mse": 0.0028196447528898716,
+      "zq_abs_mean_min": 0.013013657182455063,
+      "zq_abs_mean_max": 0.052556127309799194,
+      "zq_abs_mean_avg": 0.023273887112736702,
+      "first_group_size": 128,
+      "second_group_size": 32
+    },
+    "sparse": {
+      "sparse_ratio": 0.4,
+      "sparse_search_mse": 0.0028290965128690004
+    },
+    "initializer": "awq_residual_scale_search_fp32",
+    "clipping": false,
+    "neighbor_fusion": false,
+    "scale_grid": 20
+  },
+  "initialization_seconds": 0.4530093101784587,
+  "arms": {
+    "awq": {
+      "objective": 2.9250724763801426,
+      "weighted_relative_error": 0.10419100367298792,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.002829096745699644,
+      "train_relative_mse": 0.004278183926369729,
+      "train_fp16_mse": 0.0028290573973208666,
+      "validation_mse": 0.0026993141509592533,
+      "validation_relative_mse": 0.004104107241573059,
+      "validation_fp16_mse": 0.002699249889701605
+    },
+    "coordinate": {
+      "objective": 0.25154699016005455,
+      "weighted_relative_error": 0.03055423879809595,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.00014470345922745764,
+      "train_relative_mse": 0.00021882178978079075,
+      "train_fp16_mse": 0.00014487587031908333,
+      "validation_mse": 0.0001381098700221628,
+      "validation_relative_mse": 0.0002099858282479802,
+      "validation_fp16_mse": 0.00013827627117279917,
+      "refinement_seconds": 0.10980815533548594,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0,
+      "reload_exact": true
+    },
+    "coordinate_then_codes": {
+      "objective": 0.2405404997767555,
+      "weighted_relative_error": 0.029878308726798707,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.0001480518840253353,
+      "train_relative_mse": 0.00022388530596160463,
+      "train_fp16_mse": 0.00014816605835221708,
+      "validation_mse": 0.00014121750427875668,
+      "validation_relative_mse": 0.00021471075596790309,
+      "validation_fp16_mse": 0.00014132579963188618,
+      "refinement_seconds": 0.01833599479869008,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0,
+      "reload_exact": true
+    },
+    "coordinate_then_pair": {
+      "objective": 0.24554855039646226,
+      "weighted_relative_error": 0.030187739470816037,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.00014551222557201982,
+      "train_relative_mse": 0.0002200448130587165,
+      "train_fp16_mse": 0.0001456355967093259,
+      "validation_mse": 0.00013876579760108143,
+      "validation_relative_mse": 0.00021098311755038719,
+      "validation_fp16_mse": 0.00013888480316381902,
+      "refinement_seconds": 0.05606434307992458,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0.005998439763592295,
+      "reload_exact": true
+    },
+    "paired": {
+      "objective": 0.24017331667739003,
+      "weighted_relative_error": 0.029855495520865197,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.00013837561709806323,
+      "train_relative_mse": 0.00020925277361768832,
+      "train_fp16_mse": 0.0001384873321512714,
+      "validation_mse": 0.00013225158909335732,
+      "validation_relative_mse": 0.00020107874598986817,
+      "validation_fp16_mse": 0.00013236173253972083,
+      "refinement_seconds": 0.1957306321710348,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0.02515926161139953,
+      "reload_exact": true
+    }
+  },
+  "unquantized_oats_weighted_relative_error": 0.004034973918253239
+}

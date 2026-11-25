@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 32,
+    "method": "prepare",
+    "ppl": 24.083083551649295,
+    "predicted_tokens": 338709,
+    "seqlen": 128,
+    "batch_size": 1,
+    "checkpoint_method": "prepare",
+    "stored_dtype": "float16"
+  },
+  {
+    "rank": 32,
+    "method": "posthoc",
+    "ppl": 24.454023525700443,
+    "predicted_tokens": 338709,
+    "seqlen": 128,
+    "batch_size": 1,
+    "checkpoint_method": "posthoc",
+    "stored_dtype": "float16"
+  },
+  {
+    "rank": 32,
+    "method": "inloop",
+    "ppl": 45.444405282973676,
+    "predicted_tokens": 338709,
+    "seqlen": 128,
+    "batch_size": 1,
+    "checkpoint_method": "inloop",
+    "stored_dtype": "float16"
+  },
+  {
+    "rank": 128,
+    "method": "prepare",
+    "ppl": 17.0228171044076,
+    "predicted_tokens": 338709,
+    "seqlen": 128,
+    "batch_size": 1,
+    "checkpoint_method": "prepare",
+    "stored_dtype": "float16"
+  },
+  {
+    "rank": 128,
+    "method": "posthoc",
+    "ppl": 18.275126796477405,
+    "predicted_tokens": 338709,
+    "seqlen": 128,
+    "batch_size": 1,
+    "checkpoint_method": "posthoc",
+    "stored_dtype": "float16"
+  },
+  {
+    "rank": 128,
+    "method": "inloop",
+    "ppl": 30.74962862452269,
+    "predicted_tokens": 338709,
+    "seqlen": 128,
+    "batch_size": 1,
+    "checkpoint_method": "inloop",
+    "stored_dtype": "float16"
+  }
+]

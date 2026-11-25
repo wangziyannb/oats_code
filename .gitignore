@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+
+# OS / IDE
+.DS_Store
+.idea/
+
+# Model weights live on Google Drive (see maintenance/drive_upload_20261008/)
+checkpoint.pt
+*.safetensors
+
+# Credentials
+id_rsa*
+*.pem
+*.key
+.env
+.env.*
+
+# Runtime lock files
+*.lock

@@ -1,0 +1,12 @@
+{
+  "models": 6,
+  "projection_artifacts": 1344,
+  "phase_records": 18816,
+  "committed_objective_increases": 0,
+  "rejected_phases": 0,
+  "tests_passed": 21,
+  "full_model_reload_checks_complete": 6,
+  "full_model_reload_checks_total": 6,
+  "full_model_reload_logits_exact": true,
+  "full_models_all_224_projections_valid": true
+}

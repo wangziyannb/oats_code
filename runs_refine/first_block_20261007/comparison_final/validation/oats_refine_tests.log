@@ -1,0 +1,14 @@
+test_both_ranks_cpu_and_complete_code_state_reload (test_oats_refine.RefinementTests.test_both_ranks_cpu_and_complete_code_state_reload) ... ok
+test_both_ranks_cuda_and_fp16_export (test_oats_refine.RefinementTests.test_both_ranks_cuda_and_fp16_export) ... ok
+test_coordinate_sweeps_equal_exhaustive_discrete_minimizers (test_oats_refine.RefinementTests.test_coordinate_sweeps_equal_exhaustive_discrete_minimizers) ... ok
+test_grid_reference_mask_and_roundtrip (test_oats_refine.RefinementTests.test_grid_reference_mask_and_roundtrip) ... ok
+test_invalid_inputs (test_oats_refine.RefinementTests.test_invalid_inputs) ... ok
+test_pair_escapes_a_coordinatewise_fixed_point (test_oats_refine.RefinementTests.test_pair_escapes_a_coordinatewise_fixed_point) ... ok
+test_pair_sweeps_equal_full_legal_pair_enumeration (test_oats_refine.RefinementTests.test_pair_sweeps_equal_full_legal_pair_enumeration) ... ok
+test_scale_steps_and_guard (test_oats_refine.RefinementTests.test_scale_steps_and_guard) ... ok
+test_sparse_scale_cannot_underflow_when_exported_to_fp16 (test_oats_refine.RefinementTests.test_sparse_scale_cannot_underflow_when_exported_to_fp16) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 3.691s
+
+OK

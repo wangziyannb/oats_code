@@ -1,0 +1,8 @@
+{
+  "ppl": 30.74962862452269,
+  "predicted_tokens": 338709,
+  "seqlen": 128,
+  "batch_size": 1,
+  "checkpoint_method": "inloop",
+  "stored_dtype": "float16"
+}

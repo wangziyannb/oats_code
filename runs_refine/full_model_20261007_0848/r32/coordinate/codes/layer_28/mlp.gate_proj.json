@@ -1,0 +1,40 @@
+{
+  "name": "mlp.gate_proj",
+  "device": "cuda:2",
+  "initialization": {
+    "pair": {
+      "input_ratio": 0.05,
+      "rank_ratio": 0.0,
+      "first_search_mse": 0.021107254549860954,
+      "pair_mse": 0.021107254549860954,
+      "zq_abs_mean_min": 0.02056829445064068,
+      "zq_abs_mean_max": 0.08254295587539673,
+      "zq_abs_mean_avg": 0.03048175573348999,
+      "first_group_size": 128,
+      "second_group_size": 32
+    },
+    "sparse": {
+      "sparse_ratio": 0.4,
+      "sparse_search_mse": 0.022029059007763863
+    },
+    "initializer": "awq_residual_scale_search_fp32",
+    "clipping": false,
+    "neighbor_fusion": false,
+    "scale_grid": 20
+  },
+  "initialization_seconds": 0.4661082411184907,
+  "refinement_and_io_seconds": 0.49979731999337673,
+  "before": {
+    "objective": 157.23863901260037,
+    "sample_output_mse": 0.022028962150216103,
+    "mask_preserved": true
+  },
+  "after": {
+    "objective": 155.11232103953898,
+    "sample_output_mse": 0.02112955041229725,
+    "mask_preserved": true
+  },
+  "phases": 18,
+  "rejected_phases": 0,
+  "reload_exact": true
+}

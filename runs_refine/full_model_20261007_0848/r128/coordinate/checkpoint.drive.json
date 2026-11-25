@@ -1,0 +1,11 @@
+{
+  "original_path": "runs_refine/full_model_20261007_0848/r128/coordinate/checkpoint.pt",
+  "bytes": 14116959263,
+  "md5": "2e9185e5a31c924e7b93f315d566d521",
+  "sha256": "68e372600dcdba9a9a9dd03c6400b4e519af010b0c6e2d5b34841415337ab91b",
+  "drive_file_id": "1zpUr68MSi2iS4XsEH5s65aF5j5r3Ca6H",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1O51iAZNdpGColYAD9haZaTcgku0Fyakq",
+  "remote_relative_path": "runs_refine/full_model_20261007_0848/r128/coordinate/checkpoint.pt",
+  "verified_at": "2026-10-08T21:37:09.055667+00:00",
+  "load_function": "pruning_methods.OATS.awq.pipeline.load_bundle"
+}

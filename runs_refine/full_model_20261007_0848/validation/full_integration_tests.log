@@ -1,0 +1,11 @@
+test_cpu_both_ranks_all_arms_propagation_reload_resume (test_oats_refine_full.FullRefinementTests.test_cpu_both_ranks_all_arms_propagation_reload_resume) ... Pruning using OATS:   0%|          | 0/2 [00:00<?, ?layer/s]Pruning using OATS:  50%|█████     | 1/2 [00:00<00:00,  3.22layer/s]Pruning using OATS: 100%|██████████| 2/2 [00:00<00:00,  3.25layer/s]Pruning using OATS: 100%|██████████| 2/2 [00:00<00:00,  3.24layer/s]
+Pruning using OATS:   0%|          | 0/2 [00:00<?, ?layer/s]Pruning using OATS:  50%|█████     | 1/2 [00:00<00:00,  3.27layer/s]Pruning using OATS: 100%|██████████| 2/2 [00:00<00:00,  3.26layer/s]Pruning using OATS: 100%|██████████| 2/2 [00:00<00:00,  3.26layer/s]
+ok
+test_cuda_fp16_both_ranks_propagation_reload_resume (test_oats_refine_full.FullRefinementTests.test_cuda_fp16_both_ranks_propagation_reload_resume) ... Pruning using OATS:   0%|          | 0/2 [00:00<?, ?layer/s]Pruning using OATS:  50%|█████     | 1/2 [00:01<00:01,  1.83s/layer]Pruning using OATS: 100%|██████████| 2/2 [00:02<00:00,  1.15s/layer]Pruning using OATS: 100%|██████████| 2/2 [00:02<00:00,  1.25s/layer]
+Pruning using OATS:   0%|          | 0/2 [00:00<?, ?layer/s]Pruning using OATS:  50%|█████     | 1/2 [00:01<00:01,  1.94s/layer]Pruning using OATS: 100%|██████████| 2/2 [00:02<00:00,  1.27s/layer]Pruning using OATS: 100%|██████████| 2/2 [00:02<00:00,  1.37s/layer]
+ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 42.710s
+
+OK

@@ -1,0 +1,2232 @@
+{
+  "status": "complete",
+  "models": [
+    {
+      "path": "old/llama2_oats_24_r32/checkpoint.pt",
+      "bytes": 13637262055,
+      "base_model": "meta-llama/Llama-2-7b-hf",
+      "base_revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+      "rank": 32,
+      "layers": 32,
+      "export_tensors_exact": 672,
+      "base_norm_tensors_exact": 64,
+      "reloaded_tensors_exact": 739,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_0.pt",
+          "bytes": 409771544,
+          "inode": 393087093,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_1.pt",
+          "bytes": 409771544,
+          "inode": 393087101,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_2.pt",
+          "bytes": 409771544,
+          "inode": 393087113,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_3.pt",
+          "bytes": 409771544,
+          "inode": 393087122,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_4.pt",
+          "bytes": 409771544,
+          "inode": 393087131,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_5.pt",
+          "bytes": 409771544,
+          "inode": 393087143,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_6.pt",
+          "bytes": 409771544,
+          "inode": 393087152,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_7.pt",
+          "bytes": 409771544,
+          "inode": 393087161,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_8.pt",
+          "bytes": 409771544,
+          "inode": 393087173,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_9.pt",
+          "bytes": 409771544,
+          "inode": 393087182,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_10.pt",
+          "bytes": 409771571,
+          "inode": 393087191,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_11.pt",
+          "bytes": 409771571,
+          "inode": 393087203,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_12.pt",
+          "bytes": 409771571,
+          "inode": 393087201,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_13.pt",
+          "bytes": 409771571,
+          "inode": 393087210,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_14.pt",
+          "bytes": 409771571,
+          "inode": 393087217,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_15.pt",
+          "bytes": 409771571,
+          "inode": 393087221,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_16.pt",
+          "bytes": 409771571,
+          "inode": 393087224,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_17.pt",
+          "bytes": 409771571,
+          "inode": 393087230,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_18.pt",
+          "bytes": 409771571,
+          "inode": 393087234,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_19.pt",
+          "bytes": 409771571,
+          "inode": 393087238,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_20.pt",
+          "bytes": 409771571,
+          "inode": 393087242,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_21.pt",
+          "bytes": 409771571,
+          "inode": 393087251,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_22.pt",
+          "bytes": 409771571,
+          "inode": 393087253,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_23.pt",
+          "bytes": 409771571,
+          "inode": 393087257,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_24.pt",
+          "bytes": 409771571,
+          "inode": 393087261,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_25.pt",
+          "bytes": 409771571,
+          "inode": 393087265,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_26.pt",
+          "bytes": 409771571,
+          "inode": 393087269,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_27.pt",
+          "bytes": 409771571,
+          "inode": 393087268,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_28.pt",
+          "bytes": 409771571,
+          "inode": 393087272,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_29.pt",
+          "bytes": 409771571,
+          "inode": 393087276,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_30.pt",
+          "bytes": 409771571,
+          "inode": 393087287,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/oats_chkpt_31.pt",
+          "bytes": 409771571,
+          "inode": 393087291,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/llama2_7b_r32_param_dict.pt",
+          "bytes": 13112143154,
+          "inode": 393087288,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r32/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393087292,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 28376647126
+    },
+    {
+      "path": "old/llama2_oats_24_r64/checkpoint.pt",
+      "bytes": 13797169895,
+      "base_model": "meta-llama/Llama-2-7b-hf",
+      "base_revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+      "rank": 64,
+      "layers": 32,
+      "export_tensors_exact": 672,
+      "base_norm_tensors_exact": 64,
+      "reloaded_tensors_exact": 739,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_0.pt",
+          "bytes": 414768664,
+          "inode": 393087086,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_1.pt",
+          "bytes": 414768664,
+          "inode": 393087098,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_2.pt",
+          "bytes": 414768664,
+          "inode": 393087110,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_3.pt",
+          "bytes": 414768664,
+          "inode": 393087119,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_4.pt",
+          "bytes": 414768664,
+          "inode": 393087128,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_5.pt",
+          "bytes": 414768664,
+          "inode": 393087140,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_6.pt",
+          "bytes": 414768664,
+          "inode": 393087149,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_7.pt",
+          "bytes": 414768664,
+          "inode": 393087158,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_8.pt",
+          "bytes": 414768664,
+          "inode": 393087170,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_9.pt",
+          "bytes": 414768664,
+          "inode": 393087179,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_10.pt",
+          "bytes": 414768691,
+          "inode": 393087188,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_11.pt",
+          "bytes": 414768691,
+          "inode": 393087200,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_12.pt",
+          "bytes": 414768691,
+          "inode": 393087209,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_13.pt",
+          "bytes": 414768691,
+          "inode": 393087216,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_14.pt",
+          "bytes": 414768691,
+          "inode": 393087219,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_15.pt",
+          "bytes": 414768691,
+          "inode": 393087220,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_16.pt",
+          "bytes": 414768691,
+          "inode": 393087229,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_17.pt",
+          "bytes": 414768691,
+          "inode": 393087233,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_18.pt",
+          "bytes": 414768691,
+          "inode": 393087237,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_19.pt",
+          "bytes": 414768691,
+          "inode": 393087241,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_20.pt",
+          "bytes": 414768691,
+          "inode": 393087245,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_21.pt",
+          "bytes": 414768691,
+          "inode": 393087249,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_22.pt",
+          "bytes": 414768691,
+          "inode": 393087255,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_23.pt",
+          "bytes": 414768691,
+          "inode": 393087259,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_24.pt",
+          "bytes": 414768691,
+          "inode": 393087262,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_25.pt",
+          "bytes": 414768691,
+          "inode": 393087267,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_26.pt",
+          "bytes": 414768691,
+          "inode": 393087271,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_27.pt",
+          "bytes": 414768691,
+          "inode": 393087275,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_28.pt",
+          "bytes": 414768691,
+          "inode": 393087279,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_29.pt",
+          "bytes": 414768691,
+          "inode": 393087283,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_30.pt",
+          "bytes": 414768691,
+          "inode": 393087289,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/oats_chkpt_31.pt",
+          "bytes": 414768691,
+          "inode": 393087295,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/llama2_7b_r64_param_dict.pt",
+          "bytes": 13272051042,
+          "inode": 393087290,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r64/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393087296,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 28696462854
+    },
+    {
+      "path": "old/llama2_oats_24_r128/checkpoint.pt",
+      "bytes": 14116985683,
+      "base_model": "meta-llama/Llama-2-7b-hf",
+      "base_revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+      "rank": 128,
+      "layers": 32,
+      "export_tensors_exact": 672,
+      "base_norm_tensors_exact": 64,
+      "reloaded_tensors_exact": 739,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_0.pt",
+          "bytes": 424762904,
+          "inode": 393086596,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_1.pt",
+          "bytes": 424762904,
+          "inode": 393086628,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_2.pt",
+          "bytes": 424762904,
+          "inode": 393086649,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_3.pt",
+          "bytes": 424762904,
+          "inode": 393086673,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_4.pt",
+          "bytes": 424762904,
+          "inode": 393086698,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_5.pt",
+          "bytes": 424762904,
+          "inode": 393086720,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_6.pt",
+          "bytes": 424762904,
+          "inode": 393086726,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_7.pt",
+          "bytes": 424762904,
+          "inode": 393086724,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_8.pt",
+          "bytes": 424762904,
+          "inode": 393086746,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_9.pt",
+          "bytes": 424762904,
+          "inode": 393086758,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_10.pt",
+          "bytes": 424762931,
+          "inode": 393086767,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_11.pt",
+          "bytes": 424762931,
+          "inode": 393086771,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_12.pt",
+          "bytes": 424762931,
+          "inode": 393086789,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_13.pt",
+          "bytes": 424762931,
+          "inode": 393086798,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_14.pt",
+          "bytes": 424762931,
+          "inode": 393086807,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_15.pt",
+          "bytes": 424762931,
+          "inode": 393086819,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_16.pt",
+          "bytes": 424762931,
+          "inode": 393086831,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_17.pt",
+          "bytes": 424762931,
+          "inode": 393086840,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_18.pt",
+          "bytes": 424762931,
+          "inode": 393086838,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_19.pt",
+          "bytes": 424762931,
+          "inode": 393086862,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_20.pt",
+          "bytes": 424762931,
+          "inode": 393086871,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_21.pt",
+          "bytes": 424762931,
+          "inode": 393086880,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_22.pt",
+          "bytes": 424762931,
+          "inode": 393086883,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_23.pt",
+          "bytes": 424762931,
+          "inode": 393086884,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_24.pt",
+          "bytes": 424762931,
+          "inode": 393086885,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_25.pt",
+          "bytes": 424762931,
+          "inode": 393086897,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_26.pt",
+          "bytes": 424762931,
+          "inode": 393086899,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_27.pt",
+          "bytes": 424762931,
+          "inode": 393086900,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_28.pt",
+          "bytes": 424762931,
+          "inode": 393086902,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_29.pt",
+          "bytes": 424762931,
+          "inode": 393086906,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_30.pt",
+          "bytes": 424762931,
+          "inode": 393086907,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/oats_chkpt_31.pt",
+          "bytes": 424762931,
+          "inode": 393086909,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/llama2_7b_param_dict.pt",
+          "bytes": 13591866794,
+          "inode": 393086910,
+          "deleted": true
+        },
+        {
+          "path": "old/llama2_oats_24_r128/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393086912,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 29336094286
+    },
+    {
+      "path": "llama3.1_oats_24_r32/checkpoint.pt",
+      "bytes": 16229587927,
+      "base_model": "meta-llama/Llama-3.1-8B",
+      "base_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+      "rank": 32,
+      "layers": 32,
+      "export_tensors_exact": 672,
+      "base_norm_tensors_exact": 64,
+      "reloaded_tensors_exact": 739,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_0.pt",
+          "bytes": 441474584,
+          "inode": 393087354,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_1.pt",
+          "bytes": 441474584,
+          "inode": 393087375,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_2.pt",
+          "bytes": 441474584,
+          "inode": 393087393,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_3.pt",
+          "bytes": 441474584,
+          "inode": 393087403,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_4.pt",
+          "bytes": 441474584,
+          "inode": 393087421,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_5.pt",
+          "bytes": 441474584,
+          "inode": 393087431,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_6.pt",
+          "bytes": 441474584,
+          "inode": 393085483,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_7.pt",
+          "bytes": 441474584,
+          "inode": 393087435,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_8.pt",
+          "bytes": 441474584,
+          "inode": 393085485,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_9.pt",
+          "bytes": 441474584,
+          "inode": 393085487,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_10.pt",
+          "bytes": 441474611,
+          "inode": 393085895,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_11.pt",
+          "bytes": 441474611,
+          "inode": 393086517,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_12.pt",
+          "bytes": 441474611,
+          "inode": 393086516,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_13.pt",
+          "bytes": 441474611,
+          "inode": 393086522,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_14.pt",
+          "bytes": 441474611,
+          "inode": 393086524,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_15.pt",
+          "bytes": 441474611,
+          "inode": 393086526,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_16.pt",
+          "bytes": 441474611,
+          "inode": 393086528,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_17.pt",
+          "bytes": 441474611,
+          "inode": 393086530,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_18.pt",
+          "bytes": 441474611,
+          "inode": 393086532,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_19.pt",
+          "bytes": 441474611,
+          "inode": 393086534,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_20.pt",
+          "bytes": 441474611,
+          "inode": 393086536,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_21.pt",
+          "bytes": 441474611,
+          "inode": 393086089,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_22.pt",
+          "bytes": 441474611,
+          "inode": 393085696,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_23.pt",
+          "bytes": 441474611,
+          "inode": 393085723,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_24.pt",
+          "bytes": 441474611,
+          "inode": 393086544,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_25.pt",
+          "bytes": 441474611,
+          "inode": 393086065,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_26.pt",
+          "bytes": 441474611,
+          "inode": 393086548,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_27.pt",
+          "bytes": 441474611,
+          "inode": 393086550,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_28.pt",
+          "bytes": 441474611,
+          "inode": 393086552,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_29.pt",
+          "bytes": 441474611,
+          "inode": 393085933,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_30.pt",
+          "bytes": 441474611,
+          "inode": 393086556,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/oats_chkpt_31.pt",
+          "bytes": 441474611,
+          "inode": 393085500,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/llama3.1_8b_r32_param_dict.pt",
+          "bytes": 14126640510,
+          "inode": 393085960,
+          "deleted": true
+        },
+        {
+          "path": "llama3.1_oats_24_r32/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393086559,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 30405641762
+    },
+    {
+      "path": "old/llama3.1_oats_24_r128/checkpoint.pt",
+      "bytes": 16732904571,
+      "base_model": "meta-llama/Llama-3.1-8B",
+      "base_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+      "rank": 128,
+      "layers": 32,
+      "export_tensors_exact": 672,
+      "base_norm_tensors_exact": 64,
+      "reloaded_tensors_exact": 739,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_0.pt",
+          "bytes": 457203224,
+          "inode": 393086600,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_1.pt",
+          "bytes": 457203224,
+          "inode": 393086622,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_2.pt",
+          "bytes": 457203224,
+          "inode": 393086640,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_3.pt",
+          "bytes": 457203224,
+          "inode": 393086661,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_4.pt",
+          "bytes": 457203224,
+          "inode": 393086679,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_5.pt",
+          "bytes": 457203224,
+          "inode": 393086695,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_6.pt",
+          "bytes": 457203224,
+          "inode": 393086713,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_7.pt",
+          "bytes": 457203224,
+          "inode": 393086699,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_8.pt",
+          "bytes": 457203224,
+          "inode": 393086732,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_9.pt",
+          "bytes": 457203224,
+          "inode": 393086736,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_10.pt",
+          "bytes": 457203251,
+          "inode": 393086743,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_11.pt",
+          "bytes": 457203251,
+          "inode": 393086752,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_12.pt",
+          "bytes": 457203251,
+          "inode": 393086761,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_13.pt",
+          "bytes": 457203251,
+          "inode": 393086770,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_14.pt",
+          "bytes": 457203251,
+          "inode": 393086776,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_15.pt",
+          "bytes": 457203251,
+          "inode": 393086783,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_16.pt",
+          "bytes": 457203251,
+          "inode": 393086792,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_17.pt",
+          "bytes": 457203251,
+          "inode": 393086801,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_18.pt",
+          "bytes": 457203251,
+          "inode": 393086810,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_19.pt",
+          "bytes": 457203251,
+          "inode": 393086805,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_20.pt",
+          "bytes": 457203251,
+          "inode": 393086825,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_21.pt",
+          "bytes": 457203251,
+          "inode": 393086834,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_22.pt",
+          "bytes": 457203251,
+          "inode": 393086832,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_23.pt",
+          "bytes": 457203251,
+          "inode": 393086841,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_24.pt",
+          "bytes": 457203251,
+          "inode": 393086856,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_25.pt",
+          "bytes": 457203251,
+          "inode": 393086865,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_26.pt",
+          "bytes": 457203251,
+          "inode": 393086863,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_27.pt",
+          "bytes": 457203251,
+          "inode": 393086872,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_28.pt",
+          "bytes": 457203251,
+          "inode": 393086878,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_29.pt",
+          "bytes": 457203251,
+          "inode": 393086888,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_30.pt",
+          "bytes": 457203251,
+          "inode": 393086887,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/oats_chkpt_31.pt",
+          "bytes": 457203251,
+          "inode": 393086890,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/llama3_param_dict.pt",
+          "bytes": 14629957202,
+          "inode": 393086891,
+          "deleted": true
+        },
+        {
+          "path": "old/llama3.1_oats_24_r128/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393086894,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 31412274934
+    },
+    {
+      "path": "qwen3_1.7b_oats_24_r32/checkpoint.pt",
+      "bytes": 3512343079,
+      "base_model": "Qwen/Qwen3-1.7B-Base",
+      "base_revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+      "rank": 32,
+      "layers": 28,
+      "export_tensors_exact": 588,
+      "base_norm_tensors_exact": 112,
+      "reloaded_tensors_exact": 703,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_0.pt",
+          "bytes": 103170652,
+          "inode": 393087346,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_1.pt",
+          "bytes": 103170652,
+          "inode": 393087350,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_2.pt",
+          "bytes": 103170652,
+          "inode": 393087353,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_3.pt",
+          "bytes": 103170652,
+          "inode": 393087351,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_4.pt",
+          "bytes": 103170652,
+          "inode": 393087357,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_5.pt",
+          "bytes": 103170652,
+          "inode": 393087362,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_6.pt",
+          "bytes": 103170652,
+          "inode": 393087371,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_7.pt",
+          "bytes": 103170652,
+          "inode": 393087374,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_8.pt",
+          "bytes": 103170652,
+          "inode": 393087377,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_9.pt",
+          "bytes": 103170652,
+          "inode": 393087381,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_10.pt",
+          "bytes": 103170745,
+          "inode": 393087384,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_11.pt",
+          "bytes": 103170745,
+          "inode": 393087387,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_12.pt",
+          "bytes": 103170745,
+          "inode": 393087385,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_13.pt",
+          "bytes": 103170745,
+          "inode": 393087396,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_14.pt",
+          "bytes": 103170745,
+          "inode": 393087399,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_15.pt",
+          "bytes": 103170745,
+          "inode": 393087402,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_16.pt",
+          "bytes": 103170745,
+          "inode": 393087405,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_17.pt",
+          "bytes": 103170745,
+          "inode": 393087409,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_18.pt",
+          "bytes": 103170745,
+          "inode": 393087406,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_19.pt",
+          "bytes": 103170745,
+          "inode": 393087415,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_20.pt",
+          "bytes": 103170745,
+          "inode": 393087418,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_21.pt",
+          "bytes": 103170745,
+          "inode": 393087424,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_22.pt",
+          "bytes": 103170745,
+          "inode": 393087427,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_23.pt",
+          "bytes": 103170745,
+          "inode": 393087430,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_24.pt",
+          "bytes": 103170745,
+          "inode": 393087433,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_25.pt",
+          "bytes": 103170745,
+          "inode": 393085475,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_26.pt",
+          "bytes": 103170745,
+          "inode": 393085478,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/oats_chkpt_27.pt",
+          "bytes": 103170745,
+          "inode": 393085323,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/qwen3_1.7b_r32_param_dict.pt",
+          "bytes": 2888494218,
+          "inode": 393085479,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_1.7b_oats_24_r32/prune_chkpt.pt",
+          "bytes": 1078072146,
+          "inode": 393085481,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 6855346294
+    },
+    {
+      "path": "old/qwen3_1.7b_oats_24_r128/checkpoint.pt",
+      "bytes": 3721534119,
+      "base_model": "Qwen/Qwen3-1.7B-Base",
+      "base_revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+      "rank": 128,
+      "layers": 28,
+      "export_tensors_exact": 588,
+      "base_norm_tensors_exact": 112,
+      "reloaded_tensors_exact": 703,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_0.pt",
+          "bytes": 110641820,
+          "inode": 393086586,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_1.pt",
+          "bytes": 110641820,
+          "inode": 393086590,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_2.pt",
+          "bytes": 110641820,
+          "inode": 393086593,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_3.pt",
+          "bytes": 110641820,
+          "inode": 393086604,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_4.pt",
+          "bytes": 110641820,
+          "inode": 393086607,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_5.pt",
+          "bytes": 110641820,
+          "inode": 393086610,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_6.pt",
+          "bytes": 110641820,
+          "inode": 393086613,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_7.pt",
+          "bytes": 110641820,
+          "inode": 393086625,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_8.pt",
+          "bytes": 110641820,
+          "inode": 393086597,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_9.pt",
+          "bytes": 110641820,
+          "inode": 393086634,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_10.pt",
+          "bytes": 110641849,
+          "inode": 393086637,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_11.pt",
+          "bytes": 110641849,
+          "inode": 393086623,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_12.pt",
+          "bytes": 110641849,
+          "inode": 393086646,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_13.pt",
+          "bytes": 110641849,
+          "inode": 393086652,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_14.pt",
+          "bytes": 110641849,
+          "inode": 393086658,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_15.pt",
+          "bytes": 110641849,
+          "inode": 393086664,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_16.pt",
+          "bytes": 110641849,
+          "inode": 393086667,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_17.pt",
+          "bytes": 110641849,
+          "inode": 393086670,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_18.pt",
+          "bytes": 110641849,
+          "inode": 393086676,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_19.pt",
+          "bytes": 110641849,
+          "inode": 393086682,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_20.pt",
+          "bytes": 110641849,
+          "inode": 393086685,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_21.pt",
+          "bytes": 110641849,
+          "inode": 393086689,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_22.pt",
+          "bytes": 110641849,
+          "inode": 393086692,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_23.pt",
+          "bytes": 110641849,
+          "inode": 393086701,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_24.pt",
+          "bytes": 110641849,
+          "inode": 393086704,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_25.pt",
+          "bytes": 110641849,
+          "inode": 393086707,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_26.pt",
+          "bytes": 110641849,
+          "inode": 393086710,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/oats_chkpt_27.pt",
+          "bytes": 110641849,
+          "inode": 393086716,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/param_dict_1.7_128.pt",
+          "bytes": 3097685194,
+          "inode": 393086711,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_1.7b_oats_24_r128/prune_chkpt.pt",
+          "bytes": 1078072146,
+          "inode": 393086717,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 7273728822
+    },
+    {
+      "path": "qwen3_8b_oats_24_r32/checkpoint.pt",
+      "bytes": 16557598615,
+      "base_model": "Qwen/Qwen3-8B-Base",
+      "base_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+      "rank": 32,
+      "layers": 36,
+      "export_tensors_exact": 756,
+      "base_norm_tensors_exact": 144,
+      "reloaded_tensors_exact": 903,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_0.pt",
+          "bytes": 390750812,
+          "inode": 393087036,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_1.pt",
+          "bytes": 390750812,
+          "inode": 393087042,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_2.pt",
+          "bytes": 390750812,
+          "inode": 393087045,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_3.pt",
+          "bytes": 390750812,
+          "inode": 393087053,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_4.pt",
+          "bytes": 390750812,
+          "inode": 393087059,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_5.pt",
+          "bytes": 390750812,
+          "inode": 393087057,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_6.pt",
+          "bytes": 390750812,
+          "inode": 393087063,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_7.pt",
+          "bytes": 390750812,
+          "inode": 393087065,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_8.pt",
+          "bytes": 390750812,
+          "inode": 393087067,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_9.pt",
+          "bytes": 390750812,
+          "inode": 393087069,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_10.pt",
+          "bytes": 390750905,
+          "inode": 393087070,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_11.pt",
+          "bytes": 390750905,
+          "inode": 393087077,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_12.pt",
+          "bytes": 390750905,
+          "inode": 393087082,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_13.pt",
+          "bytes": 390750905,
+          "inode": 393087085,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_14.pt",
+          "bytes": 390750905,
+          "inode": 393087090,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_15.pt",
+          "bytes": 390750905,
+          "inode": 393087095,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_16.pt",
+          "bytes": 390750905,
+          "inode": 393087094,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_17.pt",
+          "bytes": 390750905,
+          "inode": 393087107,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_18.pt",
+          "bytes": 390750905,
+          "inode": 393087116,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_19.pt",
+          "bytes": 390750905,
+          "inode": 393087125,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_20.pt",
+          "bytes": 390750905,
+          "inode": 393087134,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_21.pt",
+          "bytes": 390750905,
+          "inode": 393087126,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_22.pt",
+          "bytes": 390750905,
+          "inode": 393087146,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_23.pt",
+          "bytes": 390750905,
+          "inode": 393087155,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_24.pt",
+          "bytes": 390750905,
+          "inode": 393087164,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_25.pt",
+          "bytes": 390750905,
+          "inode": 393087167,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_26.pt",
+          "bytes": 390750905,
+          "inode": 393087176,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_27.pt",
+          "bytes": 390750905,
+          "inode": 393087185,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_28.pt",
+          "bytes": 390750905,
+          "inode": 393087194,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_29.pt",
+          "bytes": 390750905,
+          "inode": 393087197,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_30.pt",
+          "bytes": 390750905,
+          "inode": 393087206,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_31.pt",
+          "bytes": 390750905,
+          "inode": 393087204,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_32.pt",
+          "bytes": 390750905,
+          "inode": 393087211,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_33.pt",
+          "bytes": 390750905,
+          "inode": 393087214,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_34.pt",
+          "bytes": 390750905,
+          "inode": 393087218,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/oats_chkpt_35.pt",
+          "bytes": 390750905,
+          "inode": 393087222,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/qwen3_8b_r32_param_dict.pt",
+          "bytes": 14066375422,
+          "inode": 393087223,
+          "deleted": true
+        },
+        {
+          "path": "qwen3_8b_oats_24_r32/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393087226,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 30285221042
+    },
+    {
+      "path": "old/qwen3_8b_oats_24_r64/checkpoint.pt",
+      "bytes": 16732186647,
+      "base_model": "Qwen/Qwen3-8B-Base",
+      "base_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+      "rank": 64,
+      "layers": 36,
+      "export_tensors_exact": 756,
+      "base_norm_tensors_exact": 144,
+      "reloaded_tensors_exact": 903,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_0.pt",
+          "bytes": 395600540,
+          "inode": 393086962,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_1.pt",
+          "bytes": 395600540,
+          "inode": 393086966,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_2.pt",
+          "bytes": 395600540,
+          "inode": 393086969,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_3.pt",
+          "bytes": 395600540,
+          "inode": 393086972,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_4.pt",
+          "bytes": 395600540,
+          "inode": 393086975,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_5.pt",
+          "bytes": 395600540,
+          "inode": 393086973,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_6.pt",
+          "bytes": 395600540,
+          "inode": 393086981,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_7.pt",
+          "bytes": 395600540,
+          "inode": 393086984,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_8.pt",
+          "bytes": 395600540,
+          "inode": 393086982,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_9.pt",
+          "bytes": 395600540,
+          "inode": 393086990,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_10.pt",
+          "bytes": 395600569,
+          "inode": 393086993,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_11.pt",
+          "bytes": 395600569,
+          "inode": 393086996,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_12.pt",
+          "bytes": 395600569,
+          "inode": 393086999,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_13.pt",
+          "bytes": 395600569,
+          "inode": 393087002,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_14.pt",
+          "bytes": 395600569,
+          "inode": 393087005,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_15.pt",
+          "bytes": 395600569,
+          "inode": 393087008,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_16.pt",
+          "bytes": 395600569,
+          "inode": 393087011,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_17.pt",
+          "bytes": 395600569,
+          "inode": 393087014,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_18.pt",
+          "bytes": 395600569,
+          "inode": 393087017,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_19.pt",
+          "bytes": 395600569,
+          "inode": 393087020,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_20.pt",
+          "bytes": 395600569,
+          "inode": 393087023,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_21.pt",
+          "bytes": 395600569,
+          "inode": 393087026,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_22.pt",
+          "bytes": 395600569,
+          "inode": 393087029,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_23.pt",
+          "bytes": 395600569,
+          "inode": 393087032,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_24.pt",
+          "bytes": 395600569,
+          "inode": 393087035,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_25.pt",
+          "bytes": 395600569,
+          "inode": 393087041,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_26.pt",
+          "bytes": 395600569,
+          "inode": 393087044,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_27.pt",
+          "bytes": 395600569,
+          "inode": 393087043,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_28.pt",
+          "bytes": 395600569,
+          "inode": 393087050,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_29.pt",
+          "bytes": 395600569,
+          "inode": 393087056,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_30.pt",
+          "bytes": 395600569,
+          "inode": 393087062,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_31.pt",
+          "bytes": 395600569,
+          "inode": 393087060,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_32.pt",
+          "bytes": 395600569,
+          "inode": 393087064,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_33.pt",
+          "bytes": 395600569,
+          "inode": 393087066,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_34.pt",
+          "bytes": 395600569,
+          "inode": 393087068,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/oats_chkpt_35.pt",
+          "bytes": 395600569,
+          "inode": 393087074,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/qwen3_8b_r64_param_dict.pt",
+          "bytes": 14240963518,
+          "inode": 393087071,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r64/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393087075,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 30634397682
+    },
+    {
+      "path": "old/qwen3_8b_oats_24_r128/checkpoint.pt",
+      "bytes": 17081362491,
+      "base_model": "Qwen/Qwen3-8B-Base",
+      "base_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+      "rank": 128,
+      "layers": 36,
+      "export_tensors_exact": 756,
+      "base_norm_tensors_exact": 144,
+      "reloaded_tensors_exact": 903,
+      "sparse_violations": 0,
+      "reload_logits_exact": true,
+      "deleted_files": [
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_0.pt",
+          "bytes": 405299868,
+          "inode": 393086739,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_1.pt",
+          "bytes": 405299868,
+          "inode": 393086749,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_2.pt",
+          "bytes": 405299868,
+          "inode": 393086755,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_3.pt",
+          "bytes": 405299868,
+          "inode": 393086764,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_4.pt",
+          "bytes": 405299868,
+          "inode": 393086773,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_5.pt",
+          "bytes": 405299868,
+          "inode": 393086780,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_6.pt",
+          "bytes": 405299868,
+          "inode": 393086786,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_7.pt",
+          "bytes": 405299868,
+          "inode": 393086795,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_8.pt",
+          "bytes": 405299868,
+          "inode": 393086804,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_9.pt",
+          "bytes": 405299868,
+          "inode": 393086813,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_10.pt",
+          "bytes": 405299897,
+          "inode": 393086822,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_11.pt",
+          "bytes": 405299897,
+          "inode": 393086828,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_12.pt",
+          "bytes": 405299897,
+          "inode": 393086837,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_13.pt",
+          "bytes": 405299897,
+          "inode": 393086846,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_14.pt",
+          "bytes": 405299897,
+          "inode": 393086853,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_15.pt",
+          "bytes": 405299897,
+          "inode": 393086859,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_16.pt",
+          "bytes": 405299897,
+          "inode": 393086868,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_17.pt",
+          "bytes": 405299897,
+          "inode": 393086877,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_18.pt",
+          "bytes": 405299897,
+          "inode": 393086875,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_19.pt",
+          "bytes": 405299897,
+          "inode": 393086882,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_20.pt",
+          "bytes": 405299897,
+          "inode": 393086881,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_21.pt",
+          "bytes": 405299897,
+          "inode": 393086886,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_22.pt",
+          "bytes": 405299897,
+          "inode": 393086889,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_23.pt",
+          "bytes": 405299897,
+          "inode": 393086892,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_24.pt",
+          "bytes": 405299897,
+          "inode": 393086893,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_25.pt",
+          "bytes": 405299897,
+          "inode": 393086898,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_26.pt",
+          "bytes": 405299897,
+          "inode": 393086901,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_27.pt",
+          "bytes": 405299897,
+          "inode": 393086903,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_28.pt",
+          "bytes": 405299897,
+          "inode": 393086904,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_29.pt",
+          "bytes": 405299897,
+          "inode": 393086905,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_30.pt",
+          "bytes": 405299897,
+          "inode": 393086908,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_31.pt",
+          "bytes": 405299897,
+          "inode": 393086917,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_32.pt",
+          "bytes": 405299897,
+          "inode": 393086920,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_33.pt",
+          "bytes": 405299897,
+          "inode": 393086923,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_34.pt",
+          "bytes": 405299897,
+          "inode": 393086928,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/oats_chkpt_35.pt",
+          "bytes": 405299897,
+          "inode": 393086931,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/qwen3_8b_param_dict_128.pt",
+          "bytes": 14590139386,
+          "inode": 393086929,
+          "deleted": true
+        },
+        {
+          "path": "old/qwen3_8b_oats_24_r128/prune_chkpt.pt",
+          "bytes": 2151813970,
+          "inode": 393086932,
+          "deleted": true
+        }
+      ],
+      "bytes_removed": 31332749358
+    }
+  ],
+  "bytes_removed": 254608564160,
+  "bytes_written": 132118935082,
+  "net_bytes_freed": 122489629078
+}

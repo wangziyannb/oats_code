@@ -1,0 +1,11 @@
+{
+  "original_path": "runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt",
+  "bytes": 13637255383,
+  "md5": "e376e9863e96399527989e9dc158cb8b",
+  "sha256": "e12560e53c1b9ce455336a49f0b94b00c3d4e12bec1ef7ea1e8d0b5d2b597f0c",
+  "drive_file_id": "194-_oQlbHwk5nQ89AB8Ze2nhrFLS196c",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1O51iAZNdpGColYAD9haZaTcgku0Fyakq",
+  "remote_relative_path": "runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt",
+  "verified_at": "2026-10-08T21:37:09.055630+00:00",
+  "load_function": "pruning_methods.OATS.awq.pipeline.load_bundle"
+}

@@ -1,0 +1,740 @@
+{"started_at": "2026-10-07T00:56:39.858526+00:00", "argv": ["/home/zwang53/oats_code/.venv-awq/bin/python", "-u", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/code/run_oats_awq.py", "posthoc", "--model", "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9", "--rank", "32", "--output-dir", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc", "--dtype", "fp16", "--device", "cuda:0", "--num-iters", "80", "--checkpoint", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/checkpoint.pt", "--scale-grid", "20"]}
+Using the latest cached version of the dataset since mit-han-lab/pile-val-backup couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /home/zwang53/.cache/huggingface/datasets/mit-han-lab___pile-val-backup/default/0.0.0/2f5e46ae6a69cf0dce4b12f78241c408936ca0e4 (last modified on Tue Oct  6 18:52:18 2026).
+[layer 00] external attention_qkv: ratio=0.65 mse=1.212467e-06 equiv=1.020e-07
+[layer 00] external attention_output: ratio=0.40 mse=5.444663e-06 equiv=2.162e-07
+[layer 00] external mlp_gate_up: ratio=0.00 mse=4.105954e-07 equiv=0.000e+00
+[layer 00] external mlp_down: ratio=0.40 mse=2.202519e-06 equiv=1.578e-07
+[layer 00] rank self_attn.q_proj: ratio=0.20 mse=1.423922e-03 equiv=2.005e-07
+[layer 00] rank self_attn.k_proj: ratio=0.15 mse=1.437625e-03 equiv=2.527e-07
+[layer 00] rank self_attn.v_proj: ratio=0.60 mse=7.769869e-06 equiv=2.775e-07
+[layer 00] rank self_attn.o_proj: ratio=0.50 mse=8.020102e-07 equiv=2.327e-07
+[layer 00] rank mlp.gate_proj: ratio=0.50 mse=4.275050e-05 equiv=2.069e-07
+[layer 00] rank mlp.up_proj: ratio=0.50 mse=9.374900e-05 equiv=1.761e-07
+[layer 00] rank mlp.down_proj: ratio=0.40 mse=9.372911e-07 equiv=1.457e-07
+[layer 00] clip all self_attn.v_proj: seconds=0.5
+[layer 00] clip all self_attn.o_proj: seconds=0.5
+[layer 00] clip all mlp.gate_proj: seconds=1.3
+[layer 00] clip all mlp.up_proj: seconds=1.3
+[layer 00] clip all mlp.down_proj: seconds=1.7
+[layer 00] quant self_attn.q_proj: S-mask=True violations=0 projected=2959436 A=W4G128 B=W4G32
+[layer 00] quant self_attn.k_proj: S-mask=True violations=0 projected=2611842 A=W4G128 B=W4G32
+[layer 00] quant self_attn.v_proj: S-mask=True violations=0 projected=155750 A=W4G128 B=W4G32
+[layer 00] quant self_attn.o_proj: S-mask=True violations=0 projected=844158 A=W4G128 B=W4G32
+[layer 00] quant mlp.gate_proj: S-mask=True violations=0 projected=122002 A=W4G128 B=W4G32
+[layer 00] quant mlp.up_proj: S-mask=True violations=0 projected=119743 A=W4G128 B=W4G32
+[layer 00] quant mlp.down_proj: S-mask=True violations=0 projected=235691 A=W4G128 B=W4G32
+[layer 01] external attention_qkv: ratio=0.50 mse=3.377007e-06 equiv=1.921e-07
+[layer 01] external attention_output: ratio=0.20 mse=3.758078e-06 equiv=2.296e-07
+[layer 01] external mlp_gate_up: ratio=0.10 mse=3.887244e-02 equiv=1.052e-07
+[layer 01] external mlp_down: ratio=0.25 mse=4.495654e-02 equiv=2.020e-10
+[layer 01] rank self_attn.q_proj: ratio=0.20 mse=2.620937e-03 equiv=2.176e-07
+[layer 01] rank self_attn.k_proj: ratio=0.20 mse=2.984519e-03 equiv=2.737e-07
+[layer 01] rank self_attn.v_proj: ratio=0.55 mse=2.621991e-05 equiv=1.544e-07
+[layer 01] rank self_attn.o_proj: ratio=0.50 mse=2.008217e-06 equiv=2.340e-07
+[layer 01] rank mlp.gate_proj: ratio=0.40 mse=1.150788e-04 equiv=1.555e-07
+[layer 01] rank mlp.up_proj: ratio=0.80 mse=3.664096e-04 equiv=1.581e-07
+[layer 01] rank mlp.down_proj: ratio=0.90 mse=5.962241e-03 equiv=2.714e-08
+[layer 01] clip all self_attn.v_proj: seconds=0.5
+[layer 01] clip all self_attn.o_proj: seconds=0.5
+[layer 01] clip all mlp.gate_proj: seconds=1.3
+[layer 01] clip all mlp.up_proj: seconds=1.3
+[layer 01] clip all mlp.down_proj: seconds=1.6
+[layer 01] quant self_attn.q_proj: S-mask=True violations=0 projected=278104 A=W4G128 B=W4G32
+[layer 01] quant self_attn.k_proj: S-mask=True violations=0 projected=331629 A=W4G128 B=W4G32
+[layer 01] quant self_attn.v_proj: S-mask=True violations=0 projected=66246 A=W4G128 B=W4G32
+[layer 01] quant self_attn.o_proj: S-mask=True violations=0 projected=336473 A=W4G128 B=W4G32
+[layer 01] quant mlp.gate_proj: S-mask=True violations=0 projected=116097 A=W4G128 B=W4G32
+[layer 01] quant mlp.up_proj: S-mask=True violations=0 projected=113999 A=W4G128 B=W4G32
+[layer 01] quant mlp.down_proj: S-mask=True violations=0 projected=152808 A=W4G128 B=W4G32
+[layer 02] external attention_qkv: ratio=0.20 mse=3.725649e-06 equiv=9.638e-08
+[layer 02] external attention_output: ratio=0.15 mse=1.439370e-06 equiv=2.413e-07
+[layer 02] external mlp_gate_up: ratio=0.25 mse=3.290474e-06 equiv=1.948e-07
+[layer 02] external mlp_down: ratio=0.25 mse=4.415282e-06 equiv=9.116e-08
+[layer 02] rank self_attn.q_proj: ratio=0.30 mse=4.614250e-03 equiv=2.290e-07
+[layer 02] rank self_attn.k_proj: ratio=0.30 mse=6.077493e-03 equiv=2.074e-07
+[layer 02] rank self_attn.v_proj: ratio=0.45 mse=2.743859e-04 equiv=1.432e-07
+[layer 02] rank self_attn.o_proj: ratio=0.55 mse=1.020775e-06 equiv=1.465e-07
+[layer 02] rank mlp.gate_proj: ratio=0.40 mse=1.380605e-04 equiv=1.392e-07
+[layer 02] rank mlp.up_proj: ratio=0.65 mse=2.046466e-04 equiv=9.641e-08
+[layer 02] rank mlp.down_proj: ratio=0.70 mse=2.509034e-06 equiv=4.391e-07
+[layer 02] clip all self_attn.v_proj: seconds=0.5
+[layer 02] clip all self_attn.o_proj: seconds=0.5
+[layer 02] clip all mlp.gate_proj: seconds=1.3
+[layer 02] clip all mlp.up_proj: seconds=1.3
+[layer 02] clip all mlp.down_proj: seconds=1.3
+[layer 02] quant self_attn.q_proj: S-mask=True violations=0 projected=57941 A=W4G128 B=W4G32
+[layer 02] quant self_attn.k_proj: S-mask=True violations=0 projected=56590 A=W4G128 B=W4G32
+[layer 02] quant self_attn.v_proj: S-mask=True violations=0 projected=45067 A=W4G128 B=W4G32
+[layer 02] quant self_attn.o_proj: S-mask=True violations=0 projected=59940 A=W4G128 B=W4G32
+[layer 02] quant mlp.gate_proj: S-mask=True violations=0 projected=111018 A=W4G128 B=W4G32
+[layer 02] quant mlp.up_proj: S-mask=True violations=0 projected=110160 A=W4G128 B=W4G32
+[layer 02] quant mlp.down_proj: S-mask=True violations=0 projected=130988 A=W4G128 B=W4G32
+[layer 03] external attention_qkv: ratio=0.20 mse=9.071509e-06 equiv=1.208e-07
+[layer 03] external attention_output: ratio=0.10 mse=3.086707e-06 equiv=2.245e-07
+[layer 03] external mlp_gate_up: ratio=0.05 mse=7.685548e-06 equiv=2.162e-07
+[layer 03] external mlp_down: ratio=0.25 mse=6.630488e-06 equiv=2.199e-07
+[layer 03] rank self_attn.q_proj: ratio=0.25 mse=5.599944e-03 equiv=2.225e-07
+[layer 03] rank self_attn.k_proj: ratio=0.40 mse=7.194642e-03 equiv=2.324e-07
+[layer 03] rank self_attn.v_proj: ratio=0.35 mse=5.802058e-04 equiv=1.445e-07
+[layer 03] rank self_attn.o_proj: ratio=0.60 mse=1.558566e-06 equiv=1.352e-07
+[layer 03] rank mlp.gate_proj: ratio=0.15 mse=2.361443e-04 equiv=1.370e-07
+[layer 03] rank mlp.up_proj: ratio=0.50 mse=2.801614e-04 equiv=9.634e-08
+[layer 03] rank mlp.down_proj: ratio=0.85 mse=5.391734e-06 equiv=8.098e-08
+[layer 03] clip all self_attn.v_proj: seconds=0.5
+[layer 03] clip all self_attn.o_proj: seconds=0.5
+[layer 03] clip all mlp.gate_proj: seconds=1.3
+[layer 03] clip all mlp.up_proj: seconds=1.3
+[layer 03] clip all mlp.down_proj: seconds=1.5
+[layer 03] quant self_attn.q_proj: S-mask=True violations=0 projected=53718 A=W4G128 B=W4G32
+[layer 03] quant self_attn.k_proj: S-mask=True violations=0 projected=51482 A=W4G128 B=W4G32
+[layer 03] quant self_attn.v_proj: S-mask=True violations=0 projected=44739 A=W4G128 B=W4G32
+[layer 03] quant self_attn.o_proj: S-mask=True violations=0 projected=54456 A=W4G128 B=W4G32
+[layer 03] quant mlp.gate_proj: S-mask=True violations=0 projected=109425 A=W4G128 B=W4G32
+[layer 03] quant mlp.up_proj: S-mask=True violations=0 projected=110679 A=W4G128 B=W4G32
+[layer 03] quant mlp.down_proj: S-mask=True violations=0 projected=134520 A=W4G128 B=W4G32
+[layer 04] external attention_qkv: ratio=0.30 mse=1.599366e-05 equiv=1.055e-07
+[layer 04] external attention_output: ratio=0.05 mse=1.052309e-05 equiv=2.154e-07
+[layer 04] external mlp_gate_up: ratio=0.00 mse=1.864458e-05 equiv=0.000e+00
+[layer 04] external mlp_down: ratio=0.35 mse=2.385541e-05 equiv=8.897e-08
+[layer 04] rank self_attn.q_proj: ratio=0.35 mse=5.220444e-03 equiv=2.176e-07
+[layer 04] rank self_attn.k_proj: ratio=0.35 mse=7.432729e-03 equiv=2.282e-07
+[layer 04] rank self_attn.v_proj: ratio=0.40 mse=4.594219e-04 equiv=1.364e-07
+[layer 04] rank self_attn.o_proj: ratio=0.80 mse=4.298375e-06 equiv=1.755e-07
+[layer 04] rank mlp.gate_proj: ratio=0.35 mse=3.957125e-04 equiv=1.632e-07
+[layer 04] rank mlp.up_proj: ratio=0.55 mse=6.425200e-04 equiv=1.060e-07
+[layer 04] rank mlp.down_proj: ratio=0.85 mse=1.342541e-05 equiv=1.456e-07
+[layer 04] clip all self_attn.v_proj: seconds=0.5
+[layer 04] clip all self_attn.o_proj: seconds=0.5
+[layer 04] clip all mlp.gate_proj: seconds=1.3
+[layer 04] clip all mlp.up_proj: seconds=1.3
+[layer 04] clip all mlp.down_proj: seconds=1.7
+[layer 04] quant self_attn.q_proj: S-mask=True violations=0 projected=50976 A=W4G128 B=W4G32
+[layer 04] quant self_attn.k_proj: S-mask=True violations=0 projected=49344 A=W4G128 B=W4G32
+[layer 04] quant self_attn.v_proj: S-mask=True violations=0 projected=42137 A=W4G128 B=W4G32
+[layer 04] quant self_attn.o_proj: S-mask=True violations=0 projected=48966 A=W4G128 B=W4G32
+[layer 04] quant mlp.gate_proj: S-mask=True violations=0 projected=110104 A=W4G128 B=W4G32
+[layer 04] quant mlp.up_proj: S-mask=True violations=0 projected=109614 A=W4G128 B=W4G32
+[layer 04] quant mlp.down_proj: S-mask=True violations=0 projected=137346 A=W4G128 B=W4G32
+[layer 05] external attention_qkv: ratio=0.30 mse=3.218278e-05 equiv=1.227e-07
+[layer 05] external attention_output: ratio=0.15 mse=1.441298e-05 equiv=2.425e-07
+[layer 05] external mlp_gate_up: ratio=0.10 mse=2.641706e-05 equiv=2.004e-07
+[layer 05] external mlp_down: ratio=0.30 mse=1.953297e-05 equiv=2.228e-07
+[layer 05] rank self_attn.q_proj: ratio=0.30 mse=5.482912e-03 equiv=2.138e-07
+[layer 05] rank self_attn.k_proj: ratio=0.35 mse=8.242951e-03 equiv=2.479e-07
+[layer 05] rank self_attn.v_proj: ratio=0.40 mse=6.504452e-04 equiv=1.291e-07
+[layer 05] rank self_attn.o_proj: ratio=0.70 mse=1.159479e-05 equiv=1.276e-07
+[layer 05] rank mlp.gate_proj: ratio=0.15 mse=4.893780e-04 equiv=1.679e-07
+[layer 05] rank mlp.up_proj: ratio=0.45 mse=4.764473e-04 equiv=1.062e-07
+[layer 05] rank mlp.down_proj: ratio=0.80 mse=1.652676e-05 equiv=7.402e-08
+[layer 05] clip all self_attn.v_proj: seconds=0.5
+[layer 05] clip all self_attn.o_proj: seconds=0.5
+[layer 05] clip all mlp.gate_proj: seconds=1.3
+[layer 05] clip all mlp.up_proj: seconds=1.3
+[layer 05] clip all mlp.down_proj: seconds=1.3
+[layer 05] quant self_attn.q_proj: S-mask=True violations=0 projected=48816 A=W4G128 B=W4G32
+[layer 05] quant self_attn.k_proj: S-mask=True violations=0 projected=49940 A=W4G128 B=W4G32
+[layer 05] quant self_attn.v_proj: S-mask=True violations=0 projected=42904 A=W4G128 B=W4G32
+[layer 05] quant self_attn.o_proj: S-mask=True violations=0 projected=50747 A=W4G128 B=W4G32
+[layer 05] quant mlp.gate_proj: S-mask=True violations=0 projected=108184 A=W4G128 B=W4G32
+[layer 05] quant mlp.up_proj: S-mask=True violations=0 projected=108691 A=W4G128 B=W4G32
+[layer 05] quant mlp.down_proj: S-mask=True violations=0 projected=135177 A=W4G128 B=W4G32
+[layer 06] external attention_qkv: ratio=0.30 mse=7.035979e-05 equiv=1.678e-07
+[layer 06] external attention_output: ratio=0.20 mse=3.551308e-05 equiv=2.392e-07
+[layer 06] external mlp_gate_up: ratio=0.05 mse=4.550142e-05 equiv=1.828e-07
+[layer 06] external mlp_down: ratio=0.20 mse=3.779239e-05 equiv=2.169e-07
+[layer 06] rank self_attn.q_proj: ratio=0.20 mse=7.408863e-03 equiv=2.216e-07
+[layer 06] rank self_attn.k_proj: ratio=0.25 mse=8.592494e-03 equiv=2.194e-07
+[layer 06] rank self_attn.v_proj: ratio=0.55 mse=9.019742e-04 equiv=1.456e-07
+[layer 06] rank self_attn.o_proj: ratio=0.55 mse=2.241164e-05 equiv=1.222e-07
+[layer 06] rank mlp.gate_proj: ratio=0.15 mse=6.891419e-04 equiv=1.878e-07
+[layer 06] rank mlp.up_proj: ratio=0.45 mse=5.421331e-04 equiv=1.129e-07
+[layer 06] rank mlp.down_proj: ratio=0.70 mse=2.884062e-05 equiv=7.453e-08
+[layer 06] clip all self_attn.v_proj: seconds=0.5
+[layer 06] clip all self_attn.o_proj: seconds=0.5
+[layer 06] clip all mlp.gate_proj: seconds=1.3
+[layer 06] clip all mlp.up_proj: seconds=1.3
+[layer 06] clip all mlp.down_proj: seconds=1.5
+[layer 06] quant self_attn.q_proj: S-mask=True violations=0 projected=49011 A=W4G128 B=W4G32
+[layer 06] quant self_attn.k_proj: S-mask=True violations=0 projected=48994 A=W4G128 B=W4G32
+[layer 06] quant self_attn.v_proj: S-mask=True violations=0 projected=41932 A=W4G128 B=W4G32
+[layer 06] quant self_attn.o_proj: S-mask=True violations=0 projected=47024 A=W4G128 B=W4G32
+[layer 06] quant mlp.gate_proj: S-mask=True violations=0 projected=109396 A=W4G128 B=W4G32
+[layer 06] quant mlp.up_proj: S-mask=True violations=0 projected=108919 A=W4G128 B=W4G32
+[layer 06] quant mlp.down_proj: S-mask=True violations=0 projected=136948 A=W4G128 B=W4G32
+[layer 07] external attention_qkv: ratio=0.20 mse=1.074368e-04 equiv=1.322e-07
+[layer 07] external attention_output: ratio=0.20 mse=4.241979e-05 equiv=2.567e-07
+[layer 07] external mlp_gate_up: ratio=0.00 mse=6.803792e-05 equiv=0.000e+00
+[layer 07] external mlp_down: ratio=0.20 mse=5.158392e-05 equiv=2.232e-07
+[layer 07] rank self_attn.q_proj: ratio=0.40 mse=7.674316e-03 equiv=2.088e-07
+[layer 07] rank self_attn.k_proj: ratio=0.25 mse=8.916035e-03 equiv=2.306e-07
+[layer 07] rank self_attn.v_proj: ratio=0.55 mse=9.683632e-04 equiv=1.365e-07
+[layer 07] rank self_attn.o_proj: ratio=0.60 mse=3.014371e-05 equiv=1.211e-07
+[layer 07] rank mlp.gate_proj: ratio=0.10 mse=8.909297e-04 equiv=1.873e-07
+[layer 07] rank mlp.up_proj: ratio=0.40 mse=5.992654e-04 equiv=1.284e-07
+[layer 07] rank mlp.down_proj: ratio=0.80 mse=3.993292e-05 equiv=7.375e-08
+[layer 07] clip all self_attn.v_proj: seconds=0.5
+[layer 07] clip all self_attn.o_proj: seconds=0.5
+[layer 07] clip all mlp.gate_proj: seconds=1.3
+[layer 07] clip all mlp.up_proj: seconds=1.3
+[layer 07] clip all mlp.down_proj: seconds=1.5
+[layer 07] quant self_attn.q_proj: S-mask=True violations=0 projected=49252 A=W4G128 B=W4G32
+[layer 07] quant self_attn.k_proj: S-mask=True violations=0 projected=48883 A=W4G128 B=W4G32
+[layer 07] quant self_attn.v_proj: S-mask=True violations=0 projected=43616 A=W4G128 B=W4G32
+[layer 07] quant self_attn.o_proj: S-mask=True violations=0 projected=46804 A=W4G128 B=W4G32
+[layer 07] quant mlp.gate_proj: S-mask=True violations=0 projected=109872 A=W4G128 B=W4G32
+[layer 07] quant mlp.up_proj: S-mask=True violations=0 projected=109179 A=W4G128 B=W4G32
+[layer 07] quant mlp.down_proj: S-mask=True violations=0 projected=134202 A=W4G128 B=W4G32
+[layer 08] external attention_qkv: ratio=0.25 mse=1.425938e-04 equiv=1.584e-07
+[layer 08] external attention_output: ratio=0.00 mse=6.111206e-05 equiv=0.000e+00
+[layer 08] external mlp_gate_up: ratio=0.05 mse=8.944337e-05 equiv=2.026e-07
+[layer 08] external mlp_down: ratio=0.25 mse=7.322260e-05 equiv=2.284e-07
+[layer 08] rank self_attn.q_proj: ratio=0.30 mse=7.049297e-03 equiv=2.399e-07
+[layer 08] rank self_attn.k_proj: ratio=0.25 mse=8.888663e-03 equiv=2.449e-07
+[layer 08] rank self_attn.v_proj: ratio=0.60 mse=9.545937e-04 equiv=1.300e-07
+[layer 08] rank self_attn.o_proj: ratio=0.60 mse=4.231861e-05 equiv=1.104e-07
+[layer 08] rank mlp.gate_proj: ratio=0.25 mse=9.228570e-04 equiv=1.842e-07
+[layer 08] rank mlp.up_proj: ratio=0.45 mse=7.056213e-04 equiv=1.366e-07
+[layer 08] rank mlp.down_proj: ratio=0.70 mse=4.846161e-05 equiv=7.718e-08
+[layer 08] clip all self_attn.v_proj: seconds=0.5
+[layer 08] clip all self_attn.o_proj: seconds=0.5
+[layer 08] clip all mlp.gate_proj: seconds=1.3
+[layer 08] clip all mlp.up_proj: seconds=1.3
+[layer 08] clip all mlp.down_proj: seconds=1.3
+[layer 08] quant self_attn.q_proj: S-mask=True violations=0 projected=47489 A=W4G128 B=W4G32
+[layer 08] quant self_attn.k_proj: S-mask=True violations=0 projected=47668 A=W4G128 B=W4G32
+[layer 08] quant self_attn.v_proj: S-mask=True violations=0 projected=43415 A=W4G128 B=W4G32
+[layer 08] quant self_attn.o_proj: S-mask=True violations=0 projected=44353 A=W4G128 B=W4G32
+[layer 08] quant mlp.gate_proj: S-mask=True violations=0 projected=108653 A=W4G128 B=W4G32
+[layer 08] quant mlp.up_proj: S-mask=True violations=0 projected=109263 A=W4G128 B=W4G32
+[layer 08] quant mlp.down_proj: S-mask=True violations=0 projected=135336 A=W4G128 B=W4G32
+[layer 09] external attention_qkv: ratio=0.15 mse=1.375874e-04 equiv=1.320e-07
+[layer 09] external attention_output: ratio=0.05 mse=6.517216e-05 equiv=2.683e-07
+[layer 09] external mlp_gate_up: ratio=0.05 mse=1.039721e-04 equiv=1.977e-07
+[layer 09] external mlp_down: ratio=0.25 mse=7.722923e-05 equiv=2.180e-07
+[layer 09] rank self_attn.q_proj: ratio=0.25 mse=6.451930e-03 equiv=2.337e-07
+[layer 09] rank self_attn.k_proj: ratio=0.30 mse=9.367693e-03 equiv=2.495e-07
+[layer 09] rank self_attn.v_proj: ratio=0.60 mse=1.148719e-03 equiv=1.336e-07
+[layer 09] rank self_attn.o_proj: ratio=0.65 mse=4.807236e-05 equiv=1.066e-07
+[layer 09] rank mlp.gate_proj: ratio=0.20 mse=9.952195e-04 equiv=1.798e-07
+[layer 09] rank mlp.up_proj: ratio=0.40 mse=7.723742e-04 equiv=1.276e-07
+[layer 09] rank mlp.down_proj: ratio=0.80 mse=5.604018e-05 equiv=6.837e-08
+[layer 09] clip all self_attn.v_proj: seconds=0.5
+[layer 09] clip all self_attn.o_proj: seconds=0.5
+[layer 09] clip all mlp.gate_proj: seconds=1.3
+[layer 09] clip all mlp.up_proj: seconds=1.3
+[layer 09] clip all mlp.down_proj: seconds=1.5
+[layer 09] quant self_attn.q_proj: S-mask=True violations=0 projected=47769 A=W4G128 B=W4G32
+[layer 09] quant self_attn.k_proj: S-mask=True violations=0 projected=48158 A=W4G128 B=W4G32
+[layer 09] quant self_attn.v_proj: S-mask=True violations=0 projected=44971 A=W4G128 B=W4G32
+[layer 09] quant self_attn.o_proj: S-mask=True violations=0 projected=42572 A=W4G128 B=W4G32
+[layer 09] quant mlp.gate_proj: S-mask=True violations=0 projected=108338 A=W4G128 B=W4G32
+[layer 09] quant mlp.up_proj: S-mask=True violations=0 projected=109169 A=W4G128 B=W4G32
+[layer 09] quant mlp.down_proj: S-mask=True violations=0 projected=134126 A=W4G128 B=W4G32
+[layer 10] external attention_qkv: ratio=0.30 mse=1.994114e-04 equiv=1.764e-07
+[layer 10] external attention_output: ratio=0.15 mse=9.590800e-05 equiv=2.557e-07
+[layer 10] external mlp_gate_up: ratio=0.10 mse=1.127099e-04 equiv=2.032e-07
+[layer 10] external mlp_down: ratio=0.25 mse=8.487071e-05 equiv=2.165e-07
+[layer 10] rank self_attn.q_proj: ratio=0.40 mse=6.908694e-03 equiv=2.290e-07
+[layer 10] rank self_attn.k_proj: ratio=0.35 mse=9.792212e-03 equiv=2.199e-07
+[layer 10] rank self_attn.v_proj: ratio=0.75 mse=1.109808e-03 equiv=1.310e-07
+[layer 10] rank self_attn.o_proj: ratio=0.85 mse=6.031049e-05 equiv=1.005e-07
+[layer 10] rank mlp.gate_proj: ratio=0.15 mse=1.020543e-03 equiv=2.028e-07
+[layer 10] rank mlp.up_proj: ratio=0.40 mse=8.179163e-04 equiv=1.279e-07
+[layer 10] rank mlp.down_proj: ratio=0.80 mse=6.315601e-05 equiv=7.362e-08
+[layer 10] clip all self_attn.v_proj: seconds=0.5
+[layer 10] clip all self_attn.o_proj: seconds=0.5
+[layer 10] clip all mlp.gate_proj: seconds=1.3
+[layer 10] clip all mlp.up_proj: seconds=1.3
+[layer 10] clip all mlp.down_proj: seconds=1.5
+[layer 10] quant self_attn.q_proj: S-mask=True violations=0 projected=46803 A=W4G128 B=W4G32
+[layer 10] quant self_attn.k_proj: S-mask=True violations=0 projected=46804 A=W4G128 B=W4G32
+[layer 10] quant self_attn.v_proj: S-mask=True violations=0 projected=42590 A=W4G128 B=W4G32
+[layer 10] quant self_attn.o_proj: S-mask=True violations=0 projected=42032 A=W4G128 B=W4G32
+[layer 10] quant mlp.gate_proj: S-mask=True violations=0 projected=108249 A=W4G128 B=W4G32
+[layer 10] quant mlp.up_proj: S-mask=True violations=0 projected=108526 A=W4G128 B=W4G32
+[layer 10] quant mlp.down_proj: S-mask=True violations=0 projected=134255 A=W4G128 B=W4G32
+[layer 11] external attention_qkv: ratio=0.20 mse=2.226766e-04 equiv=1.346e-07
+[layer 11] external attention_output: ratio=0.15 mse=9.179911e-05 equiv=2.733e-07
+[layer 11] external mlp_gate_up: ratio=0.10 mse=1.244832e-04 equiv=2.189e-07
+[layer 11] external mlp_down: ratio=0.20 mse=9.062568e-05 equiv=2.308e-07
+[layer 11] rank self_attn.q_proj: ratio=0.15 mse=7.652160e-03 equiv=2.058e-07
+[layer 11] rank self_attn.k_proj: ratio=0.35 mse=1.026722e-02 equiv=2.177e-07
+[layer 11] rank self_attn.v_proj: ratio=0.60 mse=1.654944e-03 equiv=1.219e-07
+[layer 11] rank self_attn.o_proj: ratio=0.60 mse=7.558899e-05 equiv=1.051e-07
+[layer 11] rank mlp.gate_proj: ratio=0.10 mse=1.066653e-03 equiv=1.796e-07
+[layer 11] rank mlp.up_proj: ratio=0.35 mse=8.743433e-04 equiv=1.271e-07
+[layer 11] rank mlp.down_proj: ratio=0.80 mse=7.369109e-05 equiv=7.498e-08
+[layer 11] clip all self_attn.v_proj: seconds=0.5
+[layer 11] clip all self_attn.o_proj: seconds=0.5
+[layer 11] clip all mlp.gate_proj: seconds=1.3
+[layer 11] clip all mlp.up_proj: seconds=1.3
+[layer 11] clip all mlp.down_proj: seconds=1.3
+[layer 11] quant self_attn.q_proj: S-mask=True violations=0 projected=46829 A=W4G128 B=W4G32
+[layer 11] quant self_attn.k_proj: S-mask=True violations=0 projected=46869 A=W4G128 B=W4G32
+[layer 11] quant self_attn.v_proj: S-mask=True violations=0 projected=44637 A=W4G128 B=W4G32
+[layer 11] quant self_attn.o_proj: S-mask=True violations=0 projected=41903 A=W4G128 B=W4G32
+[layer 11] quant mlp.gate_proj: S-mask=True violations=0 projected=107595 A=W4G128 B=W4G32
+[layer 11] quant mlp.up_proj: S-mask=True violations=0 projected=107997 A=W4G128 B=W4G32
+[layer 11] quant mlp.down_proj: S-mask=True violations=0 projected=130845 A=W4G128 B=W4G32
+[layer 12] external attention_qkv: ratio=0.25 mse=2.528500e-04 equiv=1.489e-07
+[layer 12] external attention_output: ratio=0.10 mse=9.497569e-05 equiv=2.641e-07
+[layer 12] external mlp_gate_up: ratio=0.10 mse=1.559529e-04 equiv=2.228e-07
+[layer 12] external mlp_down: ratio=0.25 mse=1.093398e-04 equiv=2.283e-07
+[layer 12] rank self_attn.q_proj: ratio=0.30 mse=7.233444e-03 equiv=2.193e-07
+[layer 12] rank self_attn.k_proj: ratio=0.30 mse=1.068081e-02 equiv=2.074e-07
+[layer 12] rank self_attn.v_proj: ratio=0.70 mse=1.384057e-03 equiv=1.273e-07
+[layer 12] rank self_attn.o_proj: ratio=0.75 mse=8.417491e-05 equiv=9.225e-08
+[layer 12] rank mlp.gate_proj: ratio=0.20 mse=1.129785e-03 equiv=1.653e-07
+[layer 12] rank mlp.up_proj: ratio=0.40 mse=1.075754e-03 equiv=1.236e-07
+[layer 12] rank mlp.down_proj: ratio=0.65 mse=8.696153e-05 equiv=7.507e-08
+[layer 12] clip all self_attn.v_proj: seconds=0.5
+[layer 12] clip all self_attn.o_proj: seconds=0.5
+[layer 12] clip all mlp.gate_proj: seconds=1.3
+[layer 12] clip all mlp.up_proj: seconds=1.3
+[layer 12] clip all mlp.down_proj: seconds=1.3
+[layer 12] quant self_attn.q_proj: S-mask=True violations=0 projected=46860 A=W4G128 B=W4G32
+[layer 12] quant self_attn.k_proj: S-mask=True violations=0 projected=46590 A=W4G128 B=W4G32
+[layer 12] quant self_attn.v_proj: S-mask=True violations=0 projected=43232 A=W4G128 B=W4G32
+[layer 12] quant self_attn.o_proj: S-mask=True violations=0 projected=41779 A=W4G128 B=W4G32
+[layer 12] quant mlp.gate_proj: S-mask=True violations=0 projected=106726 A=W4G128 B=W4G32
+[layer 12] quant mlp.up_proj: S-mask=True violations=0 projected=106204 A=W4G128 B=W4G32
+[layer 12] quant mlp.down_proj: S-mask=True violations=0 projected=131497 A=W4G128 B=W4G32
+[layer 13] external attention_qkv: ratio=0.20 mse=2.603933e-04 equiv=1.404e-07
+[layer 13] external attention_output: ratio=0.15 mse=1.063198e-04 equiv=2.509e-07
+[layer 13] external mlp_gate_up: ratio=0.05 mse=1.828348e-04 equiv=2.041e-07
+[layer 13] external mlp_down: ratio=0.20 mse=1.261868e-04 equiv=2.257e-07
+[layer 13] rank self_attn.q_proj: ratio=0.30 mse=7.154170e-03 equiv=2.129e-07
+[layer 13] rank self_attn.k_proj: ratio=0.35 mse=1.006630e-02 equiv=2.118e-07
+[layer 13] rank self_attn.v_proj: ratio=0.60 mse=1.390516e-03 equiv=1.092e-07
+[layer 13] rank self_attn.o_proj: ratio=0.60 mse=8.559363e-05 equiv=9.855e-08
+[layer 13] rank mlp.gate_proj: ratio=0.20 mse=1.197854e-03 equiv=1.999e-07
+[layer 13] rank mlp.up_proj: ratio=0.30 mse=1.107870e-03 equiv=1.316e-07
+[layer 13] rank mlp.down_proj: ratio=0.85 mse=1.059091e-04 equiv=7.068e-08
+[layer 13] clip all self_attn.v_proj: seconds=0.5
+[layer 13] clip all self_attn.o_proj: seconds=0.5
+[layer 13] clip all mlp.gate_proj: seconds=1.3
+[layer 13] clip all mlp.up_proj: seconds=1.3
+[layer 13] clip all mlp.down_proj: seconds=1.6
+[layer 13] quant self_attn.q_proj: S-mask=True violations=0 projected=46464 A=W4G128 B=W4G32
+[layer 13] quant self_attn.k_proj: S-mask=True violations=0 projected=46238 A=W4G128 B=W4G32
+[layer 13] quant self_attn.v_proj: S-mask=True violations=0 projected=42949 A=W4G128 B=W4G32
+[layer 13] quant self_attn.o_proj: S-mask=True violations=0 projected=41987 A=W4G128 B=W4G32
+[layer 13] quant mlp.gate_proj: S-mask=True violations=0 projected=107569 A=W4G128 B=W4G32
+[layer 13] quant mlp.up_proj: S-mask=True violations=0 projected=107610 A=W4G128 B=W4G32
+[layer 13] quant mlp.down_proj: S-mask=True violations=0 projected=132030 A=W4G128 B=W4G32
+[layer 14] external attention_qkv: ratio=0.25 mse=3.423836e-04 equiv=1.392e-07
+[layer 14] external attention_output: ratio=0.05 mse=1.323797e-04 equiv=2.622e-07
+[layer 14] external mlp_gate_up: ratio=0.05 mse=2.009049e-04 equiv=2.030e-07
+[layer 14] external mlp_down: ratio=0.30 mse=1.313711e-04 equiv=2.279e-07
+[layer 14] rank self_attn.q_proj: ratio=0.30 mse=7.842486e-03 equiv=2.341e-07
+[layer 14] rank self_attn.k_proj: ratio=0.40 mse=1.211758e-02 equiv=2.268e-07
+[layer 14] rank self_attn.v_proj: ratio=0.65 mse=1.327580e-03 equiv=1.124e-07
+[layer 14] rank self_attn.o_proj: ratio=0.70 mse=1.037258e-04 equiv=1.009e-07
+[layer 14] rank mlp.gate_proj: ratio=0.15 mse=1.245698e-03 equiv=1.796e-07
+[layer 14] rank mlp.up_proj: ratio=0.45 mse=1.361826e-03 equiv=1.275e-07
+[layer 14] rank mlp.down_proj: ratio=0.80 mse=1.209825e-04 equiv=6.882e-08
+[layer 14] clip all self_attn.v_proj: seconds=0.5
+[layer 14] clip all self_attn.o_proj: seconds=0.5
+[layer 14] clip all mlp.gate_proj: seconds=1.3
+[layer 14] clip all mlp.up_proj: seconds=1.3
+[layer 14] clip all mlp.down_proj: seconds=1.5
+[layer 14] quant self_attn.q_proj: S-mask=True violations=0 projected=46018 A=W4G128 B=W4G32
+[layer 14] quant self_attn.k_proj: S-mask=True violations=0 projected=46412 A=W4G128 B=W4G32
+[layer 14] quant self_attn.v_proj: S-mask=True violations=0 projected=42560 A=W4G128 B=W4G32
+[layer 14] quant self_attn.o_proj: S-mask=True violations=0 projected=40876 A=W4G128 B=W4G32
+[layer 14] quant mlp.gate_proj: S-mask=True violations=0 projected=106362 A=W4G128 B=W4G32
+[layer 14] quant mlp.up_proj: S-mask=True violations=0 projected=106810 A=W4G128 B=W4G32
+[layer 14] quant mlp.down_proj: S-mask=True violations=0 projected=133816 A=W4G128 B=W4G32
+[layer 15] external attention_qkv: ratio=0.20 mse=3.342943e-04 equiv=1.318e-07
+[layer 15] external attention_output: ratio=0.00 mse=1.429541e-04 equiv=0.000e+00
+[layer 15] external mlp_gate_up: ratio=0.00 mse=2.612372e-04 equiv=0.000e+00
+[layer 15] external mlp_down: ratio=0.30 mse=1.823086e-04 equiv=2.270e-07
+[layer 15] rank self_attn.q_proj: ratio=0.30 mse=7.146329e-03 equiv=2.614e-07
+[layer 15] rank self_attn.k_proj: ratio=0.35 mse=1.046721e-02 equiv=1.970e-07
+[layer 15] rank self_attn.v_proj: ratio=0.75 mse=1.422312e-03 equiv=1.171e-07
+[layer 15] rank self_attn.o_proj: ratio=0.75 mse=1.090901e-04 equiv=1.087e-07
+[layer 15] rank mlp.gate_proj: ratio=0.15 mse=1.387332e-03 equiv=1.907e-07
+[layer 15] rank mlp.up_proj: ratio=0.40 mse=1.602647e-03 equiv=1.371e-07
+[layer 15] rank mlp.down_proj: ratio=0.80 mse=1.545895e-04 equiv=9.012e-08
+[layer 15] clip all self_attn.v_proj: seconds=0.5
+[layer 15] clip all self_attn.o_proj: seconds=0.5
+[layer 15] clip all mlp.gate_proj: seconds=1.3
+[layer 15] clip all mlp.up_proj: seconds=1.3
+[layer 15] clip all mlp.down_proj: seconds=1.3
+[layer 15] quant self_attn.q_proj: S-mask=True violations=0 projected=46791 A=W4G128 B=W4G32
+[layer 15] quant self_attn.k_proj: S-mask=True violations=0 projected=46191 A=W4G128 B=W4G32
+[layer 15] quant self_attn.v_proj: S-mask=True violations=0 projected=42860 A=W4G128 B=W4G32
+[layer 15] quant self_attn.o_proj: S-mask=True violations=0 projected=41305 A=W4G128 B=W4G32
+[layer 15] quant mlp.gate_proj: S-mask=True violations=0 projected=106708 A=W4G128 B=W4G32
+[layer 15] quant mlp.up_proj: S-mask=True violations=0 projected=107650 A=W4G128 B=W4G32
+[layer 15] quant mlp.down_proj: S-mask=True violations=0 projected=136856 A=W4G128 B=W4G32
+[layer 16] external attention_qkv: ratio=0.30 mse=3.920490e-04 equiv=1.345e-07
+[layer 16] external attention_output: ratio=0.10 mse=2.067472e-04 equiv=2.476e-07
+[layer 16] external mlp_gate_up: ratio=0.00 mse=3.488357e-04 equiv=0.000e+00
+[layer 16] external mlp_down: ratio=0.30 mse=2.263279e-04 equiv=2.449e-07
+[layer 16] rank self_attn.q_proj: ratio=0.25 mse=7.606721e-03 equiv=2.177e-07
+[layer 16] rank self_attn.k_proj: ratio=0.30 mse=1.163226e-02 equiv=2.523e-07
+[layer 16] rank self_attn.v_proj: ratio=0.60 mse=1.578922e-03 equiv=1.052e-07
+[layer 16] rank self_attn.o_proj: ratio=0.80 mse=1.504743e-04 equiv=1.019e-07
+[layer 16] rank mlp.gate_proj: ratio=0.15 mse=1.644137e-03 equiv=1.798e-07
+[layer 16] rank mlp.up_proj: ratio=0.45 mse=1.875274e-03 equiv=1.408e-07
+[layer 16] rank mlp.down_proj: ratio=0.70 mse=2.007483e-04 equiv=1.033e-07
+[layer 16] clip all self_attn.v_proj: seconds=0.5
+[layer 16] clip all self_attn.o_proj: seconds=0.5
+[layer 16] clip all mlp.gate_proj: seconds=1.3
+[layer 16] clip all mlp.up_proj: seconds=1.3
+[layer 16] clip all mlp.down_proj: seconds=1.5
+[layer 16] quant self_attn.q_proj: S-mask=True violations=0 projected=45731 A=W4G128 B=W4G32
+[layer 16] quant self_attn.k_proj: S-mask=True violations=0 projected=46040 A=W4G128 B=W4G32
+[layer 16] quant self_attn.v_proj: S-mask=True violations=0 projected=41833 A=W4G128 B=W4G32
+[layer 16] quant self_attn.o_proj: S-mask=True violations=0 projected=41372 A=W4G128 B=W4G32
+[layer 16] quant mlp.gate_proj: S-mask=True violations=0 projected=106580 A=W4G128 B=W4G32
+[layer 16] quant mlp.up_proj: S-mask=True violations=0 projected=107259 A=W4G128 B=W4G32
+[layer 16] quant mlp.down_proj: S-mask=True violations=0 projected=133934 A=W4G128 B=W4G32
+[layer 17] external attention_qkv: ratio=0.15 mse=2.916578e-04 equiv=1.441e-07
+[layer 17] external attention_output: ratio=0.00 mse=1.383445e-04 equiv=0.000e+00
+[layer 17] external mlp_gate_up: ratio=0.15 mse=3.314795e-04 equiv=1.823e-07
+[layer 17] external mlp_down: ratio=0.35 mse=2.176267e-04 equiv=2.325e-07
+[layer 17] rank self_attn.q_proj: ratio=0.30 mse=7.410933e-03 equiv=2.225e-07
+[layer 17] rank self_attn.k_proj: ratio=0.40 mse=1.079092e-02 equiv=2.101e-07
+[layer 17] rank self_attn.v_proj: ratio=0.45 mse=1.601571e-03 equiv=1.019e-07
+[layer 17] rank self_attn.o_proj: ratio=0.80 mse=9.230354e-05 equiv=1.001e-07
+[layer 17] rank mlp.gate_proj: ratio=0.10 mse=1.713523e-03 equiv=1.837e-07
+[layer 17] rank mlp.up_proj: ratio=0.40 mse=2.349216e-03 equiv=1.368e-07
+[layer 17] rank mlp.down_proj: ratio=0.85 mse=2.037402e-04 equiv=7.221e-08
+[layer 17] clip all self_attn.v_proj: seconds=0.5
+[layer 17] clip all self_attn.o_proj: seconds=0.5
+[layer 17] clip all mlp.gate_proj: seconds=1.3
+[layer 17] clip all mlp.up_proj: seconds=1.3
+[layer 17] clip all mlp.down_proj: seconds=1.4
+[layer 17] quant self_attn.q_proj: S-mask=True violations=0 projected=46621 A=W4G128 B=W4G32
+[layer 17] quant self_attn.k_proj: S-mask=True violations=0 projected=46098 A=W4G128 B=W4G32
+[layer 17] quant self_attn.v_proj: S-mask=True violations=0 projected=42600 A=W4G128 B=W4G32
+[layer 17] quant self_attn.o_proj: S-mask=True violations=0 projected=40890 A=W4G128 B=W4G32
+[layer 17] quant mlp.gate_proj: S-mask=True violations=0 projected=105050 A=W4G128 B=W4G32
+[layer 17] quant mlp.up_proj: S-mask=True violations=0 projected=105664 A=W4G128 B=W4G32
+[layer 17] quant mlp.down_proj: S-mask=True violations=0 projected=131333 A=W4G128 B=W4G32
+[layer 18] external attention_qkv: ratio=0.15 mse=3.097725e-04 equiv=1.144e-07
+[layer 18] external attention_output: ratio=0.05 mse=1.285158e-04 equiv=2.490e-07
+[layer 18] external mlp_gate_up: ratio=0.00 mse=3.708693e-04 equiv=0.000e+00
+[layer 18] external mlp_down: ratio=0.30 mse=2.659526e-04 equiv=2.355e-07
+[layer 18] rank self_attn.q_proj: ratio=0.25 mse=7.438256e-03 equiv=2.154e-07
+[layer 18] rank self_attn.k_proj: ratio=0.40 mse=9.618560e-03 equiv=2.089e-07
+[layer 18] rank self_attn.v_proj: ratio=0.50 mse=1.992424e-03 equiv=9.871e-08
+[layer 18] rank self_attn.o_proj: ratio=0.75 mse=1.079115e-04 equiv=9.835e-08
+[layer 18] rank mlp.gate_proj: ratio=0.15 mse=1.845144e-03 equiv=1.715e-07
+[layer 18] rank mlp.up_proj: ratio=0.45 mse=2.127818e-03 equiv=1.279e-07
+[layer 18] rank mlp.down_proj: ratio=0.85 mse=2.420294e-04 equiv=7.862e-08
+[layer 18] clip all self_attn.v_proj: seconds=0.5
+[layer 18] clip all self_attn.o_proj: seconds=0.5
+[layer 18] clip all mlp.gate_proj: seconds=1.3
+[layer 18] clip all mlp.up_proj: seconds=1.3
+[layer 18] clip all mlp.down_proj: seconds=1.6
+[layer 18] quant self_attn.q_proj: S-mask=True violations=0 projected=46474 A=W4G128 B=W4G32
+[layer 18] quant self_attn.k_proj: S-mask=True violations=0 projected=46344 A=W4G128 B=W4G32
+[layer 18] quant self_attn.v_proj: S-mask=True violations=0 projected=42862 A=W4G128 B=W4G32
+[layer 18] quant self_attn.o_proj: S-mask=True violations=0 projected=41053 A=W4G128 B=W4G32
+[layer 18] quant mlp.gate_proj: S-mask=True violations=0 projected=106002 A=W4G128 B=W4G32
+[layer 18] quant mlp.up_proj: S-mask=True violations=0 projected=105844 A=W4G128 B=W4G32
+[layer 18] quant mlp.down_proj: S-mask=True violations=0 projected=131888 A=W4G128 B=W4G32
+[layer 19] external attention_qkv: ratio=0.05 mse=2.741124e-04 equiv=1.306e-07
+[layer 19] external attention_output: ratio=0.00 mse=1.095374e-04 equiv=0.000e+00
+[layer 19] external mlp_gate_up: ratio=0.05 mse=4.261404e-04 equiv=2.173e-07
+[layer 19] external mlp_down: ratio=0.30 mse=2.889141e-04 equiv=2.364e-07
+[layer 19] rank self_attn.q_proj: ratio=0.25 mse=7.175131e-03 equiv=1.830e-07
+[layer 19] rank self_attn.k_proj: ratio=0.35 mse=1.052312e-02 equiv=2.053e-07
+[layer 19] rank self_attn.v_proj: ratio=0.55 mse=2.006917e-03 equiv=1.024e-07
+[layer 19] rank self_attn.o_proj: ratio=0.60 mse=8.646324e-05 equiv=9.763e-08
+[layer 19] rank mlp.gate_proj: ratio=0.20 mse=1.897961e-03 equiv=1.824e-07
+[layer 19] rank mlp.up_proj: ratio=0.45 mse=2.347698e-03 equiv=1.294e-07
+[layer 19] rank mlp.down_proj: ratio=0.80 mse=2.644161e-04 equiv=8.968e-08
+[layer 19] clip all self_attn.v_proj: seconds=0.5
+[layer 19] clip all self_attn.o_proj: seconds=0.5
+[layer 19] clip all mlp.gate_proj: seconds=1.3
+[layer 19] clip all mlp.up_proj: seconds=1.3
+[layer 19] clip all mlp.down_proj: seconds=1.6
+[layer 19] quant self_attn.q_proj: S-mask=True violations=0 projected=47090 A=W4G128 B=W4G32
+[layer 19] quant self_attn.k_proj: S-mask=True violations=0 projected=46814 A=W4G128 B=W4G32
+[layer 19] quant self_attn.v_proj: S-mask=True violations=0 projected=42799 A=W4G128 B=W4G32
+[layer 19] quant self_attn.o_proj: S-mask=True violations=0 projected=40107 A=W4G128 B=W4G32
+[layer 19] quant mlp.gate_proj: S-mask=True violations=0 projected=105979 A=W4G128 B=W4G32
+[layer 19] quant mlp.up_proj: S-mask=True violations=0 projected=107248 A=W4G128 B=W4G32
+[layer 19] quant mlp.down_proj: S-mask=True violations=0 projected=130584 A=W4G128 B=W4G32
+[layer 20] external attention_qkv: ratio=0.10 mse=3.979700e-04 equiv=1.610e-07
+[layer 20] external attention_output: ratio=0.00 mse=4.243350e-04 equiv=0.000e+00
+[layer 20] external mlp_gate_up: ratio=0.10 mse=4.770603e-04 equiv=2.096e-07
+[layer 20] external mlp_down: ratio=0.30 mse=3.683681e-04 equiv=2.335e-07
+[layer 20] rank self_attn.q_proj: ratio=0.25 mse=7.525363e-03 equiv=2.212e-07
+[layer 20] rank self_attn.k_proj: ratio=0.40 mse=9.771112e-03 equiv=2.150e-07
+[layer 20] rank self_attn.v_proj: ratio=0.55 mse=2.001003e-03 equiv=1.030e-07
+[layer 20] rank self_attn.o_proj: ratio=0.75 mse=1.354177e-04 equiv=1.103e-07
+[layer 20] rank mlp.gate_proj: ratio=0.15 mse=1.992636e-03 equiv=1.817e-07
+[layer 20] rank mlp.up_proj: ratio=0.40 mse=3.113344e-03 equiv=1.125e-07
+[layer 20] rank mlp.down_proj: ratio=0.75 mse=2.920465e-04 equiv=7.647e-08
+[layer 20] clip all self_attn.v_proj: seconds=0.5
+[layer 20] clip all self_attn.o_proj: seconds=0.5
+[layer 20] clip all mlp.gate_proj: seconds=1.3
+[layer 20] clip all mlp.up_proj: seconds=1.3
+[layer 20] clip all mlp.down_proj: seconds=1.6
+[layer 20] quant self_attn.q_proj: S-mask=True violations=0 projected=46397 A=W4G128 B=W4G32
+[layer 20] quant self_attn.k_proj: S-mask=True violations=0 projected=46589 A=W4G128 B=W4G32
+[layer 20] quant self_attn.v_proj: S-mask=True violations=0 projected=43628 A=W4G128 B=W4G32
+[layer 20] quant self_attn.o_proj: S-mask=True violations=0 projected=41191 A=W4G128 B=W4G32
+[layer 20] quant mlp.gate_proj: S-mask=True violations=0 projected=105348 A=W4G128 B=W4G32
+[layer 20] quant mlp.up_proj: S-mask=True violations=0 projected=106044 A=W4G128 B=W4G32
+[layer 20] quant mlp.down_proj: S-mask=True violations=0 projected=130133 A=W4G128 B=W4G32
+[layer 21] external attention_qkv: ratio=0.05 mse=3.754327e-04 equiv=1.475e-07
+[layer 21] external attention_output: ratio=0.15 mse=1.648605e-04 equiv=2.269e-07
+[layer 21] external mlp_gate_up: ratio=0.00 mse=4.751455e-04 equiv=0.000e+00
+[layer 21] external mlp_down: ratio=0.30 mse=3.109188e-04 equiv=2.293e-07
+[layer 21] rank self_attn.q_proj: ratio=0.40 mse=7.715708e-03 equiv=1.964e-07
+[layer 21] rank self_attn.k_proj: ratio=0.35 mse=9.459518e-03 equiv=2.151e-07
+[layer 21] rank self_attn.v_proj: ratio=0.60 mse=2.713710e-03 equiv=1.039e-07
+[layer 21] rank self_attn.o_proj: ratio=0.60 mse=1.176314e-04 equiv=8.676e-08
+[layer 21] rank mlp.gate_proj: ratio=0.15 mse=2.007215e-03 equiv=1.639e-07
+[layer 21] rank mlp.up_proj: ratio=0.50 mse=2.346884e-03 equiv=1.026e-07
+[layer 21] rank mlp.down_proj: ratio=0.70 mse=2.917502e-04 equiv=7.291e-08
+[layer 21] clip all self_attn.v_proj: seconds=0.5
+[layer 21] clip all self_attn.o_proj: seconds=0.5
+[layer 21] clip all mlp.gate_proj: seconds=1.3
+[layer 21] clip all mlp.up_proj: seconds=1.3
+[layer 21] clip all mlp.down_proj: seconds=1.5
+[layer 21] quant self_attn.q_proj: S-mask=True violations=0 projected=47119 A=W4G128 B=W4G32
+[layer 21] quant self_attn.k_proj: S-mask=True violations=0 projected=46543 A=W4G128 B=W4G32
+[layer 21] quant self_attn.v_proj: S-mask=True violations=0 projected=43970 A=W4G128 B=W4G32
+[layer 21] quant self_attn.o_proj: S-mask=True violations=0 projected=40461 A=W4G128 B=W4G32
+[layer 21] quant mlp.gate_proj: S-mask=True violations=0 projected=105849 A=W4G128 B=W4G32
+[layer 21] quant mlp.up_proj: S-mask=True violations=0 projected=105947 A=W4G128 B=W4G32
+[layer 21] quant mlp.down_proj: S-mask=True violations=0 projected=128447 A=W4G128 B=W4G32
+[layer 22] external attention_qkv: ratio=0.05 mse=5.984045e-04 equiv=1.758e-07
+[layer 22] external attention_output: ratio=0.05 mse=8.289694e-04 equiv=1.344e-07
+[layer 22] external mlp_gate_up: ratio=0.00 mse=5.014260e-04 equiv=0.000e+00
+[layer 22] external mlp_down: ratio=0.30 mse=3.280747e-04 equiv=2.364e-07
+[layer 22] rank self_attn.q_proj: ratio=0.30 mse=8.390262e-03 equiv=2.113e-07
+[layer 22] rank self_attn.k_proj: ratio=0.35 mse=9.769455e-03 equiv=1.985e-07
+[layer 22] rank self_attn.v_proj: ratio=0.45 mse=2.529264e-03 equiv=9.732e-08
+[layer 22] rank self_attn.o_proj: ratio=0.70 mse=1.857373e-04 equiv=1.672e-07
+[layer 22] rank mlp.gate_proj: ratio=0.20 mse=1.999207e-03 equiv=1.771e-07
+[layer 22] rank mlp.up_proj: ratio=0.50 mse=2.531020e-03 equiv=1.036e-07
+[layer 22] rank mlp.down_proj: ratio=0.70 mse=3.003557e-04 equiv=8.112e-08
+[layer 22] clip all self_attn.v_proj: seconds=0.5
+[layer 22] clip all self_attn.o_proj: seconds=0.5
+[layer 22] clip all mlp.gate_proj: seconds=1.3
+[layer 22] clip all mlp.up_proj: seconds=1.3
+[layer 22] clip all mlp.down_proj: seconds=1.3
+[layer 22] quant self_attn.q_proj: S-mask=True violations=0 projected=47251 A=W4G128 B=W4G32
+[layer 22] quant self_attn.k_proj: S-mask=True violations=0 projected=46816 A=W4G128 B=W4G32
+[layer 22] quant self_attn.v_proj: S-mask=True violations=0 projected=43549 A=W4G128 B=W4G32
+[layer 22] quant self_attn.o_proj: S-mask=True violations=0 projected=40833 A=W4G128 B=W4G32
+[layer 22] quant mlp.gate_proj: S-mask=True violations=0 projected=106255 A=W4G128 B=W4G32
+[layer 22] quant mlp.up_proj: S-mask=True violations=0 projected=106280 A=W4G128 B=W4G32
+[layer 22] quant mlp.down_proj: S-mask=True violations=0 projected=127881 A=W4G128 B=W4G32
+[layer 23] external attention_qkv: ratio=0.15 mse=3.644739e-04 equiv=1.505e-07
+[layer 23] external attention_output: ratio=0.10 mse=1.971772e-04 equiv=2.414e-07
+[layer 23] external mlp_gate_up: ratio=0.00 mse=5.329265e-04 equiv=0.000e+00
+[layer 23] external mlp_down: ratio=0.30 mse=3.484540e-04 equiv=2.354e-07
+[layer 23] rank self_attn.q_proj: ratio=0.35 mse=7.082774e-03 equiv=2.238e-07
+[layer 23] rank self_attn.k_proj: ratio=0.40 mse=8.515510e-03 equiv=2.103e-07
+[layer 23] rank self_attn.v_proj: ratio=0.65 mse=2.863713e-03 equiv=9.792e-08
+[layer 23] rank self_attn.o_proj: ratio=0.60 mse=1.081342e-04 equiv=1.127e-07
+[layer 23] rank mlp.gate_proj: ratio=0.25 mse=2.016023e-03 equiv=1.576e-07
+[layer 23] rank mlp.up_proj: ratio=0.50 mse=2.908825e-03 equiv=9.606e-08
+[layer 23] rank mlp.down_proj: ratio=0.75 mse=3.234437e-04 equiv=6.779e-08
+[layer 23] clip all self_attn.v_proj: seconds=0.5
+[layer 23] clip all self_attn.o_proj: seconds=0.5
+[layer 23] clip all mlp.gate_proj: seconds=1.3
+[layer 23] clip all mlp.up_proj: seconds=1.3
+[layer 23] clip all mlp.down_proj: seconds=1.5
+[layer 23] quant self_attn.q_proj: S-mask=True violations=0 projected=45945 A=W4G128 B=W4G32
+[layer 23] quant self_attn.k_proj: S-mask=True violations=0 projected=46671 A=W4G128 B=W4G32
+[layer 23] quant self_attn.v_proj: S-mask=True violations=0 projected=42858 A=W4G128 B=W4G32
+[layer 23] quant self_attn.o_proj: S-mask=True violations=0 projected=40413 A=W4G128 B=W4G32
+[layer 23] quant mlp.gate_proj: S-mask=True violations=0 projected=105728 A=W4G128 B=W4G32
+[layer 23] quant mlp.up_proj: S-mask=True violations=0 projected=105654 A=W4G128 B=W4G32
+[layer 23] quant mlp.down_proj: S-mask=True violations=0 projected=127361 A=W4G128 B=W4G32
+[layer 24] external attention_qkv: ratio=0.05 mse=6.524675e-04 equiv=1.589e-07
+[layer 24] external attention_output: ratio=0.15 mse=7.409665e-04 equiv=2.039e-07
+[layer 24] external mlp_gate_up: ratio=0.00 mse=5.383265e-04 equiv=0.000e+00
+[layer 24] external mlp_down: ratio=0.30 mse=3.676018e-04 equiv=2.288e-07
+[layer 24] rank self_attn.q_proj: ratio=0.35 mse=7.628432e-03 equiv=2.314e-07
+[layer 24] rank self_attn.k_proj: ratio=0.30 mse=9.813260e-03 equiv=2.189e-07
+[layer 24] rank self_attn.v_proj: ratio=0.60 mse=3.296576e-03 equiv=9.957e-08
+[layer 24] rank self_attn.o_proj: ratio=0.65 mse=2.245201e-04 equiv=1.240e-07
+[layer 24] rank mlp.gate_proj: ratio=0.25 mse=2.073859e-03 equiv=1.695e-07
+[layer 24] rank mlp.up_proj: ratio=0.50 mse=3.390308e-03 equiv=9.361e-08
+[layer 24] rank mlp.down_proj: ratio=0.50 mse=3.331392e-04 equiv=6.690e-08
+[layer 24] clip all self_attn.v_proj: seconds=0.5
+[layer 24] clip all self_attn.o_proj: seconds=0.5
+[layer 24] clip all mlp.gate_proj: seconds=1.3
+[layer 24] clip all mlp.up_proj: seconds=1.3
+[layer 24] clip all mlp.down_proj: seconds=1.7
+[layer 24] quant self_attn.q_proj: S-mask=True violations=0 projected=47045 A=W4G128 B=W4G32
+[layer 24] quant self_attn.k_proj: S-mask=True violations=0 projected=45919 A=W4G128 B=W4G32
+[layer 24] quant self_attn.v_proj: S-mask=True violations=0 projected=42933 A=W4G128 B=W4G32
+[layer 24] quant self_attn.o_proj: S-mask=True violations=0 projected=41252 A=W4G128 B=W4G32
+[layer 24] quant mlp.gate_proj: S-mask=True violations=0 projected=105118 A=W4G128 B=W4G32
+[layer 24] quant mlp.up_proj: S-mask=True violations=0 projected=106678 A=W4G128 B=W4G32
+[layer 24] quant mlp.down_proj: S-mask=True violations=0 projected=125725 A=W4G128 B=W4G32
+[layer 25] external attention_qkv: ratio=0.10 mse=4.971906e-04 equiv=1.531e-07
+[layer 25] external attention_output: ratio=0.00 mse=1.631164e-04 equiv=0.000e+00
+[layer 25] external mlp_gate_up: ratio=0.00 mse=6.574398e-04 equiv=0.000e+00
+[layer 25] external mlp_down: ratio=0.30 mse=4.948888e-04 equiv=2.221e-07
+[layer 25] rank self_attn.q_proj: ratio=0.30 mse=7.750334e-03 equiv=2.159e-07
+[layer 25] rank self_attn.k_proj: ratio=0.40 mse=8.201041e-03 equiv=2.110e-07
+[layer 25] rank self_attn.v_proj: ratio=0.45 mse=3.078113e-03 equiv=1.021e-07
+[layer 25] rank self_attn.o_proj: ratio=0.65 mse=1.472822e-04 equiv=9.579e-08
+[layer 25] rank mlp.gate_proj: ratio=0.40 mse=2.182634e-03 equiv=1.531e-07
+[layer 25] rank mlp.up_proj: ratio=0.50 mse=3.827499e-03 equiv=9.441e-08
+[layer 25] rank mlp.down_proj: ratio=0.75 mse=3.707354e-04 equiv=6.920e-08
+[layer 25] clip all self_attn.v_proj: seconds=0.5
+[layer 25] clip all self_attn.o_proj: seconds=0.5
+[layer 25] clip all mlp.gate_proj: seconds=1.3
+[layer 25] clip all mlp.up_proj: seconds=1.3
+[layer 25] clip all mlp.down_proj: seconds=1.6
+[layer 25] quant self_attn.q_proj: S-mask=True violations=0 projected=45768 A=W4G128 B=W4G32
+[layer 25] quant self_attn.k_proj: S-mask=True violations=0 projected=46446 A=W4G128 B=W4G32
+[layer 25] quant self_attn.v_proj: S-mask=True violations=0 projected=42793 A=W4G128 B=W4G32
+[layer 25] quant self_attn.o_proj: S-mask=True violations=0 projected=40104 A=W4G128 B=W4G32
+[layer 25] quant mlp.gate_proj: S-mask=True violations=0 projected=106195 A=W4G128 B=W4G32
+[layer 25] quant mlp.up_proj: S-mask=True violations=0 projected=105728 A=W4G128 B=W4G32
+[layer 25] quant mlp.down_proj: S-mask=True violations=0 projected=128391 A=W4G128 B=W4G32
+[layer 26] external attention_qkv: ratio=0.15 mse=8.788398e-04 equiv=1.491e-07
+[layer 26] external attention_output: ratio=0.40 mse=1.551482e-03 equiv=2.135e-07
+[layer 26] external mlp_gate_up: ratio=0.05 mse=7.707453e-04 equiv=1.969e-07
+[layer 26] external mlp_down: ratio=0.30 mse=4.623992e-04 equiv=2.284e-07
+[layer 26] rank self_attn.q_proj: ratio=0.30 mse=8.165715e-03 equiv=2.099e-07
+[layer 26] rank self_attn.k_proj: ratio=0.35 mse=1.031633e-02 equiv=2.141e-07
+[layer 26] rank self_attn.v_proj: ratio=0.50 mse=6.490100e-03 equiv=1.008e-07
+[layer 26] rank self_attn.o_proj: ratio=0.60 mse=3.469676e-04 equiv=1.498e-07
+[layer 26] rank mlp.gate_proj: ratio=0.15 mse=2.417521e-03 equiv=1.613e-07
+[layer 26] rank mlp.up_proj: ratio=0.50 mse=3.707137e-03 equiv=1.098e-07
+[layer 26] rank mlp.down_proj: ratio=0.65 mse=4.304838e-04 equiv=6.798e-08
+[layer 26] clip all self_attn.v_proj: seconds=0.5
+[layer 26] clip all self_attn.o_proj: seconds=0.5
+[layer 26] clip all mlp.gate_proj: seconds=1.3
+[layer 26] clip all mlp.up_proj: seconds=1.3
+[layer 26] clip all mlp.down_proj: seconds=1.6
+[layer 26] quant self_attn.q_proj: S-mask=True violations=0 projected=46303 A=W4G128 B=W4G32
+[layer 26] quant self_attn.k_proj: S-mask=True violations=0 projected=46349 A=W4G128 B=W4G32
+[layer 26] quant self_attn.v_proj: S-mask=True violations=0 projected=42538 A=W4G128 B=W4G32
+[layer 26] quant self_attn.o_proj: S-mask=True violations=0 projected=44483 A=W4G128 B=W4G32
+[layer 26] quant mlp.gate_proj: S-mask=True violations=0 projected=105128 A=W4G128 B=W4G32
+[layer 26] quant mlp.up_proj: S-mask=True violations=0 projected=106070 A=W4G128 B=W4G32
+[layer 26] quant mlp.down_proj: S-mask=True violations=0 projected=133317 A=W4G128 B=W4G32
+[layer 27] external attention_qkv: ratio=0.20 mse=5.225017e-04 equiv=1.295e-07
+[layer 27] external attention_output: ratio=0.05 mse=2.307477e-04 equiv=2.492e-07
+[layer 27] external mlp_gate_up: ratio=0.00 mse=1.074625e-03 equiv=0.000e+00
+[layer 27] external mlp_down: ratio=0.35 mse=5.683986e-04 equiv=2.235e-07
+[layer 27] rank self_attn.q_proj: ratio=0.40 mse=8.043812e-03 equiv=1.855e-07
+[layer 27] rank self_attn.k_proj: ratio=0.35 mse=9.576631e-03 equiv=1.930e-07
+[layer 27] rank self_attn.v_proj: ratio=0.60 mse=3.157143e-03 equiv=9.813e-08
+[layer 27] rank self_attn.o_proj: ratio=0.60 mse=1.698629e-04 equiv=1.503e-07
+[layer 27] rank mlp.gate_proj: ratio=0.35 mse=2.692787e-03 equiv=1.504e-07
+[layer 27] rank mlp.up_proj: ratio=0.45 mse=3.568636e-03 equiv=1.134e-07
+[layer 27] rank mlp.down_proj: ratio=0.70 mse=5.212506e-04 equiv=6.964e-08
+[layer 27] clip all self_attn.v_proj: seconds=0.5
+[layer 27] clip all self_attn.o_proj: seconds=0.5
+[layer 27] clip all mlp.gate_proj: seconds=1.3
+[layer 27] clip all mlp.up_proj: seconds=1.3
+[layer 27] clip all mlp.down_proj: seconds=1.3
+[layer 27] quant self_attn.q_proj: S-mask=True violations=0 projected=46356 A=W4G128 B=W4G32
+[layer 27] quant self_attn.k_proj: S-mask=True violations=0 projected=46594 A=W4G128 B=W4G32
+[layer 27] quant self_attn.v_proj: S-mask=True violations=0 projected=41663 A=W4G128 B=W4G32
+[layer 27] quant self_attn.o_proj: S-mask=True violations=0 projected=40279 A=W4G128 B=W4G32
+[layer 27] quant mlp.gate_proj: S-mask=True violations=0 projected=105195 A=W4G128 B=W4G32
+[layer 27] quant mlp.up_proj: S-mask=True violations=0 projected=106362 A=W4G128 B=W4G32
+[layer 27] quant mlp.down_proj: S-mask=True violations=0 projected=142469 A=W4G128 B=W4G32
+[layer 28] external attention_qkv: ratio=0.10 mse=7.762006e-04 equiv=1.393e-07
+[layer 28] external attention_output: ratio=0.05 mse=5.698010e-04 equiv=2.270e-07
+[layer 28] external mlp_gate_up: ratio=0.00 mse=1.825854e-03 equiv=0.000e+00
+[layer 28] external mlp_down: ratio=0.30 mse=8.255742e-04 equiv=2.420e-07
+[layer 28] rank self_attn.q_proj: ratio=0.40 mse=8.769498e-03 equiv=1.998e-07
+[layer 28] rank self_attn.k_proj: ratio=0.40 mse=9.811670e-03 equiv=1.965e-07
+[layer 28] rank self_attn.v_proj: ratio=0.65 mse=3.703732e-03 equiv=8.884e-08
+[layer 28] rank self_attn.o_proj: ratio=0.65 mse=3.048037e-04 equiv=1.333e-07
+[layer 28] rank mlp.gate_proj: ratio=0.25 mse=3.037442e-03 equiv=1.640e-07
+[layer 28] rank mlp.up_proj: ratio=0.50 mse=4.822144e-03 equiv=1.324e-07
+[layer 28] rank mlp.down_proj: ratio=0.60 mse=7.328910e-04 equiv=9.461e-08
+[layer 28] clip all self_attn.v_proj: seconds=0.5
+[layer 28] clip all self_attn.o_proj: seconds=0.5
+[layer 28] clip all mlp.gate_proj: seconds=1.3
+[layer 28] clip all mlp.up_proj: seconds=1.3
+[layer 28] clip all mlp.down_proj: seconds=1.5
+[layer 28] quant self_attn.q_proj: S-mask=True violations=0 projected=46551 A=W4G128 B=W4G32
+[layer 28] quant self_attn.k_proj: S-mask=True violations=0 projected=46503 A=W4G128 B=W4G32
+[layer 28] quant self_attn.v_proj: S-mask=True violations=0 projected=42987 A=W4G128 B=W4G32
+[layer 28] quant self_attn.o_proj: S-mask=True violations=0 projected=41305 A=W4G128 B=W4G32
+[layer 28] quant mlp.gate_proj: S-mask=True violations=0 projected=105900 A=W4G128 B=W4G32
+[layer 28] quant mlp.up_proj: S-mask=True violations=0 projected=106918 A=W4G128 B=W4G32
+[layer 28] quant mlp.down_proj: S-mask=True violations=0 projected=143731 A=W4G128 B=W4G32
+[layer 29] external attention_qkv: ratio=0.15 mse=8.796197e-04 equiv=1.446e-07
+[layer 29] external attention_output: ratio=0.30 mse=8.400747e-04 equiv=2.152e-07
+[layer 29] external mlp_gate_up: ratio=0.10 mse=4.048102e-03 equiv=1.788e-07
+[layer 29] external mlp_down: ratio=0.30 mse=1.325083e-03 equiv=4.657e-07
+[layer 29] rank self_attn.q_proj: ratio=0.25 mse=1.033978e-02 equiv=2.337e-07
+[layer 29] rank self_attn.k_proj: ratio=0.25 mse=1.218383e-02 equiv=2.267e-07
+[layer 29] rank self_attn.v_proj: ratio=0.70 mse=3.966397e-03 equiv=9.237e-08
+[layer 29] rank self_attn.o_proj: ratio=0.65 mse=2.818948e-04 equiv=1.018e-07
+[layer 29] rank mlp.gate_proj: ratio=0.30 mse=3.498837e-03 equiv=1.584e-07
+[layer 29] rank mlp.up_proj: ratio=0.60 mse=5.207666e-03 equiv=1.380e-07
+[layer 29] rank mlp.down_proj: ratio=0.75 mse=1.126242e-03 equiv=1.841e-07
+[layer 29] clip all self_attn.v_proj: seconds=0.5
+[layer 29] clip all self_attn.o_proj: seconds=0.5
+[layer 29] clip all mlp.gate_proj: seconds=1.3
+[layer 29] clip all mlp.up_proj: seconds=1.3
+[layer 29] clip all mlp.down_proj: seconds=1.6
+[layer 29] quant self_attn.q_proj: S-mask=True violations=0 projected=48125 A=W4G128 B=W4G32
+[layer 29] quant self_attn.k_proj: S-mask=True violations=0 projected=45993 A=W4G128 B=W4G32
+[layer 29] quant self_attn.v_proj: S-mask=True violations=0 projected=42622 A=W4G128 B=W4G32
+[layer 29] quant self_attn.o_proj: S-mask=True violations=0 projected=41821 A=W4G128 B=W4G32
+[layer 29] quant mlp.gate_proj: S-mask=True violations=0 projected=106146 A=W4G128 B=W4G32
+[layer 29] quant mlp.up_proj: S-mask=True violations=0 projected=106989 A=W4G128 B=W4G32
+[layer 29] quant mlp.down_proj: S-mask=True violations=0 projected=152871 A=W4G128 B=W4G32
+[layer 30] external attention_qkv: ratio=0.10 mse=6.257588e-04 equiv=1.308e-07
+[layer 30] external attention_output: ratio=0.10 mse=7.973554e-04 equiv=2.181e-07
+[layer 30] external mlp_gate_up: ratio=0.10 mse=2.436021e-02 equiv=1.314e-07
+[layer 30] external mlp_down: ratio=0.60 mse=3.359726e-02 equiv=1.558e-09
+[layer 30] rank self_attn.q_proj: ratio=0.30 mse=1.130275e-02 equiv=2.006e-07
+[layer 30] rank self_attn.k_proj: ratio=0.30 mse=1.185140e-02 equiv=2.210e-07
+[layer 30] rank self_attn.v_proj: ratio=0.35 mse=4.365859e-03 equiv=1.065e-07
+[layer 30] rank self_attn.o_proj: ratio=0.55 mse=3.435456e-04 equiv=1.907e-07
+[layer 30] rank mlp.gate_proj: ratio=0.55 mse=4.404315e-03 equiv=2.144e-07
+[layer 30] rank mlp.up_proj: ratio=0.70 mse=2.761213e-02 equiv=1.525e-07
+[layer 30] rank mlp.down_proj: ratio=0.85 mse=1.156739e-02 equiv=5.907e-07
+[layer 30] clip all self_attn.v_proj: seconds=0.5
+[layer 30] clip all self_attn.o_proj: seconds=0.5
+[layer 30] clip all mlp.gate_proj: seconds=1.3
+[layer 30] clip all mlp.up_proj: seconds=1.3
+[layer 30] clip all mlp.down_proj: seconds=1.3
+[layer 30] quant self_attn.q_proj: S-mask=True violations=0 projected=47925 A=W4G128 B=W4G32
+[layer 30] quant self_attn.k_proj: S-mask=True violations=0 projected=45740 A=W4G128 B=W4G32
+[layer 30] quant self_attn.v_proj: S-mask=True violations=0 projected=42198 A=W4G128 B=W4G32
+[layer 30] quant self_attn.o_proj: S-mask=True violations=0 projected=41313 A=W4G128 B=W4G32
+[layer 30] quant mlp.gate_proj: S-mask=True violations=0 projected=107174 A=W4G128 B=W4G32
+[layer 30] quant mlp.up_proj: S-mask=True violations=0 projected=107807 A=W4G128 B=W4G32
+[layer 30] quant mlp.down_proj: S-mask=True violations=0 projected=352843 A=W4G128 B=W4G32
+[layer 31] external attention_qkv: ratio=0.05 mse=1.230326e-03 equiv=1.541e-07
+[layer 31] external attention_output: ratio=0.15 mse=3.133299e-03 equiv=3.773e-08
+[layer 31] external mlp_gate_up: ratio=0.25 mse=3.802648e-02 equiv=1.087e-07
+[layer 31] external mlp_down: ratio=0.40 mse=4.746953e-02 equiv=1.515e-07
+[layer 31] rank self_attn.q_proj: ratio=0.20 mse=1.016098e-02 equiv=2.096e-07
+[layer 31] rank self_attn.k_proj: ratio=0.25 mse=1.331136e-02 equiv=2.040e-07
+[layer 31] rank self_attn.v_proj: ratio=0.45 mse=2.723663e-03 equiv=1.390e-07
+[layer 31] rank self_attn.o_proj: ratio=0.70 mse=1.305698e-03 equiv=5.126e-08
+[layer 31] rank mlp.gate_proj: ratio=0.35 mse=6.099283e-03 equiv=2.286e-07
+[layer 31] rank mlp.up_proj: ratio=0.50 mse=1.913853e-02 equiv=2.298e-07
+[layer 31] rank mlp.down_proj: ratio=0.55 mse=3.100508e-02 equiv=2.113e-07
+[layer 31] clip all self_attn.v_proj: seconds=0.5
+[layer 31] clip all self_attn.o_proj: seconds=0.5
+[layer 31] clip all mlp.gate_proj: seconds=1.3
+[layer 31] clip all mlp.up_proj: seconds=1.3
+[layer 31] clip all mlp.down_proj: seconds=1.6
+[layer 31] quant self_attn.q_proj: S-mask=True violations=0 projected=48330 A=W4G128 B=W4G32
+[layer 31] quant self_attn.k_proj: S-mask=True violations=0 projected=47271 A=W4G128 B=W4G32
+[layer 31] quant self_attn.v_proj: S-mask=True violations=0 projected=44547 A=W4G128 B=W4G32
+[layer 31] quant self_attn.o_proj: S-mask=True violations=0 projected=42993 A=W4G128 B=W4G32
+[layer 31] quant mlp.gate_proj: S-mask=True violations=0 projected=109548 A=W4G128 B=W4G32
+[layer 31] quant mlp.up_proj: S-mask=True violations=0 projected=110998 A=W4G128 B=W4G32
+[layer 31] quant mlp.down_proj: S-mask=True violations=0 projected=316028 A=W4G128 B=W4G32
+Saved complete model: /home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt

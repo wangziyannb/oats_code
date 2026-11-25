@@ -1,0 +1,13 @@
+{
+  "model": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+  "evaluation_dataset": "wikitext/wikitext-2-raw-v1/test",
+  "token_count": 341469,
+  "predicted_tokens": 338709,
+  "token_sha256": "8e0218eea3a8ac00caa80af114e52f301aa90a919124378320787e7f777cb3ee",
+  "physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

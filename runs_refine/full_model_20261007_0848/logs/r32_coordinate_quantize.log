@@ -1,0 +1,34 @@
+{"argv": ["/home/zwang53/oats_code/.venv-awq/bin/python", "-u", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/code/run_oats_refine_full.py", "quantize", "--output-dir", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r32/coordinate", "--model", "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9", "--baseline-dir", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare", "--calibration-path", "/home/zwang53/oats_code/calib_llama2-7b.pth", "--rank", "32", "--arm", "coordinate", "--devices", "cuda:0", "cuda:1", "cuda:2", "cuda:3", "--dtype", "fp16", "--batch-size", "8", "--tokens", "512", "--scale-grid", "20", "--sweeps", "3", "--pair-candidates", "16"], "started_at": "2026-10-07T08:51:56.387710+00:00"}
+[layer done] coordinate rank=32 1/32 elapsed=21.7s
+[layer done] coordinate rank=32 2/32 elapsed=30.7s
+[layer done] coordinate rank=32 3/32 elapsed=38.4s
+[layer done] coordinate rank=32 4/32 elapsed=46.2s
+[layer done] coordinate rank=32 5/32 elapsed=54.5s
+[layer done] coordinate rank=32 6/32 elapsed=62.1s
+[layer done] coordinate rank=32 7/32 elapsed=69.2s
+[layer done] coordinate rank=32 8/32 elapsed=77.4s
+[layer done] coordinate rank=32 9/32 elapsed=86.2s
+[layer done] coordinate rank=32 10/32 elapsed=93.1s
+[layer done] coordinate rank=32 11/32 elapsed=100.5s
+[layer done] coordinate rank=32 12/32 elapsed=107.5s
+[layer done] coordinate rank=32 13/32 elapsed=114.8s
+[layer done] coordinate rank=32 14/32 elapsed=121.7s
+[layer done] coordinate rank=32 15/32 elapsed=129.2s
+[layer done] coordinate rank=32 16/32 elapsed=137.3s
+[layer done] coordinate rank=32 17/32 elapsed=144.3s
+[layer done] coordinate rank=32 18/32 elapsed=151.7s
+[layer done] coordinate rank=32 19/32 elapsed=160.1s
+[layer done] coordinate rank=32 20/32 elapsed=166.9s
+[layer done] coordinate rank=32 21/32 elapsed=174.7s
+[layer done] coordinate rank=32 22/32 elapsed=181.5s
+[layer done] coordinate rank=32 23/32 elapsed=189.4s
+[layer done] coordinate rank=32 24/32 elapsed=196.4s
+[layer done] coordinate rank=32 25/32 elapsed=204.3s
+[layer done] coordinate rank=32 26/32 elapsed=212.0s
+[layer done] coordinate rank=32 27/32 elapsed=219.0s
+[layer done] coordinate rank=32 28/32 elapsed=226.9s
+[layer done] coordinate rank=32 29/32 elapsed=233.6s
+[layer done] coordinate rank=32 30/32 elapsed=241.5s
+[layer done] coordinate rank=32 31/32 elapsed=248.4s
+[layer done] coordinate rank=32 32/32 elapsed=256.3s
+Saved complete refined model: /home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r32/coordinate/checkpoint.pt

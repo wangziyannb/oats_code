@@ -1,0 +1,85 @@
+diff -ruN oats_code/pruning_methods/OATS/oats_wrapper.py oats_code_mod/pruning_methods/OATS/oats_wrapper.py
+--- oats_code/pruning_methods/OATS/oats_wrapper.py	2024-09-30 16:31:35.000000000 +0000
++++ oats_code_mod/pruning_methods/OATS/oats_wrapper.py	2026-03-11 00:00:00.000000000 +0000
+@@ -20,6 +20,16 @@
+         if isinstance(self.layer, nn.Linear):
+             if len(inp.shape) == 3:
+                 inp = inp.reshape((-1, inp.shape[-1]))
+             inp = inp.t()
++
++        if not torch.isfinite(inp).all():
++            finite_ratio = torch.isfinite(inp).float().mean().item()
++            print(
++                f"[WrappedOATS] Non-finite activation detected before statistics update "
++                f"for layer '{self.layer_name}' (shape={tuple(inp.shape)}, finite_ratio={finite_ratio:.6f})."
++            )
++            raise ValueError(f"Non-finite activations in WrappedOATS for layer: {self.layer_name}")
+ 
+         self.scaler_row *= self.nsamples / (self.nsamples+tmp)
+         self.nsamples += tmp
+ 
+         inp = inp.type(torch.float32)
+diff -ruN oats_code/pruning_methods/OATS/prune_oats_compress.py oats_code_mod/pruning_methods/OATS/prune_oats_compress.py
+--- oats_code/pruning_methods/OATS/prune_oats_compress.py	2024-09-30 17:51:08.000000000 +0000
++++ oats_code_mod/pruning_methods/OATS/prune_oats_compress.py	2026-03-11 00:00:00.000000000 +0000
+@@ -54,7 +54,7 @@
+             wrapped_layers = {}
+ 
+             for name in subset:
+-                wrapped_layers[name] = WrappedOATS(subset[name])
++                wrapped_layers[name] = WrappedOATS(subset[name], layer_id=layer_idx, layer_name=name)
+             
+             def add_batch(name):
+                 def tmp(_, inp, out):
+@@ -183,6 +183,12 @@
+                 out = layer_adapter.layer(*layer_args_batch, **layer_kwargs_batch)
+                 if isinstance(out, tuple):
+                     out = out[layer_adapter.hidden_states_output_position]
++                if not torch.isfinite(out).all():
++                    finite_ratio = torch.isfinite(out).float().mean().item()
++                    raise ValueError(
++                        f"Non-finite hidden states after recomputing pruned layer {layer_idx}. "
++                        f"finite_ratio={finite_ratio:.6f}"
++                    )
+                 out = out.cpu()
+                 pruned_outs.append(out)
+             
+@@ -216,12 +222,24 @@
+ 
+ def altern_ls(weight, diag_approx, num_iters, target_rank, unstruct_sparse, prune_level = "row", prune_n=0, prune_m=0):
+     
+-    if diag_approx.isnan().any():
+-        print("Outliers have NaN. Exiting!")
+-        raise ValueError
++    if not torch.isfinite(diag_approx).all():
++        bad_mask = ~torch.isfinite(diag_approx)
++        diag_safe = torch.nan_to_num(diag_approx.detach().float().cpu(), nan=0.0, posinf=0.0, neginf=0.0)
++        print(
++            "diag_approx has non-finite values. ",
++            f"bad={int(bad_mask.sum().item())}, ",
++            f"min={float(diag_safe.min().item())}, ",
++            f"max={float(diag_safe.max().item())}"
++        )
++        raise ValueError("diag_approx contains NaN/Inf before altern_ls")
++
++    eps = 1e-8
++    diag_approx = diag_approx.clamp_min(eps)
++    sqrt_diag = torch.sqrt(diag_approx)
+ 
+-    scaled_weight = weight * torch.sqrt(diag_approx) # d_out x d_in
++    scaled_weight = weight * sqrt_diag # d_out x d_in
+     sparse_component = torch.zeros_like(scaled_weight).to(config.device)
+     for iter_idx in range(num_iters): 
+         # Apply PCA
+         U, S, V = torch.linalg.svd(scaled_weight - sparse_component , full_matrices=False)
+@@ -258,8 +276,8 @@
+         sparse_component[W_mask] = 0
+         
+     
+-    low_rank_compressed_V = (V[:target_rank, :]).detach().clone() * (1/torch.sqrt(diag_approx))
++    low_rank_compressed_V = (V[:target_rank, :]).detach().clone() * (1/sqrt_diag)
+     low_rank_compressed_U = (U[:, :target_rank] @ torch.diag(S)[:target_rank, : target_rank]).detach().clone()
+-    sparse_comp = sparse_component * (1/torch.sqrt(diag_approx))
++    sparse_comp = sparse_component * (1/sqrt_diag)
+ 
+     return low_rank_compressed_V, low_rank_compressed_U, sparse_comp

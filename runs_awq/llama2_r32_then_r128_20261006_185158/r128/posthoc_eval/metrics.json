@@ -1,0 +1,8 @@
+{
+  "ppl": 18.275126796477405,
+  "predicted_tokens": 338709,
+  "seqlen": 128,
+  "batch_size": 1,
+  "checkpoint_method": "posthoc",
+  "stored_dtype": "float16"
+}

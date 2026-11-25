@@ -1,0 +1,60 @@
+{
+  "mode": "eval",
+  "model": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+  "rank": 128,
+  "checkpoint": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt",
+  "device": "cuda:0",
+  "dtype": "fp16",
+  "num_iters": 80,
+  "calibration_path": null,
+  "cal_nsamples": 128,
+  "cal_seqlen": 2048,
+  "cal_batch_size": 32,
+  "tuple_keys": "auto",
+  "seed": 0,
+  "awq_tokens": 512,
+  "scale_grid": 20,
+  "sparse_refresh": 10,
+  "ppl_seqlen": 128,
+  "eval_tokens": null,
+  "checkpoint_identity": {
+    "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt",
+    "size": 14116731487,
+    "mtime_ns": 1791350456169317025
+  },
+  "model_config_sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+  "model_weights": [
+    {
+      "path": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/blobs/4ec71fd53e99766de38f24753b30c9e8942630e9e576a1ba27b0ec531e87be41",
+      "size": 9976578928,
+      "mtime_ns": 1753326453442276906
+    },
+    {
+      "path": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/blobs/41780b5dac322ac35598737e99208d90bdc632a1ba3389ebedbb46a1d8385a7f",
+      "size": 3500297344,
+      "mtime_ns": 1753326472733275493
+    }
+  ],
+  "quantization_source": {
+    "archive": "awq_methods.zip",
+    "archive_sha256": "8714c946a0957f9f1c2b18863a2d0f8739b18628d68ec2fb8beaeedde7dd7dd4",
+    "awq_revision": "d6e797a42b9ef7778de8ee2352116e0f48a78d61",
+    "sources": {
+      "src/lib/dual_awq.py": "ce68baac49879396bb7c34e100e5cec39feff15440f4bea692103c8f9c3b6137",
+      "src/scripts/awq_residue_sparse_w4.py": "3afeaac57baf3aedb99edf2c9db2573b71e2751cc1d74466c2dcab32abe04ec8",
+      "src/scripts/awq_residue_allbranch_w4.py": "f1b1627407c2b793a495bdbe9599b3ee753f385a02486f3a68372a879e50e9a9",
+      "third_party/llm-awq/awq/quantize/quantizer.py": "7929ee1f97addde95ce1b9c1d55f027b3b4d13fb1b9e6c850ab8a01736914e6c"
+    },
+    "changes": "Only quantization functions ported; native S/V/U mapping; validation and OATS integration added. fit_dual_awq and Wanda/SVD optimizer are excluded."
+  },
+  "iterate_selection": "last",
+  "early_stopping": false,
+  "pruning_algorithm": "native_oats_weighted_full_svd",
+  "bits": 4,
+  "groups": {
+    "S": 128,
+    "V": 128,
+    "U": 128
+  },
+  "clipping": false
+}

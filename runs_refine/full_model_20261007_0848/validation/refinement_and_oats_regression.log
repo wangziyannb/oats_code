@@ -1,0 +1,23 @@
+test_both_ranks_cpu_and_complete_code_state_reload (test_oats_refine.RefinementTests.test_both_ranks_cpu_and_complete_code_state_reload) ... ok
+test_both_ranks_cuda_and_fp16_export (test_oats_refine.RefinementTests.test_both_ranks_cuda_and_fp16_export) ... ok
+test_coordinate_sweeps_equal_exhaustive_discrete_minimizers (test_oats_refine.RefinementTests.test_coordinate_sweeps_equal_exhaustive_discrete_minimizers) ... ok
+test_grid_reference_mask_and_roundtrip (test_oats_refine.RefinementTests.test_grid_reference_mask_and_roundtrip) ... ok
+test_invalid_inputs (test_oats_refine.RefinementTests.test_invalid_inputs) ... ok
+test_pair_escapes_a_coordinatewise_fixed_point (test_oats_refine.RefinementTests.test_pair_escapes_a_coordinatewise_fixed_point) ... ok
+test_pair_sweeps_equal_full_legal_pair_enumeration (test_oats_refine.RefinementTests.test_pair_sweeps_equal_full_legal_pair_enumeration) ... ok
+test_scale_steps_and_guard (test_oats_refine.RefinementTests.test_scale_steps_and_guard) ... ok
+test_sparse_scale_cannot_underflow_when_exported_to_fp16 (test_oats_refine.RefinementTests.test_sparse_scale_cannot_underflow_when_exported_to_fp16) ... ok
+test_activation_sampling_does_not_change_oats_statistics (test_oats_awq.CoreTests.test_activation_sampling_does_not_change_oats_statistics) ... ok
+test_equivalent_scales_for_native_oats_layers (test_oats_awq.CoreTests.test_equivalent_scales_for_native_oats_layers) ... ok
+test_feedback_is_quantized_and_last_iterate_is_returned (test_oats_awq.CoreTests.test_feedback_is_quantized_and_last_iterate_is_returned) ... ok
+test_identity_quantization_preserves_oats_trajectory (test_oats_awq.CoreTests.test_identity_quantization_preserves_oats_trajectory) ... ok
+test_manifest_rejects_mixing_runs (test_oats_awq.CoreTests.test_manifest_rejects_mixing_runs) ... ok
+test_pair_search_handles_zero_activations_and_effective_coordinates (test_oats_awq.CoreTests.test_pair_search_handles_zero_activations_and_effective_coordinates) ... ok
+test_quantizer_reference_mask_and_invalid_inputs (test_oats_awq.CoreTests.test_quantizer_reference_mask_and_invalid_inputs) ... ok
+test_sparse_refresh_interval_and_actual_two_factor_output (test_oats_awq.CoreTests.test_sparse_refresh_interval_and_actual_two_factor_output) ... ok
+test_unquantized_matches_original_exactly_each_iteration (test_oats_awq.CoreTests.test_unquantized_matches_original_exactly_each_iteration) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 9.919s
+
+OK

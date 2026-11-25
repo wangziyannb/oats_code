@@ -1,0 +1,326 @@
+[
+  {
+    "Path": "verified_receipt.json",
+    "Name": "verified_receipt.json",
+    "Size": 17509,
+    "MimeType": "application/json",
+    "ModTime": "2026-10-08T21:37:09.056Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "360aa366db67723dc1be6d8e0e98553d"
+    },
+    "ID": "17CB_FxAyXsLhf5QwioU4UohBCfnLoaWV"
+  },
+  {
+    "Path": "SHA256SUMS",
+    "Name": "SHA256SUMS",
+    "Size": 2642,
+    "MimeType": "text/plain",
+    "ModTime": "2026-10-08T20:55:00.323Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "bfef7bf9ae9fda06d119837d61ab8271"
+    },
+    "ID": "1zjlP_WcpPwd3GiEIVJcu7DTXhpiAafrI"
+  },
+  {
+    "Path": "MD5SUMS",
+    "Name": "MD5SUMS",
+    "Size": 1938,
+    "MimeType": "text/plain",
+    "ModTime": "2026-10-08T20:54:58.622Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "e87a747650941a85bba7d9721f225d51"
+    },
+    "ID": "1V7YmCF9QThuimFDu_ZrNZj8E6EjZIPE_"
+  },
+  {
+    "Path": "models_manifest.json",
+    "Name": "models_manifest.json",
+    "Size": 10696,
+    "MimeType": "application/json",
+    "ModTime": "2026-10-08T20:54:56.514Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "f35f2260c38b608e07a214b9edce93e2"
+    },
+    "ID": "1nSVnCVSIyJascJYsRZyWSosA7NM9iXKG"
+  },
+  {
+    "Path": "README.md",
+    "Name": "README.md",
+    "Size": 1749,
+    "MimeType": "text/markdown",
+    "ModTime": "2026-10-08T20:52:56.540Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "86f9d6f318004efbb8afc85ce445dda3"
+    },
+    "ID": "1-0zqhY-yPhDpVQQ_rWEooDduDlpiLvYR"
+  },
+  {
+    "Path": "qwen3_1.7b_oats_24_r32/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 3512343079,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:44:24.001Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "fa87a3d9ebff9014085f0a88b3518824"
+    },
+    "ID": "1adeqAfDUi7ZApL7pyufrc39o1T0F3rXn"
+  },
+  {
+    "Path": "qwen3_8b_oats_24_r32/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 16557598615,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:45:00.600Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "90282968a61769473554fd1dbe046196"
+    },
+    "ID": "16iHhDfj2zoY7quRGm0jkN3Gt-snIjui6"
+  },
+  {
+    "Path": "old/qwen3_8b_oats_24_r64/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 16732186647,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:45:33.021Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "6270eae1fa8dbe4900e116fe2f565e77"
+    },
+    "ID": "1gE3vMeHhDJ2J55n-VzHsJ2yBUZzqXDle"
+  },
+  {
+    "Path": "old/qwen3_1.7b_oats_24_r128/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 3721534119,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:44:30.739Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "d983b172eea283a3f22077579e962681"
+    },
+    "ID": "19mOH0BZGNKk0NlUOdmUK0wstdvk58ZKK"
+  },
+  {
+    "Path": "old/llama2_oats_24_r128/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116985683,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:43:13.716Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "3a70aef39b21cdadc3fd1e9f5cbe51de"
+    },
+    "ID": "1YxKTCHXWJmHfpCenXlJL7vrUHIYjyg9N"
+  },
+  {
+    "Path": "old/llama2_oats_24_r64/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13797169895,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:42:45.817Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "2f41ff227bd3f2c29514b4daf0a1826c"
+    },
+    "ID": "1uOs87Scr52nLUD-8T47FSpREUDf-dDH5"
+  },
+  {
+    "Path": "old/llama2_oats_24_r32/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637262055,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:42:16.763Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "b6eafbc75b06cedc4e009e8c46f36608"
+    },
+    "ID": "1JwJltFY-SiQ6cQ1lDhtkSRy7Fd8gQd4-"
+  },
+  {
+    "Path": "old/llama3.1_oats_24_r128/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 16732904571,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:44:13.883Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "a2f69f60c825585fb17d0341cfeb59b0"
+    },
+    "ID": "13yE3dse4iLrljdt52qSlmbnF9_5x2tQW"
+  },
+  {
+    "Path": "llama3.1_oats_24_r32/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 16229587927,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:43:43.487Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "d345bfd694da0733693fab24b4016063"
+    },
+    "ID": "12J6P7rUTzRd4DzW7srkQOVnkrxC6pCKl"
+  },
+  {
+    "Path": "old/qwen3_8b_oats_24_r128/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 17081362491,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-08T20:46:06.767Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "32ada2a99cbca11fc32e458c9512733c"
+    },
+    "ID": "1PHbsN6v4fC06sEFlOQnOLT9_t-ajpwWw"
+  },
+  {
+    "Path": "runs_refine/full_model_20261007_0848/r32/coordinate/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637235671,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T08:57:26.955Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "65fff505e7a2ce808f439109e12fc9a4"
+    },
+    "ID": "1pJr7yCiU0kwlAZ9imJqgV7qZGAZ13yY7"
+  },
+  {
+    "Path": "runs_refine/full_model_20261007_0848/r128/paired/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116959263,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T09:21:50.198Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "3ae104bc78b34f3afcfbf2d134caf4c9"
+    },
+    "ID": "1sU3rR70Od21UKulaaMMSg6A4lRD5SKw5"
+  },
+  {
+    "Path": "runs_refine/full_model_20261007_0848/r32/paired/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637235671,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T09:03:55.144Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "761b61f78a7d258372c982497e67a210"
+    },
+    "ID": "1sA9nI_DsvqhcpLdFHvQdv3lcQtEAhwI1"
+  },
+  {
+    "Path": "runs_refine/full_model_20261007_0848/r128/awq/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116959263,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T09:12:40.701Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "91b92f9636c0a65a325a41ed9fa91694"
+    },
+    "ID": "19sRJPuXtKcuPGd4LJ625X9znF3hkT6xL"
+  },
+  {
+    "Path": "runs_refine/full_model_20261007_0848/r32/awq/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637235607,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T08:51:52.325Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "f24121b362a03bea1b75c18ec164066f"
+    },
+    "ID": "1DBneSLO7ZZPrOlGcxAh3_DfLAXvgRJQe"
+  },
+  {
+    "Path": "runs_refine/full_model_20261007_0848/r128/coordinate/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116959263,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T09:16:52.363Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "2e9185e5a31c924e7b93f315d566d521"
+    },
+    "ID": "1zpUr68MSi2iS4XsEH5s65aF5j5r3Ca6H"
+  },
+  {
+    "Path": "runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637008023,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T03:09:58.552Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "5bb7829f642455848113a78031410f84"
+    },
+    "ID": "1Rtf6mOXr5SdS2xw9pXlR_vjHz8G5KC8F"
+  },
+  {
+    "Path": "runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637255383,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T01:04:53.960Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "e376e9863e96399527989e9dc158cb8b"
+    },
+    "ID": "194-_oQlbHwk5nQ89AB8Ze2nhrFLS196c"
+  },
+  {
+    "Path": "runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 13637007895,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T00:56:36.529Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "1d0d74572b73b29cffb30ae4ed9899d4"
+    },
+    "ID": "1XjS1jEoEueLzviIMkEGPwWOBslremEyJ"
+  },
+  {
+    "Path": "runs_awq/llama2_r32_then_r128_20261006_185158/r128/inloop/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116731615,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T07:43:48.479Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "b5b702833f19b54a7efa49472f9fff02"
+    },
+    "ID": "1joJ0Pcm-OtvlstiNePZ4Wp4ho-qFtQAu"
+  },
+  {
+    "Path": "runs_awq/llama2_r32_then_r128_20261006_185158/r128/posthoc/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116978975,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T05:29:09.558Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "58d2ca5ae982d5195be262c598083118"
+    },
+    "ID": "1y6eRe2Ktgtx7jU9fqefDN1bTIObFxXsM"
+  },
+  {
+    "Path": "runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt",
+    "Name": "checkpoint.pt",
+    "Size": 14116731487,
+    "MimeType": "application/x-zip",
+    "ModTime": "2026-10-07T05:20:56.169Z",
+    "IsDir": false,
+    "Hashes": {
+      "md5": "efdb5b54a1d517a8b40dc76f35f7b7a5"
+    },
+    "ID": "1bFep_gWG8aFcBGrwhsxorjB9mmYMZNQD"
+  }
+]

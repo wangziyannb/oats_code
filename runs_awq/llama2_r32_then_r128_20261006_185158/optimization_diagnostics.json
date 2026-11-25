@@ -1,0 +1,72 @@
+{
+  "description": "Adjacent completed iterations of each fixed projection; no cross-layer comparisons. An increase is counted only when next > previous * (1 + 1e-4). These diagnostics do not establish the cause of PPL degradation.",
+  "relative_increase_threshold": 0.0001,
+  "results": [
+    {
+      "rank": 32,
+      "method": "prepare",
+      "metric": "weighted_rel_frob_err",
+      "source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/iterations.jsonl",
+      "transitions": 17696,
+      "increases": 0,
+      "increase_percent": 0.0,
+      "modules_with_increases": 0,
+      "modules": 224
+    },
+    {
+      "rank": 32,
+      "method": "inloop",
+      "metric": "weighted_rel_frob_err",
+      "source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/iterations.jsonl",
+      "transitions": 17696,
+      "increases": 4531,
+      "increase_percent": 25.60465641952984,
+      "modules_with_increases": 203,
+      "modules": 224
+    },
+    {
+      "rank": 32,
+      "method": "inloop",
+      "metric": "output_mse",
+      "source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/iterations.jsonl",
+      "transitions": 17696,
+      "increases": 7101,
+      "increase_percent": 40.127712477396024,
+      "modules_with_increases": 224,
+      "modules": 224
+    },
+    {
+      "rank": 128,
+      "method": "prepare",
+      "metric": "weighted_rel_frob_err",
+      "source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/iterations.jsonl",
+      "transitions": 17696,
+      "increases": 5,
+      "increase_percent": 0.02825497287522604,
+      "modules_with_increases": 1,
+      "modules": 224
+    },
+    {
+      "rank": 128,
+      "method": "inloop",
+      "metric": "weighted_rel_frob_err",
+      "source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/inloop/iterations.jsonl",
+      "transitions": 17696,
+      "increases": 7229,
+      "increase_percent": 40.85103978300181,
+      "modules_with_increases": 214,
+      "modules": 224
+    },
+    {
+      "rank": 128,
+      "method": "inloop",
+      "metric": "output_mse",
+      "source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/inloop/iterations.jsonl",
+      "transitions": 17696,
+      "increases": 8454,
+      "increase_percent": 47.77350813743219,
+      "modules_with_increases": 224,
+      "modules": 224
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "rank": 32,
+  "name": "self_attn.k_proj",
+  "device": "cuda:3",
+  "config": {
+    "sweeps": 3,
+    "update_scales": true,
+    "pair_candidates": 16,
+    "min_step": 1e-12,
+    "storage_dtype": "float16"
+  },
+  "initialization": {
+    "pair": {
+      "input_ratio": 0.55,
+      "rank_ratio": 0.0,
+      "first_search_mse": 0.0026921068783849478,
+      "pair_mse": 0.0026921068783849478,
+      "zq_abs_mean_min": 0.016362210735678673,
+      "zq_abs_mean_max": 0.051807209849357605,
+      "zq_abs_mean_avg": 0.025316935032606125,
+      "first_group_size": 128,
+      "second_group_size": 32
+    },
+    "sparse": {
+      "sparse_ratio": 0.4,
+      "sparse_search_mse": 0.0027048650663346052
+    },
+    "initializer": "awq_residual_scale_search_fp32",
+    "clipping": false,
+    "neighbor_fusion": false,
+    "scale_grid": 20
+  },
+  "initialization_seconds": 0.40510005224496126,
+  "arms": {
+    "awq": {
+      "objective": 2.517232170830973,
+      "weighted_relative_error": 0.11691374073613953,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.0027048634365200996,
+      "train_relative_mse": 0.0066088490158759195,
+      "train_fp16_mse": 0.002705584280192852,
+      "validation_mse": 0.0025691804476082325,
+      "validation_relative_mse": 0.006257050599739868,
+      "validation_fp16_mse": 0.0025697643868625164
+    },
+    "coordinate": {
+      "objective": 0.22912335855947885,
+      "weighted_relative_error": 0.035272691735559074,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.00014079504762776196,
+      "train_relative_mse": 0.000344007464255589,
+      "train_fp16_mse": 0.0001409189571859315,
+      "validation_mse": 0.00013667135499417782,
+      "validation_relative_mse": 0.00033285306391370363,
+      "validation_fp16_mse": 0.00013675689115189016,
+      "refinement_seconds": 0.11043444415554404,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0,
+      "reload_exact": true
+    },
+    "coordinate_then_codes": {
+      "objective": 0.2218820279290084,
+      "weighted_relative_error": 0.03471082873936663,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.00014694285346195102,
+      "train_relative_mse": 0.00035902852594340136,
+      "train_fp16_mse": 0.00014702751650474966,
+      "validation_mse": 0.00014237806317396462,
+      "validation_relative_mse": 0.00034675133325173975,
+      "validation_fp16_mse": 0.0001424444344593212,
+      "refinement_seconds": 0.018747698981314898,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0,
+      "reload_exact": true
+    },
+    "coordinate_then_pair": {
+      "objective": 0.22386986117893182,
+      "weighted_relative_error": 0.03486596858528365,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.0001432989665772766,
+      "train_relative_mse": 0.0003501253414326425,
+      "train_fp16_mse": 0.00014340995403472334,
+      "validation_mse": 0.00013903374201618135,
+      "validation_relative_mse": 0.00033860648428812916,
+      "validation_fp16_mse": 0.00013912830036133528,
+      "refinement_seconds": 0.05678078392520547,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0.005253497380547034,
+      "reload_exact": true
+    },
+    "paired": {
+      "objective": 0.22006088234567384,
+      "weighted_relative_error": 0.03456808685593715,
+      "mask_preserved": true,
+      "fp16_mask_preserved": true,
+      "train_mse": 0.00013641788973473012,
+      "train_relative_mse": 0.00033331266345968866,
+      "train_fp16_mse": 0.00013659210526384413,
+      "validation_mse": 0.0001325060147792101,
+      "validation_relative_mse": 0.0003227086832360259,
+      "validation_fp16_mse": 0.00013266934547573328,
+      "refinement_seconds": 0.19976342795416713,
+      "rejected_phases": 0,
+      "pair_objective_gain": 0.01775742646473355,
+      "reload_exact": true
+    }
+  },
+  "unquantized_oats_weighted_relative_error": 0.005982954464787895
+}

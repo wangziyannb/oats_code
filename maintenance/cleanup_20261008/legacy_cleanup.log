@@ -1,0 +1,21 @@
+Saving: old/llama2_oats_24_r32
+Consolidated and verified: old/llama2_oats_24_r32 net bytes freed: 14739385071
+Saving: old/llama2_oats_24_r64
+Consolidated and verified: old/llama2_oats_24_r64 net bytes freed: 14899292959
+Saving: old/llama2_oats_24_r128
+Consolidated and verified: old/llama2_oats_24_r128 net bytes freed: 15219108603
+Saving: llama3.1_oats_24_r32
+Consolidated and verified: llama3.1_oats_24_r32 net bytes freed: 14176053835
+Saving: old/llama3.1_oats_24_r128
+Consolidated and verified: old/llama3.1_oats_24_r128 net bytes freed: 14679370363
+Saving: qwen3_1.7b_oats_24_r32
+Consolidated and verified: qwen3_1.7b_oats_24_r32 net bytes freed: 3343003215
+Saving: old/qwen3_1.7b_oats_24_r128
+Consolidated and verified: old/qwen3_1.7b_oats_24_r128 net bytes freed: 3552194703
+Saving: qwen3_8b_oats_24_r32
+Consolidated and verified: qwen3_8b_oats_24_r32 net bytes freed: 13727622427
+Saving: old/qwen3_8b_oats_24_r64
+Consolidated and verified: old/qwen3_8b_oats_24_r64 net bytes freed: 13902211035
+Saving: old/qwen3_8b_oats_24_r128
+Consolidated and verified: old/qwen3_8b_oats_24_r128 net bytes freed: 14251386867
+Finished: 122489629078 net bytes freed

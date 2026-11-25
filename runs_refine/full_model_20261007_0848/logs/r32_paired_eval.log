@@ -1,0 +1,16 @@
+{"argv": ["/home/zwang53/oats_code/.venv-awq/bin/python", "-u", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/code/run_oats_refine_full.py", "eval", "--output-dir", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r32/paired_eval", "--checkpoint", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/r32/paired/checkpoint.pt", "--eval-tokens", "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/data/wikitext2_raw_test_tokens.pt", "--device", "cuda:2", "--ppl-seqlen", "128"], "started_at": "2026-10-07T09:04:01.487499+00:00"}
+{
+  "ppl": 28.070119606203253,
+  "predicted_tokens": 338709,
+  "seqlen": 128,
+  "batch_size": 1,
+  "checkpoint_method": "refine_paired",
+  "stored_dtype": "float16",
+  "reload_logits_exact": true,
+  "evaluation_seconds": 79.06026222417131,
+  "eval_tokens_identity": {
+    "path": "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/data/wikitext2_raw_test_tokens.pt",
+    "size": 2733479,
+    "mtime_ns": 1791362802897022595
+  }
+}

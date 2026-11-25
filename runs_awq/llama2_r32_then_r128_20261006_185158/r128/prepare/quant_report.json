@@ -1,0 +1,13 @@
+{
+  "method": "prepare",
+  "iterate_selection": "last",
+  "num_iters": 80,
+  "actual_calibration_sequences": 128,
+  "quantization": null,
+  "audit": {
+    "modules": 224,
+    "groups_2_4": 1619001344,
+    "violations_2_4": 0
+  },
+  "packed_int4": false
+}

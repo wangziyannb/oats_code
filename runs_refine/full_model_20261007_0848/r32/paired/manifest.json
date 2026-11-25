@@ -1,0 +1,306 @@
+{
+  "mode": "quantize",
+  "model": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+  "baseline_dir": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare",
+  "calibration_path": "/home/zwang53/oats_code/calib_llama2-7b.pth",
+  "rank": 32,
+  "arm": "paired",
+  "devices": [
+    "cuda:0",
+    "cuda:1",
+    "cuda:2",
+    "cuda:3"
+  ],
+  "dtype": "fp16",
+  "batch_size": 8,
+  "tokens": 512,
+  "scale_grid": 20,
+  "sweeps": 3,
+  "pair_candidates": 16,
+  "cpu_threads": 4,
+  "source_sha256": {
+    "run_oats_refine_full.py": "75f6ad0e660e3ccf3e5872825baca0dcbebd5d5ec03dcc88d83e713cd799bb52",
+    "run_oats_awq.py": "8ea69e57bb51ec02b1134c5aa5cf0e8f25430493c9754997c9800bd9f5798cfd",
+    "pruning_methods/OATS/awq/__init__.py": "96eb398b21b119cbeddfbb7acb54790c497803c7b3d0332afb9c6ff6f8fcae74",
+    "pruning_methods/OATS/awq/parallel.py": "e25e9ac32eb97faa2776aee90947a4e9f6fcc2bf1fa979c01bb154b072f7a060",
+    "pruning_methods/OATS/awq/pipeline.py": "983a1e9fcf76d779f52a5233ae2f7dca60c16d5b08d58eced0c8f41c0f71517e",
+    "pruning_methods/OATS/awq/posthoc.py": "fb0888dd539d709190a96478a01069eab8118e22b16a9963cdddfff0e44f5e47",
+    "pruning_methods/OATS/awq/quantize.py": "5d9e7c7eeeab8e62121e12df049e2c284756d2261311691a1d928aa2332a3324",
+    "pruning_methods/OATS/awq/reference/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pruning_methods/OATS/awq/reference/quantizer.py": "8ea79b899181b327be45a436d9d730f2af580021dbedf5a4595c078e2afb23ce",
+    "pruning_methods/OATS/awq/refine.py": "7caad38c8e4c03504396f98cf86e264d2a86180fbd6114975c7a6b93cffb7037",
+    "pruning_methods/OATS/compressed_linear.py": "e992b7c511ac93680671b7b4603c284e1246da9f30dc85898c9a1c01f7d18124",
+    "pruning_methods/OATS/oats_utils.py": "7302b0fe457d752fff94b1f047794c015b33fb045e19e6f96dacda3b157b2c7a",
+    "pruning_methods/OATS/oats_wrapper.py": "922b05f09c90c74817da0c480caec495d4eb85f08995129ca7ec7d59bc7940f9",
+    "pruning_methods/OATS/prune_oats.py": "189d46453c6455d5f08415a42bac6713eda3686fd1141a3f27be998375aceaff",
+    "pruning_methods/OATS/prune_oats_compress.py": "ebc247838343b803cab948845e0f160f2b6216e5af6020d8d5afa87620f4f4bd",
+    "models/__init__.py": "6a6bbc371d4822840cdaab6fa76f4a12295f8ee36dc7d595963a31daa7b4bc74",
+    "models/adapters/llama_adapter.py": "cae3e9e6d1f772519677aa37465b8b1d9c828ceb312c13a9fe824992f1505674",
+    "models/adapters/phi3_adapter.py": "7661c6dcd296cb7f413b5741c851331a91c5e91c9ac9980f2e1f1d94ef8a8818",
+    "models/adapters/qwen3_adapter.py": "8f860b90d1d563516897a340de9d747ca294e400ca1207b4fccc0f721a921470",
+    "models/model_adapter.py": "f5d15d29338170426edc19e505b4bde752249d7a3093718e6cca0a3275c7c177",
+    "models/model_utils.py": "b72e365fd02aa194ed8dbb97dccc82775a7348735d790f1692f4c3d78dbf561d",
+    "general_utils/config.py": "b0a742b01c217c2bdf52af79bf80c9851b6b718ac58af7961d5eafe84700fbf2",
+    "general_utils/data_utils.py": "d0263a8ab81d39b41994901e7f84eb1eb3e2bb609d242979d00564bb08dbff18",
+    "general_utils/gpu_utils.py": "93e93b9f5bf48b311bf4e85036d19759489ec1d2f143347596f4e329dfe3b141",
+    "general_utils/hf_utils.py": "d52456cd3e8e89f7150744e97f15ad603aacc9f569ffd459079a1b6583f67a72",
+    "general_utils/utils.py": "d2fe484fe6f832ea5c73dba7d72a340e7df8dfbc7c95b61d5019cee5367c70b3"
+  },
+  "baseline_manifest": {
+    "mode": "prepare",
+    "model": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+    "rank": 32,
+    "checkpoint": null,
+    "device": "cuda:0",
+    "devices": [
+      "cuda:0",
+      "cuda:1",
+      "cuda:2",
+      "cuda:3"
+    ],
+    "worker_cpu_threads": 1,
+    "dtype": "fp16",
+    "num_iters": 80,
+    "calibration_path": "/home/zwang53/oats_code/calib_llama2-7b.pth",
+    "cal_nsamples": 128,
+    "cal_seqlen": 2048,
+    "cal_batch_size": 32,
+    "tuple_keys": "auto",
+    "seed": 0,
+    "awq_tokens": 512,
+    "scale_grid": 20,
+    "sparse_refresh": 10,
+    "ppl_seqlen": 128,
+    "eval_tokens": null,
+    "parallel_execution": {
+      "strategy": "block_projection_spawn",
+      "devices": [
+        "cuda:0",
+        "cuda:1",
+        "cuda:2",
+        "cuda:3"
+      ],
+      "calibration_device": "cuda:0",
+      "cuda_visible_devices": "4,5,6,7",
+      "worker_cpu_threads": 1
+    },
+    "calibration_path_identity": {
+      "path": "/home/zwang53/oats_code/calib_llama2-7b.pth",
+      "size": 6356262,
+      "mtime_ns": 1773258775809117000
+    },
+    "model_config_sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+    "model_weights": [
+      {
+        "path": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/blobs/4ec71fd53e99766de38f24753b30c9e8942630e9e576a1ba27b0ec531e87be41",
+        "size": 9976578928,
+        "mtime_ns": 1753326453442276906
+      },
+      {
+        "path": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/blobs/41780b5dac322ac35598737e99208d90bdc632a1ba3389ebedbb46a1d8385a7f",
+        "size": 3500297344,
+        "mtime_ns": 1753326472733275493
+      }
+    ],
+    "quantization_source": {
+      "archive": "awq_methods.zip",
+      "archive_sha256": "8714c946a0957f9f1c2b18863a2d0f8739b18628d68ec2fb8beaeedde7dd7dd4",
+      "awq_revision": "d6e797a42b9ef7778de8ee2352116e0f48a78d61",
+      "sources": {
+        "src/lib/dual_awq.py": "ce68baac49879396bb7c34e100e5cec39feff15440f4bea692103c8f9c3b6137",
+        "src/scripts/awq_residue_sparse_w4.py": "3afeaac57baf3aedb99edf2c9db2573b71e2751cc1d74466c2dcab32abe04ec8",
+        "src/scripts/awq_residue_allbranch_w4.py": "f1b1627407c2b793a495bdbe9599b3ee753f385a02486f3a68372a879e50e9a9",
+        "third_party/llm-awq/awq/quantize/quantizer.py": "7929ee1f97addde95ce1b9c1d55f027b3b4d13fb1b9e6c850ab8a01736914e6c"
+      },
+      "changes": "Only quantization functions ported; native S/V/U mapping; validation and OATS integration added. fit_dual_awq and Wanda/SVD optimizer are excluded."
+    },
+    "iterate_selection": "last",
+    "early_stopping": false,
+    "pruning_algorithm": "native_oats_weighted_full_svd",
+    "bits": 4,
+    "groups": {
+      "S": 128,
+      "V": 128,
+      "U": 32
+    },
+    "clipping": false
+  },
+  "source_layers": [
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_0.pt",
+      "size": 409771951,
+      "mtime_ns": 1791327464471679512
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_1.pt",
+      "size": 409771951,
+      "mtime_ns": 1791327703608476046
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_2.pt",
+      "size": 409771951,
+      "mtime_ns": 1791327933513185296
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_3.pt",
+      "size": 409771951,
+      "mtime_ns": 1791328157276878936
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_4.pt",
+      "size": 409771951,
+      "mtime_ns": 1791328382693604327
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_5.pt",
+      "size": 409771951,
+      "mtime_ns": 1791328610519360789
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_6.pt",
+      "size": 409771951,
+      "mtime_ns": 1791328834312094110
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_7.pt",
+      "size": 409771951,
+      "mtime_ns": 1791329065492889956
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_8.pt",
+      "size": 409771951,
+      "mtime_ns": 1791329293646665673
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_9.pt",
+      "size": 409771951,
+      "mtime_ns": 1791329519607426441
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_10.pt",
+      "size": 409771980,
+      "mtime_ns": 1791329746820996223
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_11.pt",
+      "size": 409771980,
+      "mtime_ns": 1791329970701696865
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_12.pt",
+      "size": 409771980,
+      "mtime_ns": 1791330197362145467
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_13.pt",
+      "size": 409771980,
+      "mtime_ns": 1791330421252382380
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_14.pt",
+      "size": 409771980,
+      "mtime_ns": 1791330650818555563
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_15.pt",
+      "size": 409771980,
+      "mtime_ns": 1791330873816591430
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_16.pt",
+      "size": 409771980,
+      "mtime_ns": 1791331105332654898
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_17.pt",
+      "size": 409771980,
+      "mtime_ns": 1791331331393638085
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_18.pt",
+      "size": 409771980,
+      "mtime_ns": 1791331562346643567
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_19.pt",
+      "size": 409771980,
+      "mtime_ns": 1791331789502975959
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_20.pt",
+      "size": 409771980,
+      "mtime_ns": 1791332022108455389
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_21.pt",
+      "size": 409771980,
+      "mtime_ns": 1791332248980727794
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_22.pt",
+      "size": 409771980,
+      "mtime_ns": 1791332477563924295
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_23.pt",
+      "size": 409771980,
+      "mtime_ns": 1791332706296062366
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_24.pt",
+      "size": 409771980,
+      "mtime_ns": 1791332932865142417
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_25.pt",
+      "size": 409771980,
+      "mtime_ns": 1791333160623209094
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_26.pt",
+      "size": 409771980,
+      "mtime_ns": 1791333388981265541
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_27.pt",
+      "size": 409771980,
+      "mtime_ns": 1791333617515313514
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_28.pt",
+      "size": 409771980,
+      "mtime_ns": 1791333848256638748
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_29.pt",
+      "size": 409771980,
+      "mtime_ns": 1791334081341029898
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_30.pt",
+      "size": 409771980,
+      "mtime_ns": 1791334310294283725
+    },
+    {
+      "path": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/layers/oats_chkpt_31.pt",
+      "size": 409771980,
+      "mtime_ns": 1791334538367469245
+    }
+  ],
+  "cuda_visible_devices": "0,1,2,3",
+  "objective": "fixed_diagonal_weighted_reconstruction",
+  "quantization": {
+    "bits": 4,
+    "groups": {
+      "S": 128,
+      "V": 128,
+      "U": 32
+    },
+    "clipping": false,
+    "neighbor_fusion": false,
+    "fixed_masks": true
+  },
+  "calibration": "all supplied C4 sequences; all tokens for H; uniform samples for AWQ",
+  "calibration_propagation": "quantized_block_output",
+  "torch_version": "2.13.0+cu130"
+}

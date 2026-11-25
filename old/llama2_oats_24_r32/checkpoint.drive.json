@@ -1,0 +1,11 @@
+{
+  "original_path": "old/llama2_oats_24_r32/checkpoint.pt",
+  "bytes": 13637262055,
+  "md5": "b6eafbc75b06cedc4e009e8c46f36608",
+  "sha256": "1466da623ad4699487d18a030fb9bc921af198d7446c6d928e6a530580c23b73",
+  "drive_file_id": "1JwJltFY-SiQ6cQ1lDhtkSRy7Fd8gQd4-",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1O51iAZNdpGColYAD9haZaTcgku0Fyakq",
+  "remote_relative_path": "old/llama2_oats_24_r32/checkpoint.pt",
+  "verified_at": "2026-10-08T21:37:09.055727+00:00",
+  "load_function": "maintenance.full_model_archive.load_archive"
+}

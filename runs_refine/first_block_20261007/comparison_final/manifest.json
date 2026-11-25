@@ -1,0 +1,38 @@
+{
+  "mode": "benchmark",
+  "capture_dir": "/home/zwang53/oats_code/runs_refine/first_block_20261007/capture",
+  "baseline_dir": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158",
+  "output_dir": "/home/zwang53/oats_code/runs_refine/first_block_20261007/comparison_final",
+  "ranks": [
+    32,
+    128
+  ],
+  "devices": [
+    "cuda:0",
+    "cuda:1",
+    "cuda:2",
+    "cuda:3"
+  ],
+  "projections": [
+    "self_attn.q_proj",
+    "self_attn.k_proj",
+    "self_attn.v_proj",
+    "self_attn.o_proj",
+    "mlp.gate_proj",
+    "mlp.up_proj",
+    "mlp.down_proj"
+  ],
+  "sweeps": 3,
+  "scale_grid": 20,
+  "group_size": 128,
+  "pair_candidates": 16,
+  "no_scale_update": false,
+  "source_sha256": {
+    "run_oats_refine.py": "90670f4e57dc62742695b4ff920bf073e8be9ad536bd4e9d9960fe242ebc749b",
+    "pruning_methods/OATS/awq/refine.py": "7caad38c8e4c03504396f98cf86e264d2a86180fbd6114975c7a6b93cffb7037",
+    "pruning_methods/OATS/awq/quantize.py": "5d9e7c7eeeab8e62121e12df049e2c284756d2261311691a1d928aa2332a3324"
+  },
+  "cuda_visible_devices": "4,5,6,7",
+  "created_at": "2026-10-07T08:34:48.031463+00:00",
+  "torch_version": "2.13.0+cu130"
+}

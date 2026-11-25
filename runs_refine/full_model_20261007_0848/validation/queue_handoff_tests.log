@@ -1,0 +1,6 @@
+test_resume_skips_artifacts_and_changes_only_future_gpu_assignments (test_oats_refine_queue.QueueTests.test_resume_skips_artifacts_and_changes_only_future_gpu_assignments) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+OK

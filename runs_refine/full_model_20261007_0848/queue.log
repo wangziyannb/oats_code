@@ -1,0 +1,13 @@
+2026-10-07T08:47:16.349372+00:00 START rank=32 arm=awq mode=quantize
+2026-10-07T08:51:56.387029+00:00 DONE rank=32 arm=awq mode=quantize
+2026-10-07T08:51:56.388586+00:00 START rank=32 arm=coordinate mode=quantize
+2026-10-07T08:57:31.431495+00:00 DONE rank=32 arm=coordinate mode=quantize
+2026-10-07T08:57:31.433223+00:00 START rank=32 arm=paired mode=quantize
+2026-10-07T09:04:01.484807+00:00 DONE rank=32 arm=paired mode=quantize
+2026-10-07T09:04:01.486534+00:00 START rank=32 arm=awq mode=eval
+2026-10-07T09:04:01.487407+00:00 START rank=32 arm=coordinate mode=eval
+2026-10-07T09:04:01.488466+00:00 START rank=32 arm=paired mode=eval
+2026-10-07T09:06:51.511976+00:00 DONE rank=32 arm=coordinate mode=eval
+2026-10-07T09:06:56.513073+00:00 DONE rank=32 arm=paired mode=eval
+2026-10-07T09:07:01.514088+00:00 DONE rank=32 arm=awq mode=eval
+2026-10-07T09:07:01.515412+00:00 START rank=128 arm=awq mode=quantize

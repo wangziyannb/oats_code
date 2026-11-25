@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=0,1,2,3",
+    "/home/zwang53/oats_code/.venv-awq/bin/python",
+    "-u",
+    "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/code/run_oats_refine_study.py",
+    "--output-dir",
+    "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848",
+    "--baseline-dir",
+    "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158",
+    "--model",
+    "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+    "--calibration-path",
+    "/home/zwang53/oats_code/calib_llama2-7b.pth",
+    "--eval-tokens",
+    "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848/data/wikitext2_raw_test_tokens.pt"
+  ]
+}

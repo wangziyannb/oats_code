@@ -1,0 +1,390 @@
+{
+  "scope": "first Llama2-7B block; seven projections per rank; fixed OATS mask/rank; no full-model PPL",
+  "aggregate": "100 * (1 - geometric_mean(per_projection_after / per_projection_before)); positive means improvement; equal weight per projection",
+  "calibration": "first 64 original C4 sequences for new quantizer; last 64 for diagnostics, but all were used by the original OATS fit",
+  "fp16_masks_preserved": true,
+  "all_refinement_reloads_exact": true,
+  "rejected_phases": 0,
+  "comparisons": [
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "awq",
+      "after": "coordinate",
+      "geomean_reduction_percent": 55.92184347119944,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "awq",
+      "after": "paired",
+      "geomean_reduction_percent": 56.55082745180449,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "coordinate",
+      "after": "paired",
+      "geomean_reduction_percent": 1.4269743340878382,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "coordinate",
+      "after": "coordinate_then_codes",
+      "geomean_reduction_percent": 1.1457467312267489,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "coordinate",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.7302704810163374,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "coordinate_then_codes",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": -0.42029172895654554,
+      "improved_projections": 1,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "objective",
+      "before": "coordinate_then_codes",
+      "after": "paired",
+      "geomean_reduction_percent": 0.2844871045623698,
+      "improved_projections": 6,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "awq",
+      "after": "coordinate",
+      "geomean_reduction_percent": 64.46731217596596,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "awq",
+      "after": "paired",
+      "geomean_reduction_percent": 64.93482045309446,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "coordinate",
+      "after": "paired",
+      "geomean_reduction_percent": 1.3157132369037927,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_codes",
+      "geomean_reduction_percent": -0.7288020879195001,
+      "improved_projections": 5,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": -0.27491057845274725,
+      "improved_projections": 2,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "coordinate_then_codes",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.45060747279668245,
+      "improved_projections": 2,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_mse",
+      "before": "coordinate_then_codes",
+      "after": "paired",
+      "geomean_reduction_percent": 2.029722663671474,
+      "improved_projections": 4,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "awq",
+      "after": "coordinate",
+      "geomean_reduction_percent": 64.45617589138959,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "awq",
+      "after": "paired",
+      "geomean_reduction_percent": 64.92426714017677,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate",
+      "after": "paired",
+      "geomean_reduction_percent": 1.3169411579262102,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_codes",
+      "geomean_reduction_percent": -0.7218490763469365,
+      "improved_projections": 5,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": -0.270361874716718,
+      "improved_projections": 2,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate_then_codes",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.44825150230113353,
+      "improved_projections": 2,
+      "total_projections": 7
+    },
+    {
+      "rank": 32,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate_then_codes",
+      "after": "paired",
+      "geomean_reduction_percent": 2.0241787188872484,
+      "improved_projections": 4,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "awq",
+      "after": "coordinate",
+      "geomean_reduction_percent": 47.17631775254084,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "awq",
+      "after": "paired",
+      "geomean_reduction_percent": 50.94944240129844,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "coordinate",
+      "after": "paired",
+      "geomean_reduction_percent": 7.142865639471941,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "coordinate",
+      "after": "coordinate_then_codes",
+      "geomean_reduction_percent": 1.0710436530111056,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "coordinate",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 1.3872247305175889,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "coordinate_then_codes",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.3196041777672187,
+      "improved_projections": 4,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "objective",
+      "before": "coordinate_then_codes",
+      "after": "paired",
+      "geomean_reduction_percent": 6.13755791091557,
+      "improved_projections": 6,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "awq",
+      "after": "coordinate",
+      "geomean_reduction_percent": 56.88456858731436,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "awq",
+      "after": "paired",
+      "geomean_reduction_percent": 60.164800296581,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "coordinate",
+      "after": "paired",
+      "geomean_reduction_percent": 7.608022468497233,
+      "improved_projections": 6,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_codes",
+      "geomean_reduction_percent": -0.6655249949104602,
+      "improved_projections": 4,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.22935277586995095,
+      "improved_projections": 3,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "coordinate_then_codes",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.8889615097379733,
+      "improved_projections": 3,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_mse",
+      "before": "coordinate_then_codes",
+      "after": "paired",
+      "geomean_reduction_percent": 8.218848969223568,
+      "improved_projections": 5,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "awq",
+      "after": "coordinate",
+      "geomean_reduction_percent": 56.883166967364495,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "awq",
+      "after": "paired",
+      "geomean_reduction_percent": 60.160895961928,
+      "improved_projections": 7,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate",
+      "after": "paired",
+      "geomean_reduction_percent": 7.601970655132662,
+      "improved_projections": 6,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_codes",
+      "geomean_reduction_percent": -0.6660757478183399,
+      "improved_projections": 4,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.22916428263421995,
+      "improved_projections": 3,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate_then_codes",
+      "after": "coordinate_then_pair",
+      "geomean_reduction_percent": 0.8893165088656563,
+      "improved_projections": 3,
+      "total_projections": 7
+    },
+    {
+      "rank": 128,
+      "metric": "validation_fp16_mse",
+      "before": "coordinate_then_codes",
+      "after": "paired",
+      "geomean_reduction_percent": 8.213339341511173,
+      "improved_projections": 5,
+      "total_projections": 7
+    }
+  ],
+  "phase_records": 658,
+  "committed_objective_increases": 0
+}

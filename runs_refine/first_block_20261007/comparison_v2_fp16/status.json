@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "completed_projections": 14,
+  "total_projections": 14,
+  "capture": {
+    "model": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+    "model_config_sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+    "calibration_identity": {
+      "path": "/home/zwang53/oats_code/calib_llama2-7b.pth",
+      "size": 6356262,
+      "mtime_ns": 1773258775809117000
+    },
+    "layer": 0,
+    "dtype": "fp16",
+    "train_sequences": 64,
+    "validation_sequences": 64,
+    "validation_scope": "held out from new quantizer only; original OATS used all sequences",
+    "input_propagation": "dense first block, shared by both ranks",
+    "diagonal": "mean squared activation over ALL tokens in train sequences, clamped at 1e-8",
+    "sampling": "uniform positions per sequence; disjoint sequence splits",
+    "projections": {
+      "self_attn.q_proj": {
+        "weight_shape": [
+          4096,
+          4096
+        ],
+        "train_sample_shape": [
+          512,
+          4096
+        ],
+        "validation_sample_shape": [
+          512,
+          4096
+        ]
+      },
+      "self_attn.k_proj": {
+        "weight_shape": [
+          4096,
+          4096
+        ],
+        "train_sample_shape": [
+          512,
+          4096
+        ],
+        "validation_sample_shape": [
+          512,
+          4096
+        ]
+      },
+      "self_attn.v_proj": {
+        "weight_shape": [
+          4096,
+          4096
+        ],
+        "train_sample_shape": [
+          512,
+          4096
+        ],
+        "validation_sample_shape": [
+          512,
+          4096
+        ]
+      },
+      "self_attn.o_proj": {
+        "weight_shape": [
+          4096,
+          4096
+        ],
+        "train_sample_shape": [
+          512,
+          4096
+        ],
+        "validation_sample_shape": [
+          512,
+          4096
+        ]
+      },
+      "mlp.gate_proj": {
+        "weight_shape": [
+          11008,
+          4096
+        ],
+        "train_sample_shape": [
+          512,
+          4096
+        ],
+        "validation_sample_shape": [
+          512,
+          4096
+        ]
+      },
+      "mlp.up_proj": {
+        "weight_shape": [
+          11008,
+          4096
+        ],
+        "train_sample_shape": [
+          512,
+          4096
+        ],
+        "validation_sample_shape": [
+          512,
+          4096
+        ]
+      },
+      "mlp.down_proj": {
+        "weight_shape": [
+          4096,
+          11008
+        ],
+        "train_sample_shape": [
+          512,
+          11008
+        ],
+        "validation_sample_shape": [
+          512,
+          11008
+        ]
+      }
+    }
+  },
+  "started_at": "2026-10-07T08:33:02.618625+00:00",
+  "current_rank": 128,
+  "updated_at": "2026-10-07T08:33:27.129454+00:00",
+  "finished_at": "2026-10-07T08:33:27.820826+00:00"
+}

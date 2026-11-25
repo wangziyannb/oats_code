@@ -1,0 +1,40 @@
+{
+  "name": "self_attn.v_proj",
+  "device": "cuda:2",
+  "initialization": {
+    "pair": {
+      "input_ratio": 0.05,
+      "rank_ratio": 0.1,
+      "first_search_mse": 0.0202135369181633,
+      "pair_mse": 0.020201675593852997,
+      "zq_abs_mean_min": 0.012570442631840706,
+      "zq_abs_mean_max": 0.032587144523859024,
+      "zq_abs_mean_avg": 0.016560129821300507,
+      "first_group_size": 128,
+      "second_group_size": 32
+    },
+    "sparse": {
+      "sparse_ratio": 0.45,
+      "sparse_search_mse": 0.021171340718865395
+    },
+    "initializer": "awq_residual_scale_search_fp32",
+    "clipping": false,
+    "neighbor_fusion": false,
+    "scale_grid": 20
+  },
+  "initialization_seconds": 0.49406926007941365,
+  "refinement_and_io_seconds": 0.8763693422079086,
+  "before": {
+    "objective": 57.76867183470043,
+    "sample_output_mse": 0.021171411499381065,
+    "mask_preserved": true
+  },
+  "after": {
+    "objective": 56.94191003969796,
+    "sample_output_mse": 0.020823385566473007,
+    "mask_preserved": true
+  },
+  "phases": 24,
+  "rejected_phases": 0,
+  "reload_exact": true
+}

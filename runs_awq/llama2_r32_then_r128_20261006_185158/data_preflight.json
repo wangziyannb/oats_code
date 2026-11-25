@@ -1,0 +1,17 @@
+{
+  "model": "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+  "oats_sequences": 128,
+  "oats_sequence_length": 2048,
+  "pileval_rows": 214670,
+  "pileval_fingerprint": "fa7b9ce01fad1b22",
+  "pileval_calibration_shape": [
+    65,
+    512
+  ],
+  "wiki_rows": 4358,
+  "wiki_fingerprint": "7ccd6deaa4fc56e5",
+  "wiki_token_shape": [
+    1,
+    341469
+  ]
+}

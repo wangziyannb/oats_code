@@ -1,0 +1,7 @@
+# Minimal dependencies for run_oats_awq.py; no lm-eval or compiled AWQ kernels.
+torch>=2.3
+transformers>=4.51,<6
+ml_collections>=0.1.1
+datasets>=2.19
+tqdm
+numpy

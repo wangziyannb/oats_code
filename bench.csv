@@ -1,0 +1,11 @@
+case,rank,effective_rank,compute_rank,ms_median,ms_mean,tflops,note
+dense_full_linear,0,4096,4096,0.5514079928398132,0.551545599102974,623.1273179600367,"baseline dense F.linear([512,4096], [4096,4096]); eager"
+sparse24_full_linear_UNSUPPORTED,0,4096,4096,nan,nan,nan,real semi-structured sparse kernel via F.linear; eager only to avoid torch.compile sparse dispatch failures; runtime error: RuntimeError: _sparse_semi_structured_linear: Supported only on GPUs with compute capability 8.x
+lowrank_dense_linear,64,64,64,0.08249600231647491,0.08283840045332909,130.15683110084083,"F.linear([512,4096],[r,4096]) -> F.linear([512,r],[4096,r]); eager"
+lowrank_sparse24x2_linear_UNSUPPORTED,64,64,64,nan,nan,nan,sparse case 默认 eager，避免 torch.compile + SparseSemiStructuredTensor 失败; runtime error: RuntimeError: _sparse_semi_structured_linear: Supported only on GPUs with compute capability 8.x
+lowrank_dense_linear,128,128,128,0.08883199840784073,0.08854719959199428,241.74663257496334,"F.linear([512,4096],[r,4096]) -> F.linear([512,r],[4096,r]); eager"
+lowrank_sparse24x2_linear_UNSUPPORTED,128,128,128,nan,nan,nan,sparse case 默认 eager，避免 torch.compile + SparseSemiStructuredTensor 失败; runtime error: RuntimeError: _sparse_semi_structured_linear: Supported only on GPUs with compute capability 8.x
+lowrank_dense_linear,256,256,256,0.11715199798345566,0.11693599969148635,366.61494212045284,"F.linear([512,4096],[r,4096]) -> F.linear([512,r],[4096,r]); eager"
+lowrank_sparse24x2_linear_UNSUPPORTED,256,256,256,nan,nan,nan,sparse case 默认 eager，避免 torch.compile + SparseSemiStructuredTensor 失败; runtime error: RuntimeError: _sparse_semi_structured_linear: Supported only on GPUs with compute capability 8.x
+lowrank_dense_linear,512,512,512,0.16862399876117706,0.1689696006476879,509.41352684714604,"F.linear([512,4096],[r,4096]) -> F.linear([512,r],[4096,r]); eager"
+lowrank_sparse24x2_linear_UNSUPPORTED,512,512,512,nan,nan,nan,sparse case 默认 eager，避免 torch.compile + SparseSemiStructuredTensor 失败; runtime error: RuntimeError: _sparse_semi_structured_linear: Supported only on GPUs with compute capability 8.x

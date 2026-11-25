@@ -1,0 +1,11 @@
+{
+  "original_path": "old/qwen3_1.7b_oats_24_r128/checkpoint.pt",
+  "bytes": 3721534119,
+  "md5": "d983b172eea283a3f22077579e962681",
+  "sha256": "f24d150eecdb3f5d0d4f87463f070dbf7459bebce53c94199f2d4f67c0a8afbd",
+  "drive_file_id": "19mOH0BZGNKk0NlUOdmUK0wstdvk58ZKK",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1O51iAZNdpGColYAD9haZaTcgku0Fyakq",
+  "remote_relative_path": "old/qwen3_1.7b_oats_24_r128/checkpoint.pt",
+  "verified_at": "2026-10-08T21:37:09.055795+00:00",
+  "load_function": "maintenance.full_model_archive.load_archive"
+}

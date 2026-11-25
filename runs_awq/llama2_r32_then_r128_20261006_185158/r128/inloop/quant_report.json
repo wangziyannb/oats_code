@@ -1,0 +1,23 @@
+{
+  "method": "inloop",
+  "iterate_selection": "last",
+  "num_iters": 80,
+  "actual_calibration_sequences": 128,
+  "quantization": {
+    "config": {
+      "bits": 4,
+      "group_size": 128,
+      "grid": 20,
+      "row_chunk": 512,
+      "sparse_refresh": 10
+    },
+    "tokens": 512,
+    "sequences": 128
+  },
+  "audit": {
+    "modules": 224,
+    "groups_2_4": 1619001344,
+    "violations_2_4": 0
+  },
+  "packed_int4": false
+}

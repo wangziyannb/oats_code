@@ -1,0 +1,13 @@
+Verified: runs_awq/llama2_r32_then_r128_20261006_185158/r128/inloop/checkpoint.pt
+Verified: runs_awq/llama2_r32_then_r128_20261006_185158/r128/posthoc/checkpoint.pt
+Verified: runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt
+Verified: runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/checkpoint.pt
+Verified: runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt
+Verified: runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/checkpoint.pt
+Verified: runs_refine/full_model_20261007_0848/r128/awq/checkpoint.pt
+Verified: runs_refine/full_model_20261007_0848/r128/coordinate/checkpoint.pt
+Verified: runs_refine/full_model_20261007_0848/r128/paired/checkpoint.pt
+Verified: runs_refine/full_model_20261007_0848/r32/awq/checkpoint.pt
+Verified: runs_refine/full_model_20261007_0848/r32/coordinate/checkpoint.pt
+Verified: runs_refine/full_model_20261007_0848/r32/paired/checkpoint.pt
+Removed bytes: 260854876427 files: 1921

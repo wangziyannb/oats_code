@@ -1,0 +1,40 @@
+{
+  "name": "mlp.down_proj",
+  "device": "cuda:0",
+  "initialization": {
+    "pair": {
+      "input_ratio": 0.05,
+      "rank_ratio": 0.2,
+      "first_search_mse": 0.0002466237638145685,
+      "pair_mse": 0.0002463081618770957,
+      "zq_abs_mean_min": 0.010556099936366081,
+      "zq_abs_mean_max": 0.03247132524847984,
+      "zq_abs_mean_avg": 0.019539689645171165,
+      "first_group_size": 128,
+      "second_group_size": 32
+    },
+    "sparse": {
+      "sparse_ratio": 0.4,
+      "sparse_search_mse": 0.0002592868695501238
+    },
+    "initializer": "awq_residual_scale_search_fp32",
+    "clipping": false,
+    "neighbor_fusion": false,
+    "scale_grid": 20
+  },
+  "initialization_seconds": 0.529714407864958,
+  "refinement_and_io_seconds": 0.7324097999371588,
+  "before": {
+    "objective": 0.7023549566837067,
+    "sample_output_mse": 0.0002592872770037502,
+    "mask_preserved": true
+  },
+  "after": {
+    "objective": 0.6916523757084363,
+    "sample_output_mse": 0.0002540948917157948,
+    "mask_preserved": true
+  },
+  "phases": 18,
+  "rejected_phases": 0,
+  "reload_exact": true
+}

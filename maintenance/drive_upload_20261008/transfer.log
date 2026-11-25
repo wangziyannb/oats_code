@@ -1,0 +1,245 @@
+2026-10-08T20:52:04.025414+00:00 Hashing all 22 complete models (MD5 and SHA256).
+2026-10-08T20:52:26.052644+00:00 Hashed runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/checkpoint.pt
+2026-10-08T20:52:26.733483+00:00 Hashed runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt
+2026-10-08T20:52:26.767623+00:00 Hashed runs_awq/llama2_r32_then_r128_20261006_185158/r128/posthoc/checkpoint.pt
+2026-10-08T20:52:27.193446+00:00 Hashed runs_awq/llama2_r32_then_r128_20261006_185158/r128/inloop/checkpoint.pt
+2026-10-08T20:52:48.166642+00:00 Hashed runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt
+2026-10-08T20:52:49.598613+00:00 Hashed runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/checkpoint.pt
+2026-10-08T20:52:49.629290+00:00 Hashed runs_refine/full_model_20261007_0848/r128/awq/checkpoint.pt
+2026-10-08T20:52:50.206733+00:00 Hashed runs_refine/full_model_20261007_0848/r128/coordinate/checkpoint.pt
+2026-10-08T20:53:10.975579+00:00 Hashed runs_refine/full_model_20261007_0848/r128/paired/checkpoint.pt
+2026-10-08T20:53:11.601703+00:00 Hashed runs_refine/full_model_20261007_0848/r32/coordinate/checkpoint.pt
+2026-10-08T20:53:11.764913+00:00 Hashed runs_refine/full_model_20261007_0848/r32/awq/checkpoint.pt
+2026-10-08T20:53:12.365860+00:00 Hashed runs_refine/full_model_20261007_0848/r32/paired/checkpoint.pt
+2026-10-08T20:53:32.526890+00:00 Hashed old/llama2_oats_24_r32/checkpoint.pt
+2026-10-08T20:53:33.510256+00:00 Hashed old/llama2_oats_24_r64/checkpoint.pt
+2026-10-08T20:53:34.192319+00:00 Hashed old/llama2_oats_24_r128/checkpoint.pt
+2026-10-08T20:53:38.105519+00:00 Hashed llama3.1_oats_24_r32/checkpoint.pt
+2026-10-08T20:53:39.086386+00:00 Hashed qwen3_1.7b_oats_24_r32/checkpoint.pt
+2026-10-08T20:53:40.130105+00:00 Hashed old/qwen3_1.7b_oats_24_r128/checkpoint.pt
+2026-10-08T20:53:59.095626+00:00 Hashed old/llama3.1_oats_24_r128/checkpoint.pt
+2026-10-08T20:54:04.185781+00:00 Hashed qwen3_8b_oats_24_r32/checkpoint.pt
+2026-10-08T20:54:05.581054+00:00 Hashed old/qwen3_8b_oats_24_r64/checkpoint.pt
+2026-10-08T20:54:07.218991+00:00 Hashed old/qwen3_8b_oats_24_r128/checkpoint.pt
+2026/10/08 16:54:07 ERROR : models_manifest.json: Failed to copy: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:07 ERROR : Attempt 1/5 failed with 1 errors and: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:08 ERROR : models_manifest.json: Failed to copy: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:08 ERROR : Attempt 2/5 failed with 1 errors and: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:08 ERROR : models_manifest.json: Failed to copy: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:08 ERROR : Attempt 3/5 failed with 1 errors and: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:08 ERROR : models_manifest.json: Failed to copy: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:08 ERROR : Attempt 4/5 failed with 1 errors and: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:09 ERROR : models_manifest.json: Failed to copy: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:09 ERROR : Attempt 5/5 failed with 1 errors and: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026/10/08 16:54:09 NOTICE: Failed to copyto: googleapi: Error 403: Request had insufficient authentication scopes.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "method": "google.apps.drive.v3.DriveFiles.Create",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT"
+  }
+]
+
+More details:
+Reason: insufficientPermissions, Message: Insufficient Permission
+2026-10-08T20:54:09.099371+00:00 Stopped: CalledProcessError(1, ['rclone', 'copyto', '/home/zwang53/oats_code/maintenance/drive_upload_20261008/models_manifest.json', 'gdrive_hdtf:models_manifest.json', '--checksum', '--immutable', '--drive-root-folder-id', '1O51iAZNdpGColYAD9haZaTcgku0Fyakq', '--retries', '5', '--low-level-retries', '20', '--contimeout', '30s', '--timeout', '5m'])
+Traceback (most recent call last):
+  File "/home/zwang53/oats_code/maintenance/drive_upload_20261008/transfer.py", line 185, in <module>
+    main()
+    ~~~~^^
+  File "/home/zwang53/oats_code/maintenance/drive_upload_20261008/transfer.py", line 124, in main
+    run(['copyto', str(WORK / filename), REMOTE + filename, '--checksum', '--immutable'])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zwang53/oats_code/maintenance/drive_upload_20261008/transfer.py", line 47, in run
+    return subprocess.check_output(command, text=True)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zwang53/miniconda3/lib/python3.13/subprocess.py", line 474, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/home/zwang53/miniconda3/lib/python3.13/subprocess.py", line 579, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['rclone', 'copyto', '/home/zwang53/oats_code/maintenance/drive_upload_20261008/models_manifest.json', 'gdrive_hdtf:models_manifest.json', '--checksum', '--immutable', '--drive-root-folder-id', '1O51iAZNdpGColYAD9haZaTcgku0Fyakq', '--retries', '5', '--low-level-retries', '20', '--contimeout', '30s', '--timeout', '5m']' returned non-zero exit status 1.
+2026-10-08T21:06:10.248589+00:00 Hashing all 22 complete models (MD5 and SHA256).
+2026-10-08T21:06:11.088863+00:00 Uploading with 4 concurrent transfers; no local deletion during upload.
+2026-10-08T21:37:08.055684+00:00 Upload command succeeded. Independently verifying all Drive sizes and MD5 hashes.
+2026-10-08T21:37:11.317865+00:00 Verified on Drive and deleted locally: runs_awq/llama2_r32_then_r128_20261006_185158/r128/inloop/checkpoint.pt
+2026-10-08T21:37:11.825024+00:00 Verified on Drive and deleted locally: runs_awq/llama2_r32_then_r128_20261006_185158/r128/posthoc/checkpoint.pt
+2026-10-08T21:37:12.179760+00:00 Verified on Drive and deleted locally: runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt
+2026-10-08T21:37:12.523888+00:00 Verified on Drive and deleted locally: runs_awq/llama2_r32_then_r128_20261006_185158/r32/inloop/checkpoint.pt
+2026-10-08T21:37:12.931873+00:00 Verified on Drive and deleted locally: runs_awq/llama2_r32_then_r128_20261006_185158/r32/posthoc/checkpoint.pt
+2026-10-08T21:37:13.250232+00:00 Verified on Drive and deleted locally: runs_awq/llama2_r32_then_r128_20261006_185158/r32/prepare/checkpoint.pt
+2026-10-08T21:37:13.640173+00:00 Verified on Drive and deleted locally: runs_refine/full_model_20261007_0848/r128/awq/checkpoint.pt
+2026-10-08T21:37:14.078163+00:00 Verified on Drive and deleted locally: runs_refine/full_model_20261007_0848/r128/coordinate/checkpoint.pt
+2026-10-08T21:37:14.433241+00:00 Verified on Drive and deleted locally: runs_refine/full_model_20261007_0848/r128/paired/checkpoint.pt
+2026-10-08T21:37:14.798253+00:00 Verified on Drive and deleted locally: runs_refine/full_model_20261007_0848/r32/awq/checkpoint.pt
+2026-10-08T21:37:15.215367+00:00 Verified on Drive and deleted locally: runs_refine/full_model_20261007_0848/r32/coordinate/checkpoint.pt
+2026-10-08T21:37:15.590621+00:00 Verified on Drive and deleted locally: runs_refine/full_model_20261007_0848/r32/paired/checkpoint.pt
+2026-10-08T21:37:16.593262+00:00 Verified on Drive and deleted locally: old/llama2_oats_24_r32/checkpoint.pt
+2026-10-08T21:37:17.626630+00:00 Verified on Drive and deleted locally: old/llama2_oats_24_r64/checkpoint.pt
+2026-10-08T21:37:18.633131+00:00 Verified on Drive and deleted locally: old/llama2_oats_24_r128/checkpoint.pt
+2026-10-08T21:37:19.502413+00:00 Verified on Drive and deleted locally: llama3.1_oats_24_r32/checkpoint.pt
+2026-10-08T21:37:20.368499+00:00 Verified on Drive and deleted locally: old/llama3.1_oats_24_r128/checkpoint.pt
+2026-10-08T21:37:20.555658+00:00 Verified on Drive and deleted locally: qwen3_1.7b_oats_24_r32/checkpoint.pt
+2026-10-08T21:37:20.747115+00:00 Verified on Drive and deleted locally: old/qwen3_1.7b_oats_24_r128/checkpoint.pt
+2026-10-08T21:37:21.749004+00:00 Verified on Drive and deleted locally: qwen3_8b_oats_24_r32/checkpoint.pt
+2026-10-08T21:37:22.693030+00:00 Verified on Drive and deleted locally: old/qwen3_8b_oats_24_r64/checkpoint.pt
+2026-10-08T21:37:23.713432+00:00 Verified on Drive and deleted locally: old/qwen3_8b_oats_24_r128/checkpoint.pt
+2026-10-08T21:37:26.337208+00:00 Complete: 22 verified models on Drive, 298643233198 bytes removed locally.

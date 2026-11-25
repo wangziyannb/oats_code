@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "historical_source": "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158",
+  "current_source": "/home/zwang53/oats_code/runs_refine/full_model_20261007_0848",
+  "comparison_scope": "same base model/rank/dtype and PPL protocol; quantization/calibration strategies differ from historical posthoc/inloop",
+  "new_method": "fixed-mask quantization refinement after completed OATS, not the original SVD+AWQ inloop implementation",
+  "device_transition": [
+    {
+      "at": "2026-10-07T09:12:45.086021+00:00",
+      "from": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "to": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "evaluation": {
+    "dataset": "WikiText-2 raw test",
+    "seqlen": 128,
+    "batch_size": 1,
+    "predicted_tokens": 338709,
+    "dtype": "float16"
+  },
+  "rows": [
+    {
+      "rank": 32,
+      "previous_prepare": 24.083083551649295,
+      "previous_posthoc": 24.454023525700443,
+      "previous_inloop": 45.444405282973676,
+      "coordinate": 27.766093811995713,
+      "paired": 28.070119606203253,
+      "awq": 29.673491634167323,
+      "coordinate_vs_initializer_ppl_reduction_percent": 6.4279520781954425,
+      "paired_vs_initializer_ppl_reduction_percent": 5.403381737920854,
+      "paired_vs_coordinate_ppl_reduction_percent": -1.0949534214862888,
+      "paired_vs_previous_inloop_ppl_reduction_percent": 38.23195741826535
+    },
+    {
+      "rank": 128,
+      "previous_prepare": 17.0228171044076,
+      "previous_posthoc": 18.275126796477405,
+      "previous_inloop": 30.74962862452269,
+      "coordinate": 20.227434002609172,
+      "paired": 19.83392936867893,
+      "awq": 23.333547110713404,
+      "coordinate_vs_initializer_ppl_reduction_percent": 13.311791359308955,
+      "paired_vs_initializer_ppl_reduction_percent": 14.998224339528953,
+      "paired_vs_coordinate_ppl_reduction_percent": 1.9454006567490634,
+      "paired_vs_previous_inloop_ppl_reduction_percent": 35.49863768806149
+    }
+  ]
+}

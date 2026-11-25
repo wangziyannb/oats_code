@@ -1,0 +1,11 @@
+{"started_at": "2026-10-07T07:43:51.820089+00:00", "argv": ["/home/zwang53/oats_code/.venv-awq/bin/python", "-u", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/code/run_oats_awq.py", "eval", "--model", "/home/zwang53/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9", "--rank", "128", "--output-dir", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare_eval", "--dtype", "fp16", "--device", "cuda:0", "--num-iters", "80", "--checkpoint", "/home/zwang53/oats_code/runs_awq/llama2_r32_then_r128_20261006_185158/r128/prepare/checkpoint.pt", "--ppl-seqlen", "128"]}
+Using the latest cached version of the dataset since wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/zwang53/.cache/huggingface/datasets/wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Aug  3 21:34:57 2025).
+{
+  "ppl": 17.0228171044076,
+  "predicted_tokens": 338709,
+  "seqlen": 128,
+  "batch_size": 1,
+  "checkpoint_method": "prepare",
+  "stored_dtype": "float16"
+}

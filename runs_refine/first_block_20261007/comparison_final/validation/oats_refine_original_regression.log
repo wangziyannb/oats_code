@@ -1,0 +1,14 @@
+test_activation_sampling_does_not_change_oats_statistics (test_oats_awq.CoreTests.test_activation_sampling_does_not_change_oats_statistics) ... ok
+test_equivalent_scales_for_native_oats_layers (test_oats_awq.CoreTests.test_equivalent_scales_for_native_oats_layers) ... ok
+test_feedback_is_quantized_and_last_iterate_is_returned (test_oats_awq.CoreTests.test_feedback_is_quantized_and_last_iterate_is_returned) ... ok
+test_identity_quantization_preserves_oats_trajectory (test_oats_awq.CoreTests.test_identity_quantization_preserves_oats_trajectory) ... ok
+test_manifest_rejects_mixing_runs (test_oats_awq.CoreTests.test_manifest_rejects_mixing_runs) ... ok
+test_pair_search_handles_zero_activations_and_effective_coordinates (test_oats_awq.CoreTests.test_pair_search_handles_zero_activations_and_effective_coordinates) ... ok
+test_quantizer_reference_mask_and_invalid_inputs (test_oats_awq.CoreTests.test_quantizer_reference_mask_and_invalid_inputs) ... ok
+test_sparse_refresh_interval_and_actual_two_factor_output (test_oats_awq.CoreTests.test_sparse_refresh_interval_and_actual_two_factor_output) ... ok
+test_unquantized_matches_original_exactly_each_iteration (test_oats_awq.CoreTests.test_unquantized_matches_original_exactly_each_iteration) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.021s
+
+OK
